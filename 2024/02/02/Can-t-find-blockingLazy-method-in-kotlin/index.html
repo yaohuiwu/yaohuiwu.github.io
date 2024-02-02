@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"yaohuiwu.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="行是知之始，知是行之成。 —— 王阳明">
+  <meta name="description" content="In the ‘Standard Delegates’ section of the Delegation Properties page, there is one sentence says:  If you want thread safety, use blockingLazy() instead: it guarantees that the values will be compute">
 <meta property="og:type" content="article">
-<meta property="og:title" content="名言摘录">
-<meta property="og:url" content="https://yaohuiwu.github.io/2021/05/21/My-first-blog/index.html">
+<meta property="og:title" content="Can&#39;t find blockingLazy() method in kotlin">
+<meta property="og:url" content="https://yaohuiwu.github.io/2024/02/02/Can-t-find-blockingLazy-method-in-kotlin/index.html">
 <meta property="og:site_name" content="君子兰槐的博客">
-<meta property="og:description" content="行是知之始，知是行之成。 —— 王阳明">
+<meta property="og:description" content="In the ‘Standard Delegates’ section of the Delegation Properties page, there is one sentence says:  If you want thread safety, use blockingLazy() instead: it guarantees that the values will be compute">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-05-21T06:29:36.000Z">
-<meta property="article:modified_time" content="2021-05-21T06:39:15.229Z">
+<meta property="article:published_time" content="2024-02-02T09:18:59.000Z">
+<meta property="article:modified_time" content="2024-02-02T09:31:00.577Z">
 <meta property="article:author" content="君子兰槐">
+<meta property="article:tag" content="kotlin blockingLazy">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://yaohuiwu.github.io/2021/05/21/My-first-blog/">
+<link rel="canonical" href="https://yaohuiwu.github.io/2024/02/02/Can-t-find-blockingLazy-method-in-kotlin/">
 
 
 <script id="page-configurations">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title>名言摘录 | 君子兰槐的博客</title>
+  <title>Can't find blockingLazy() method in kotlin | 君子兰槐的博客</title>
   
 
 
@@ -151,7 +152,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yaohuiwu.github.io/2021/05/21/My-first-blog/">
+    <link itemprop="mainEntityOfPage" href="https://yaohuiwu.github.io/2024/02/02/Can-t-find-blockingLazy-method-in-kotlin/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars.githubusercontent.com/u/7850789?s=400&u=b6147688931a49db0a7bc27d89660d828bdb55a9&v=4">
@@ -164,7 +165,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          名言摘录
+          Can't find blockingLazy() method in kotlin
         </h1>
 
         <div class="post-meta">
@@ -175,7 +176,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-21 14:29:36 / 修改时间：14:39:15" itemprop="dateCreated datePublished" datetime="2021-05-21T14:29:36+08:00">2021-05-21</time>
+              <time title="创建时间：2024-02-02 17:18:59 / 修改时间：17:31:00" itemprop="dateCreated datePublished" datetime="2024-02-02T17:18:59+08:00">2024-02-02</time>
             </span>
 
           
@@ -189,10 +190,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <blockquote>
-<p>行是知之始，知是行之成。 —— 王阳明</p>
+        <p>In the ‘Standard Delegates’ section of the <a target="_blank" rel="noopener" href="https://play.kotlinlang.org/byExample/07_Delegation/02_DelegatedProperties">Delegation Properties</a> page, there is one sentence says:</p>
+<blockquote>
+<p>If you want thread safety, use blockingLazy() instead: it guarantees that the values will be computed only in one thread and that all threads will see the same value.</p>
 </blockquote>
-
+<p>But I searched the kotlin standard library and can’t find the <code>blockingLazy()</code> method. I’m using the kotlin 1.9.10:</p>
+<pre><code>$ kotlin -version
+Kotlin version 1.9.10-release-459 (JRE 17.0.8+9-LTS-211)
+</code></pre>
+<p>and kotlin standard library 1.9.0:</p>
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.jetbrains.kotlin&lt;/groupId&gt;
+    &lt;artifactId&gt;kotlin-stdlib&lt;/artifactId&gt;
+    &lt;version&gt;1.9.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<p>It seems that kotlin has removed the blockingLazy method.</p>
+<p>I did find a <code>lazy</code> method which allow passing a lock parameter. It should be the new way to use a blocking lazy.</p>
+<p>So I implement a thread-safe version here:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ThreadSafeLazyExample</span> </span>&#123;</span><br><span class="line">    init &#123;</span><br><span class="line">        println(<span class="string">&quot;Created!&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> val lazyLock: Int = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// a thread safe lazy</span></span><br><span class="line">    val lazyStr: <span class="function">String by <span class="title">lazy</span><span class="params">(lazyLock)</span> </span>&#123;</span><br><span class="line">        println(<span class="string">&quot;computed!&quot;</span>)</span><br><span class="line">        <span class="string">&quot;my lazy&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">fun <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    val sample = ThreadSafeLazyExample()</span><br><span class="line">    println(<span class="string">&quot;lazyStr is $&#123;sample.lazyStr&#125;&quot;</span>)</span><br><span class="line">    println(<span class="string">&quot; =$&#123;sample.lazyStr&#125;&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -200,17 +216,20 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/kotlin-blockingLazy/" rel="tag"># kotlin blockingLazy</a>
+          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2024/01/31/Can-not-clone-repositories-from-github-in-china/" rel="next" title="近期无法通过git从github克隆项目的解决办法">
-      近期无法通过git从github克隆项目的解决办法 <i class="fa fa-chevron-right"></i>
+    <a href="/2024/01/31/Can-not-clone-repositories-from-github-in-china/" rel="prev" title="近期无法通过git从github克隆项目的解决办法">
+      <i class="fa fa-chevron-left"></i> 近期无法通过git从github克隆项目的解决办法
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -388,7 +407,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'yaohuiwu.github.io',
       owner       : 'yaohuiwu',
       admin       : ['yaohuiwu'],
-      id          : 'fa2b7042a43d6a1242e681f885b48a7d',
+      id          : 'ca33f7a4da580d5db3d121ce887ace7f',
         language: 'zh-CN',
       distractionFreeMode: true
     });
