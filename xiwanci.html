@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="习万词">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#BFE9FF">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>习万词</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#BFE9FF; --bg2:#E9F8FF; --dots:rgba(255,255,255,.75);
+  --paper:#FFFFFF; --paper2:#EEF8FF; --text:#1F2A44; --muted:#5C6B8A; --line:#1F2A44; --on:#1F2A44;
+  --yellow:#FFD23F; --coral:#FF6B6B; --green:#35D07F; --blue:#4DA3FF; --purple:#8F6BFF; --orange:#FF9F43; --pink:#FF7EB6;
+  --good:#12A150; --bad:#D6343A;
+  --sh:0 4px 0 var(--line);
+  --t0:color-mix(in srgb,var(--yellow) 30%,var(--paper)); --t1:color-mix(in srgb,var(--green) 26%,var(--paper)); --t2:color-mix(in srgb,var(--blue) 26%,var(--paper)); --t3:color-mix(in srgb,var(--pink) 26%,var(--paper));
+  --font:"Fredoka","Yuanti SC","Hiragino Maru Gothic ProN","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+  --display:"ZCOOL KuaiLe","Fredoka","Yuanti SC","PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg1:#1A2145; --bg2:#222B5A; --dots:rgba(255,255,255,.06);
+    --paper:#2C3772; --paper2:#252F66; --text:#F1F4FF; --muted:#AAB5DD; --line:#0B1030;
+    --good:#5BE29B; --bad:#FF8A8F;
+    --t0:#6B5A1F; --t1:#1F5C48; --t2:#27508A; --t3:#7A2F5A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg1:#1A2145; --bg2:#222B5A; --dots:rgba(255,255,255,.06);
+  --paper:#2C3772; --paper2:#252F66; --text:#F1F4FF; --muted:#AAB5DD; --line:#0B1030;
+  --good:#5BE29B; --bad:#FF8A8F;
+  --t0:#6B5A1F; --t1:#1F5C48; --t2:#27508A; --t3:#7A2F5A;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*,*::before,*::after{box-sizing:border-box;}
+body{margin:0;color:var(--text);font-family:var(--font);font-size:16px;line-height:1.5;
+  background:radial-gradient(var(--dots) 2.2px,transparent 2.7px) 0 0/30px 30px,linear-gradient(180deg,var(--bg1) 0,var(--bg2) 560px) var(--bg2);
+  background-attachment:scroll;min-height:100vh;}
+.wrap{max-width:640px;margin:0 auto;padding:14px 14px 118px;}
+button{font-family:inherit;}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--purple);outline-offset:2px;}
+
+/* 顶部 */
+.top{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.avatar{flex:none;width:58px;height:58px;border-radius:50%;border:3px solid var(--line);background:var(--yellow);box-shadow:var(--sh);padding:0;overflow:hidden;cursor:pointer;}
+.avatar svg{width:100%;height:100%;display:block;}
+.brand{flex:1;min-width:0;}
+h1{font-family:var(--display);font-weight:400;font-size:2rem;line-height:1.05;margin:0;color:var(--yellow);-webkit-text-stroke:6px var(--line);paint-order:stroke fill;letter-spacing:.06em;text-shadow:0 3px 0 var(--line);transform:rotate(-2deg);transform-origin:left center;}
+.tag{display:block;font-size:.8rem;color:var(--muted);margin-top:7px;}
+.pts{display:flex;align-items:center;gap:6px;background:var(--yellow);color:var(--on);border:3px solid var(--line);border-radius:999px;padding:3px 14px 3px 5px;font:inherit;font-weight:700;font-size:1.05rem;box-shadow:var(--sh);cursor:pointer;}
+.coin{flex:none;display:inline-block;vertical-align:middle;}
+
+/* 底部导航 */
+nav{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:4px;background:var(--paper);border-top:3px solid var(--line);padding:6px max(8px,calc((100vw - 640px)/2)) calc(6px + env(safe-area-inset-bottom,0px));}
+nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:0;background:none;border:3px solid transparent;border-radius:16px;padding:3px 0 2px;color:var(--muted);font-size:.72rem;font-weight:600;cursor:pointer;}
+nav button .ic{font-size:1.45rem;line-height:1.25;}
+nav button[aria-current="true"]{background:var(--yellow);color:var(--on);border-color:var(--line);box-shadow:0 3px 0 var(--line);}
+
+/* 通用按钮 */
+.primary,.ghost{border:3px solid var(--line);border-radius:16px;padding:11px 18px;font:inherit;font-weight:700;cursor:pointer;box-shadow:var(--sh);transition:transform .08s,box-shadow .08s;}
+.primary{background:var(--yellow);color:var(--on);}
+.ghost{background:var(--paper);color:var(--text);padding:9px 14px;}
+.primary:active,.ghost:active,.opt:not(:disabled):active,.rate button:active,.lvbtn:not([disabled]):active,.itm:active{transform:translateY(3px);box-shadow:0 1px 0 var(--line);}
+.danger{color:var(--bad);}
+h2{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:26px 0 6px;letter-spacing:.03em;}
+p.note{color:var(--muted);font-size:.88rem;margin:4px 0 0;}
+.warn{background:var(--paper);border:3px solid var(--bad);color:var(--bad);border-radius:14px;padding:8px 12px;font-size:.88rem;margin-bottom:12px;font-weight:600;}
+.empty{text-align:center;color:var(--muted);padding:30px 0;}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;font-weight:600;}
+.meta span{background:var(--paper);border:3px solid var(--line);border-radius:999px;padding:2px 14px;box-shadow:0 3px 0 var(--line);font-size:.92rem;}
+.meta span:nth-child(1){background:color-mix(in srgb,var(--coral) 35%,var(--paper));}
+.meta span:nth-child(2){background:color-mix(in srgb,var(--green) 35%,var(--paper));}
+.meta b{font-weight:700;}
+
+/* 卡片和学习 */
+.card{background:var(--paper);border:3px solid var(--line);border-radius:28px;box-shadow:0 6px 0 var(--line);padding:26px 20px;min-height:260px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+.card.tap{cursor:pointer;}
+.word{font-family:var(--font);font-weight:700;font-size:clamp(2.4rem,11vw,3.8rem);line-height:1.1;margin:0;word-break:break-word;letter-spacing:.01em;}
+.emo{font-size:2.8rem;line-height:1;margin:0 0 8px;}
+.hint{color:var(--muted);font-size:.9rem;margin-top:20px;}
+.spk{background:var(--blue);color:var(--on);border:3px solid var(--line);border-radius:999px;padding:5px 16px;margin-top:14px;font:inherit;font-weight:700;font-size:.95rem;box-shadow:0 3px 0 var(--line);cursor:pointer;}
+.spk::before{content:'🔊 ';}
+.answer{margin-top:18px;padding-top:16px;border-top:3px dashed color-mix(in srgb,var(--line) 35%,transparent);width:100%;}
+.meaning{font-size:1.3rem;font-weight:700;margin:0 0 8px;}
+.example{font-family:var(--font);color:var(--muted);margin:0;max-width:46ch;margin-inline:auto;}
+.rate{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px;}
+.rate button{border:3px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:9px 2px;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:1px;color:var(--on);}
+.rate .r1{background:#FF8A8A;} .rate .r2{background:#FFC46B;} .rate .r3{background:#6EE7A8;} .rate .r4{background:#7DBBFF;}
+.rate button strong{font-size:1rem;}
+.rate button small{font-size:.74rem;opacity:.8;}
+
+/* 表单和列表 */
+label{display:block;font-size:.9rem;font-weight:600;color:var(--muted);margin:14px 0 4px;}
+input[type=text],input[type=search],textarea,select{width:100%;background:var(--paper);color:var(--text);border:3px solid var(--line);border-radius:16px;padding:10px 14px;font:inherit;}
+textarea{min-height:110px;resize:vertical;}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
+.list{margin-top:12px;}
+.item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--paper);border:3px solid var(--line);border-radius:18px;margin-bottom:8px;}
+.item .t{flex:1;min-width:0;}
+.item .t b{font-size:1.05rem;}
+.item .t span{display:block;color:var(--muted);font-size:.9rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.item .s{background:var(--paper2);border:2px solid var(--line);border-radius:999px;padding:0 10px;color:var(--muted);font-size:.78rem;font-weight:600;white-space:nowrap;}
+.item button{background:none;border:0;color:var(--muted);cursor:pointer;font:inherit;font-size:.85rem;padding:4px 6px;}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+.stat{border:3px solid var(--line);border-radius:20px;box-shadow:var(--sh);padding:12px 14px;background:var(--paper);}
+.stat:nth-child(1){background:color-mix(in srgb,var(--blue) 30%,var(--paper));}
+.stat:nth-child(2){background:color-mix(in srgb,var(--coral) 30%,var(--paper));}
+.stat:nth-child(3){background:color-mix(in srgb,var(--green) 30%,var(--paper));}
+.stat:nth-child(4){background:color-mix(in srgb,var(--yellow) 40%,var(--paper));}
+.stat:nth-child(5){background:color-mix(in srgb,var(--purple) 28%,var(--paper));}
+.stat:nth-child(6){background:color-mix(in srgb,var(--pink) 30%,var(--paper));}
+.stat:nth-child(7){background:color-mix(in srgb,var(--orange) 32%,var(--paper));}
+.stat:nth-child(8){background:color-mix(in srgb,var(--yellow) 40%,var(--paper));}
+.stat b{display:block;font-size:1.8rem;line-height:1.1;font-weight:700;}
+.stat span{color:var(--muted);font-size:.82rem;font-weight:600;}
+
+/* 提示条 */
+#toast{position:fixed;left:50%;bottom:calc(var(--nav-h,76px) + 12px);transform:translateX(-50%);background:var(--yellow);color:var(--on);border:3px solid var(--line);box-shadow:var(--sh);padding:8px 18px;border-radius:999px;font-weight:700;font-size:.95rem;opacity:0;pointer-events:none;transition:opacity .15s;z-index:80;white-space:nowrap;}
+#toast.on{opacity:1;}
+
+/* 烟花层和奖励 */
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:90;display:none;}
+#reward{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;background:rgba(14,18,48,.62);padding:16px;}
+#reward[hidden]{display:none;}
+.rw-card{background:var(--paper);border:3px solid var(--line);box-shadow:0 8px 0 var(--line);border-radius:30px;padding:16px 16px 18px;width:100%;max-width:350px;text-align:center;overflow:hidden;}
+.rw-stars{margin:0;line-height:1;display:flex;justify-content:center;}
+.rw-pts{display:inline-block;margin:8px 0 0;padding:2px 16px;background:var(--yellow);color:var(--on);border:3px solid var(--line);border-radius:999px;font-weight:700;box-shadow:0 3px 0 var(--line);}
+.rw-pts:empty{display:none;}
+.rw-stage{position:relative;margin-top:4px;}
+.rw-stage::before{content:'';position:absolute;inset:-4% -14%;border-radius:50%;background:repeating-conic-gradient(rgba(255,210,63,.55) 0 9deg,transparent 9deg 18deg);-webkit-mask-image:radial-gradient(circle,#000 18%,transparent 66%);mask-image:radial-gradient(circle,#000 18%,transparent 66%);animation:spin 18s linear infinite;}
+#rw-fig{position:relative;width:100%;height:auto;display:block;}
+.rw-bubble{position:absolute;top:3%;left:2%;background:#FFFFFF;color:#1F2A44;border:3px solid #1F2A44;border-radius:18px;padding:5px 14px;font-weight:700;font-size:1.25rem;box-shadow:0 3px 0 #1F2A44;opacity:0;transform:scale(.6);transform-origin:bottom right;transition:opacity .2s,transform .25s;}
+.rw-bubble::after{content:'';position:absolute;right:16px;bottom:-12px;border:8px solid transparent;border-top-color:#1F2A44;border-bottom:0;}
+.rw-bubble.on{opacity:1;transform:scale(1);}
+
+/* 闯关 */
+.seg{display:flex;gap:8px;margin-bottom:12px;}
+.seg button{flex:1;background:var(--paper);color:var(--text);border:3px solid var(--line);border-radius:16px;padding:8px 6px;font:inherit;font-size:.9rem;font-weight:700;cursor:pointer;box-shadow:0 3px 0 var(--line);}
+.seg button[aria-pressed="true"]{background:var(--yellow);color:var(--on);}
+.chap{margin-top:20px;}
+.chap h2{margin:0 0 4px;}
+.chip{display:inline-block;padding:1px 16px;border:3px solid var(--line);border-radius:999px;box-shadow:0 3px 0 var(--line);color:var(--on);font-size:1.05rem;}
+.ch0{background:var(--yellow);} .ch1{background:var(--coral);} .ch2{background:var(--green);} .ch3{background:var(--blue);} .ch4{background:var(--purple);color:#fff;}
+.lv{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px;}
+.lvbtn{background:var(--paper);border:3px solid var(--line);border-radius:20px;box-shadow:var(--sh);padding:8px 2px 7px;font:inherit;color:var(--text);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;}
+.lvbtn .ic{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:1.2rem;border:3px solid var(--line);background:var(--yellow);}
+.lvbtn:nth-child(2) .ic{background:var(--green);} .lvbtn:nth-child(3) .ic{background:var(--blue);} .lvbtn:nth-child(4) .ic{background:var(--pink);}
+.lvbtn strong{font-size:.95rem;}
+.lvbtn small{color:var(--muted);font-size:.74rem;font-weight:600;}
+.lvbtn[disabled]{background:var(--paper2);box-shadow:none;cursor:not-allowed;color:var(--muted);transform:translateY(2px);}
+.lvbtn[disabled] .ic{background:#C9D3E6;filter:grayscale(1);opacity:.7;}
+.lvbtn.next{animation:ring 1.7s ease-out infinite;}
+.stars{display:block;}
+.gtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;}
+.gtop b{font-family:var(--display);font-weight:400;font-size:1.15rem;}
+.hearts{letter-spacing:.05em;font-size:1.05rem;white-space:nowrap;}
+.bar{height:16px;background:var(--paper);border:3px solid var(--line);border-radius:999px;overflow:hidden;margin-bottom:14px;}
+.bar i{display:block;height:100%;background:repeating-linear-gradient(135deg,var(--green) 0 10px,color-mix(in srgb,var(--green) 80%,#fff) 10px 20px);border-right:3px solid var(--line);min-width:0;}
+.card.q{min-height:170px;}
+.card.q.t0{background:var(--t0);}
+.card.q.t1{background:var(--t1);}
+.card.q.t2{background:var(--t2);}
+.card.q.t3{background:var(--t3);}
+.opts{display:grid;gap:10px;margin-top:16px;}
+.opt{display:flex;align-items:center;gap:12px;background:var(--paper);color:var(--text);border:3px solid var(--line);border-radius:20px;box-shadow:var(--sh);padding:11px 14px;font:inherit;font-size:1.08rem;font-weight:600;text-align:left;cursor:pointer;}
+.opt .k{flex:none;width:32px;height:32px;border-radius:50%;border:3px solid var(--line);display:grid;place-items:center;font-size:.95rem;font-weight:700;color:var(--on);}
+.opt .k0{background:var(--yellow);} .opt .k1{background:var(--green);} .opt .k2{background:var(--blue);} .opt .k3{background:var(--pink);}
+.opt.ok{background:color-mix(in srgb,var(--green) 45%,var(--paper));}
+.opt.ok::after{content:'✓';margin-left:auto;font-weight:700;font-size:1.3rem;}
+.opt.bad{background:color-mix(in srgb,var(--coral) 45%,var(--paper));animation:shake .35s;}
+.opt.bad::after{content:'✗';margin-left:auto;font-weight:700;font-size:1.3rem;}
+.opt:disabled{cursor:default;}
+.opt:disabled:not(.ok):not(.bad){opacity:.6;}
+.fb{margin-top:14px;text-align:center;font-size:1.1rem;}
+.fb.ok{color:var(--good);} .fb.bad{color:var(--bad);}
+.hintpat{font-family:var(--font);font-weight:700;font-size:1.6rem;letter-spacing:.14em;margin:14px 0 0;}
+.res .big{margin:0;line-height:1;display:flex;justify-content:center;}
+
+/* 商店 */
+.shop-top{text-align:center;}
+.shop-fig{position:relative;width:min(66vw,270px);margin:0 auto 4px;}
+.shop-fig::before{content:'';position:absolute;left:7%;right:7%;bottom:7%;aspect-ratio:1/1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFF1A8,var(--yellow));border:3px solid var(--line);box-shadow:0 6px 0 var(--line);}
+.shop-fig svg{position:relative;width:100%;height:auto;display:block;}
+.shop-bal{display:inline-flex;align-items:center;gap:8px;margin:6px 0 12px;padding:3px 16px 3px 12px;background:var(--paper);border:3px solid var(--line);border-radius:999px;box-shadow:0 3px 0 var(--line);font-weight:600;}
+.shop-bal b{font-size:1.5rem;}
+.items{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:4px;}
+.itm{background:var(--paper);border:3px solid var(--line);border-radius:20px;box-shadow:var(--sh);padding:6px 4px 8px;font:inherit;color:var(--text);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;}
+.itm svg{width:100%;height:auto;max-width:96px;}
+.itm .nm{font-size:.9rem;font-weight:700;}
+.itm .pr svg{width:14px;height:14px;max-width:none;flex:none;}
+.itm .pr{display:inline-flex;align-items:center;gap:3px;font-size:.82rem;font-weight:700;color:var(--muted);}
+.itm[aria-pressed="true"]{background:color-mix(in srgb,var(--yellow) 45%,var(--paper));}
+.itm.worn{background:color-mix(in srgb,var(--green) 35%,var(--paper));}
+.itm.worn .pr{color:var(--good);}
+.shop-act{margin:16px 0 4px;text-align:center;}
+.shop-fig.has-bg::before{display:none;}
+.shop-fig.has-bg svg{border-radius:28px;border:3px solid var(--line);box-shadow:0 6px 0 var(--line);overflow:hidden;}
+.rw-stage.has-bg::before{display:none;}
+.rw-stage.has-bg #rw-fig{border-radius:24px;border:3px solid var(--line);overflow:hidden;}
+.itm svg.bgthumb{border-radius:12px;border:2px solid var(--line);overflow:hidden;}
+.seg button{padding:8px 2px;}
+
+@keyframes ring{0%,100%{box-shadow:0 4px 0 var(--line),0 0 0 0 rgba(255,210,63,.95)}60%{box-shadow:0 4px 0 var(--line),0 0 0 10px rgba(255,210,63,0)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+.fbbar{position:fixed;left:0;right:0;bottom:var(--nav-h,76px);z-index:45;background:color-mix(in srgb,var(--coral) 40%,var(--paper));border-top:3px solid var(--line);padding:10px 14px 12px;animation:rise .18s ease-out;}
+.fbin{max-width:640px;margin:0 auto;text-align:center;}
+.fbin .fb{margin:0 0 2px;}
+.fbin .example{font-size:.9rem;margin-bottom:8px;}
+.fbin .primary{width:100%;}
+.fbspace{height:190px;}
+@keyframes rise{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){
+  .lvbtn.next,.opt.bad,.rw-stage::before,.fbbar{animation:none;}
+  .rw-bubble,#toast,.primary,.ghost{transition:none;}
+}
+
+/* ===== 触控和 iOS ===== */
+html{-webkit-text-size-adjust:100%;}
+button,.lvbtn,.opt,.itm,nav button,.seg button,.primary,.ghost,.avatar,.pts,.filebtn{touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;}
+body{-webkit-user-select:none;user-select:none;}
+input,textarea,select{-webkit-user-select:text;user-select:text;-webkit-appearance:none;appearance:none;}
+select{padding-right:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cpath d='M2 2l6 6 6-6' fill='none' stroke='%231F2A44' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;}
+html.typing nav{display:none;}
+html.typing .fbbar{bottom:0;}
+.tip{display:flex;align-items:center;gap:10px;background:var(--yellow);color:var(--on);border:3px solid var(--line);border-radius:18px;box-shadow:0 3px 0 var(--line);padding:8px 12px;margin-bottom:12px;font-size:.88rem;font-weight:600;}
+.tip span{flex:1;}
+.filebtn{display:inline-block;border:3px solid var(--line);border-radius:16px;padding:9px 14px;margin:0;background:var(--paper);color:var(--text);font:inherit;font-weight:700;box-shadow:var(--sh);cursor:pointer;}
+.filebtn input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;}
+
+/* ===== iPad / 大屏 ===== */
+@media (min-width:768px){
+  body{font-size:18px;}
+  .wrap{max-width:980px;padding:22px 28px 150px;}
+  nav{padding-left:max(12px,calc((100vw - 980px)/2));padding-right:max(12px,calc((100vw - 980px)/2));}
+  nav button{font-size:.85rem;padding:5px 0 3px;}
+  nav button .ic{font-size:1.8rem;}
+  h1{font-size:2.6rem;}
+  .tag{font-size:.95rem;}
+  .avatar{width:76px;height:76px;}
+  .pts{font-size:1.25rem;}
+  .card{min-height:340px;padding:40px 32px;}
+  .word{font-size:clamp(3.4rem,7vw,5.2rem);}
+  .meaning{font-size:1.6rem;}
+  .rate{max-width:780px;margin-left:auto;margin-right:auto;}
+  .rate button{padding:14px 4px;}
+  .opts{grid-template-columns:1fr 1fr;}
+  .opt{padding:16px 18px;font-size:1.25rem;}
+  .chaps{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;}
+  .grid{grid-template-columns:repeat(4,1fr);}
+  .items{grid-template-columns:repeat(4,1fr);}
+  .fbin{max-width:980px;}
+  .meta span{font-size:1rem;}
+  .rw-card{max-width:440px;}
+}
+@media (min-width:900px){
+  .shop-wrap{display:grid;grid-template-columns:340px 1fr;gap:28px;align-items:start;}
+  .shop-left{position:sticky;top:12px;}
+  .items{grid-template-columns:repeat(3,1fr);}
+}
+@media (min-width:768px) and (max-height:900px){
+  .card{min-height:250px;padding:26px 24px;}
+  .card.q{min-height:200px;}
+  .fbspace{height:150px;}
+}
+
+/* ===== 旧版 Safari 的降级（不支持 color-mix 时用固定颜色） ===== */
+@supports not (background:color-mix(in srgb,red 50%,white)){
+  :root{--t0:#FFF1BF;--t1:#D7F5E4;--t2:#DCEBFF;--t3:#FFE0EE;}
+  .meta span:nth-child(1){background:#FFD6D6;} .meta span:nth-child(2){background:#CFF3E0;}
+  .answer{border-top-color:rgba(31,42,68,.35);}
+  .stat:nth-child(1){background:#CFE5FF;} .stat:nth-child(2){background:#FFD6D6;} .stat:nth-child(3){background:#CFF3E0;} .stat:nth-child(4){background:#FFF0B0;}
+  .stat:nth-child(5){background:#E2D9FF;} .stat:nth-child(6){background:#FFDDEB;} .stat:nth-child(7){background:#FFE0C2;} .stat:nth-child(8){background:#FFF0B0;}
+  .opt.ok{background:#B6EBCD;} .opt.bad{background:#FFBDBD;}
+  .itm[aria-pressed="true"]{background:#FFE9A0;} .itm.worn{background:#BDEED4;}
+  .fbbar{background:#FFC9C9;}
+  .bar i{background:var(--green);}
+  .seg button[aria-pressed="true"]{background:var(--yellow);}
+}
+@supports not (aspect-ratio:1/1){ .shop-fig::before{top:22%;} }
+@media (prefers-color-scheme: dark){
+  @supports not (background:color-mix(in srgb,red 50%,white)){
+    :root:not([data-theme="light"]) .meta span:nth-child(1){background:#6A3A56;}
+    :root:not([data-theme="light"]) .meta span:nth-child(2){background:#245A57;}
+    :root:not([data-theme="light"]) .answer{border-top-color:rgba(255,255,255,.25);}
+    :root:not([data-theme="light"]) .stat:nth-child(odd){background:#37458A;}
+    :root:not([data-theme="light"]) .stat:nth-child(even){background:#433A82;}
+    :root:not([data-theme="light"]) .opt.ok{background:#25664A;} :root:not([data-theme="light"]) .opt.bad{background:#7A3340;}
+    :root:not([data-theme="light"]) .itm[aria-pressed="true"]{background:#5A4F2A;} :root:not([data-theme="light"]) .itm.worn{background:#25664A;}
+    :root:not([data-theme="light"]) .fbbar{background:#6A3A48;}
+  }
+}
+
+/* ===== 词库切换、单元标题、导入 ===== */
+.seg.multi{flex-wrap:wrap;}
+.seg.multi button{flex:1 1 104px;display:flex;flex-direction:column;align-items:center;line-height:1.25;padding:5px 6px;}
+.why{margin:4px 0 10px;}
+.why summary{cursor:pointer;font-weight:700;color:var(--muted);font-size:.9rem;padding:4px 0;}
+.why p.note{margin-top:6px;}
+.seg.multi button span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.seg.multi button small{font-size:.74rem;font-weight:600;opacity:.75;}
+h3.unit{grid-column:1/-1;margin:22px 0 0;padding:5px 14px;background:var(--paper);border:3px solid var(--line);border-radius:14px;box-shadow:0 3px 0 var(--line);font-family:var(--display);font-weight:400;font-size:1.1rem;}
+.impbox{margin-top:14px;background:var(--paper);border:3px solid var(--line);border-radius:18px;padding:10px 14px;}
+.impbox p{margin:4px 0;}
+.imptable{margin:6px 0;}
+.imptable div{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:6px 0;border-top:2px dashed color-mix(in srgb,var(--line) 25%,transparent);}
+.imptable div:first-child{border-top:0;}
+.imptable b{min-width:6.5em;}
+.imptable span{color:var(--text);}
+.imptable i{flex-basis:100%;color:var(--muted);font-size:.85rem;}
+.imptable .more{color:var(--muted);font-size:.85rem;}
+.impbox ul{margin:6px 0;padding-left:20px;}
+@supports not (background:color-mix(in srgb,red 50%,white)){.imptable div{border-top-color:rgba(31,42,68,.25);}}
+
+.rw-title{font-family:var(--display);font-size:1.9rem;line-height:1.1;margin:0 0 4px;letter-spacing:.06em;color:var(--text);}
+.rw-stars svg polygon.on{transform-box:fill-box;transform-origin:center;animation:starpop .55s cubic-bezier(.2,1.6,.4,1) both;}
+.rw-stars svg polygon.on:nth-of-type(1){animation-delay:.2s;}
+.rw-stars svg polygon.on:nth-of-type(2){animation-delay:.45s;}
+.rw-stars svg polygon.on:nth-of-type(3){animation-delay:.7s;}
+@keyframes starpop{0%{transform:scale(0) rotate(-70deg);opacity:0}100%{transform:scale(1) rotate(0);opacity:1}}
+@media (prefers-reduced-motion: reduce){.rw-stars svg polygon.on{animation:none;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <button class="avatar" id="avatar" data-tab="shop" aria-label="我的小人，去商店"></button>
+    <div class="brand"><h1>习万词</h1><span class="tag">每天记一点点，越学越快乐</span></div>
+    <button class="pts" id="pts" data-tab="shop"></button>
+  </header>
+  <main id="view"></main>
+  <nav id="nav"></nav>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="reward" role="dialog" aria-modal="true" aria-label="通关奖励" hidden>
+  <div class="rw-card">
+    <p id="rw-title" class="rw-title"></p>
+    <p id="rw-stars" class="rw-stars"></p>
+    <p id="rw-pts" class="rw-pts"></p>
+    <div class="rw-stage"><svg id="rw-fig" viewBox="0 0 300 340" role="img" aria-label="打太极拳的小人"></svg><div id="rw-bubble" class="rw-bubble">Good job!</div></div>
+    <button class="primary" id="rw-close" data-act="rw-close" style="width:100%">继续</button>
+  </div>
+</div>
+
+<script>
+/*FSRS-START*/
+// FSRS-4.5：17 个默认权重、遗忘曲线常数与公式见页面说明中的来源
+const W=[0.4872,1.4003,3.7145,13.8206,5.1618,1.2298,0.8975,0.031,1.6474,0.1367,1.0461,2.1072,0.0793,0.3246,1.587,0.2272,2.8755];
+const DECAY=-0.5, FACTOR=19/81, DAY=86400000;
+const clampD=d=>Math.min(10,Math.max(1,d));
+const retr=(t,s)=>Math.pow(1+FACTOR*t/s,DECAY);
+const d0=g=>clampD(W[4]-(g-3)*W[5]);
+const nextD=(d,g)=>clampD(W[7]*d0(3)+(1-W[7])*(d-W[6]*(g-3)));
+const sRecall=(d,s,r,g)=>s*(1+Math.exp(W[8])*(11-d)*Math.pow(s,-W[9])*(Math.exp((1-r)*W[10])-1)*(g===2?W[15]:1)*(g===4?W[16]:1));
+const sForget=(d,s,r)=>Math.min(s,W[11]*Math.pow(d,-W[12])*(Math.pow(s+1,W[13])-1)*Math.exp((1-r)*W[14]));
+const interval=(s,ret)=>Math.min(36500,Math.max(1,Math.round(s/FACTOR*(Math.pow(ret,1/DECAY)-1))));
+const dayStart=(ts,add)=>{const d=new Date(ts);return new Date(d.getFullYear(),d.getMonth(),d.getDate()+(add||0)).getTime();};
+function schedule(c,g,now,ret){
+  const n=Object.assign({},c);
+  if(c.reps===0){n.s=Math.max(0.1,W[g-1]);n.d=d0(g);}
+  else{
+    const r=retr(Math.max(0,(now-c.last)/DAY),c.s);
+    n.d=nextD(c.d,g);
+    if(g===1){n.s=Math.max(0.1,sForget(c.d,c.s,r));n.lapses=c.lapses+1;}
+    else n.s=sRecall(c.d,c.s,r,g);
+  }
+  n.reps=c.reps+1;n.last=now;
+  if(g===1){n.due=now+10*60000;}
+  else{n.due=dayStart(now,interval(n.s,ret));}
+  return n;
+}
+/*FSRS-END*/
+
+const KEY='english-flashcards:v1';
+const STARTER=[
+['ubiquitous','无处不在的','Smartphones have become ubiquitous in modern life.'],
+['mitigate','减轻，缓解','We added caching to mitigate the load on the database.'],
+['ambiguous','模棱两可的，含糊的','The error message was too ambiguous to be useful.'],
+['resilient','有韧性的，能快速恢复的','A resilient system keeps working when a node fails.'],
+['pragmatic','务实的','She took a pragmatic approach and shipped the simple version first.'],
+['inevitable','不可避免的','Some delay was inevitable given the scope.'],
+['compelling','引人注目的，有说服力的','He made a compelling case for rewriting the service.'],
+['nuance','细微差别','The translation missed an important nuance.'],
+['scrutiny','仔细审查','The proposal came under close scrutiny from the board.'],
+['leverage','利用（动词）；杠杆作用','We can leverage existing tools instead of building our own.'],
+['feasible','可行的','Is it feasible to finish this before the release?'],
+['coherent','连贯的，条理清晰的','Her argument was clear and coherent.'],
+['reluctant','不情愿的','He was reluctant to change a working design.'],
+['profound','深刻的，意义深远的','The new tool had a profound effect on our workflow.'],
+['advocate','提倡，拥护；拥护者','She advocates writing tests before fixing bugs.'],
+['comprehensive','全面的，综合的','They produced a comprehensive report on the outage.'],
+['deteriorate','恶化，变坏','Performance began to deteriorate as traffic grew.'],
+['elaborate','详细说明；精心制作的','Could you elaborate on that point?'],
+['arbitrary','随意的，任意的','The limit seems arbitrary; why 100?'],
+['substantial','大量的，重大的','The refactor brought a substantial improvement.'],
+['prevalent','普遍的，盛行的','This bug is prevalent in older versions.'],
+['overwhelm','使不堪重负，压倒','Too many notifications can overwhelm users.'],
+['contemplate','沉思；考虑','I’m contemplating a move to a new team.'],
+['controversy','争议','The change sparked a lot of controversy.'],
+['diminish','减少，降低','Returns diminish after the first few optimizations.'],
+['inherent','固有的，内在的','Latency is inherent in any network call.'],
+['meticulous','一丝不苟的','He is meticulous about documenting every change.'],
+['trivial','微不足道的','It’s a trivial fix, but it matters.'],
+['versatile','多才多艺的，多用途的','Python is a versatile language.'],
+['vulnerable','易受攻击的，脆弱的','The old library left the app vulnerable.'],
+['acknowledge','承认；确认收到','Please acknowledge receipt of this message.'],
+['consequence','后果，结果','Every design choice has consequences.'],
+['anticipate','预期，预料','We anticipate a spike in traffic on launch day.'],
+['fundamental','基本的，根本的','Understanding indexes is fundamental to database work.'],
+['obsolete','过时的，废弃的','That API is obsolete and will be removed.'],
+['plausible','似乎合理的','Your explanation sounds plausible, but let’s verify.'],
+['rigorous','严格的，严谨的','The team follows a rigorous review process.'],
+['tangible','有形的，切实的','We need tangible results, not just plans.'],
+['thrive','繁荣，茁壮成长','Small teams often thrive with clear goals.'],
+['abundant','丰富的，充裕的','Open-source libraries are abundant for this task.']
+];
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const dayKey=ts=>{const d=new Date(ts);return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();};
+const mk=(word,meaning,example)=>({id:uid(),word:word,meaning:meaning,example:example||'',reps:0,lapses:0,s:0,d:0,due:0,last:0,created:Date.now()});
+
+let store={cards:[],log:[],seeded:false,game:{stars:{}},wallet:{pts:0,earned:0,owned:{},equip:{}},meta:{lastBackup:0,hintUntil:0},decks:[],settings:{newPerDay:10,retention:0.9,autoSpeak:false,newCount:{day:'',n:0}}};
+let persist=true, tab='study', revealed=false, current=null, spoken=null, listQuery='', confirmKey=null, toastTimer=null, backupText='';
+
+function load(){
+  try{
+    const raw=localStorage.getItem(KEY);
+    if(raw){
+      const o=JSON.parse(raw);
+      if(o&&Array.isArray(o.cards)){
+        store.cards=o.cards; store.log=Array.isArray(o.log)?o.log:[]; store.seeded=!!o.seeded;
+        store.settings=Object.assign(store.settings,o.settings||{});
+        if(o.game&&o.game.stars)store.game=o.game;
+        if(o.wallet&&typeof o.wallet==='object')store.wallet=Object.assign(store.wallet,o.wallet);
+        if(o.meta&&typeof o.meta==='object')store.meta=Object.assign(store.meta,o.meta);
+        if(Array.isArray(o.decks))store.decks=o.decks;
+      }
+    }
+  }catch(e){persist=false;}
+  if(!store.seeded&&store.cards.length===0){
+    store.cards=STARTER.map(x=>mk(x[0],x[1],x[2])); store.seeded=true; save();
+  }
+}
+function save(){
+  try{localStorage.setItem(KEY,JSON.stringify(store));}catch(e){persist=false;}
+}
+function toast(msg){
+  const t=$('#toast'); t.textContent=msg; t.classList.add('on');
+  clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove('on'),1800);
+}
+function speak(text){
+  try{
+    if(!('speechSynthesis' in window))return toast('当前浏览器不支持朗读');
+    speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(text); u.lang='en-US'; u.rate=0.9; speechSynthesis.speak(u);
+  }catch(e){toast('朗读失败');}
+}
+
+function newLeft(){
+  const nc=store.settings.newCount;
+  return Math.max(0,store.settings.newPerDay-(nc.day===dayKey(Date.now())?nc.n:0));
+}
+function buildQueue(){
+  const now=Date.now();
+  const due=store.cards.filter(c=>c.reps>0&&c.due<=now).sort((a,b)=>a.due-b.due);
+  const fresh=store.cards.filter(c=>c.reps===0).slice(0,newLeft());
+  let q=due.concat(fresh);
+  if(!q.length) q=store.cards.filter(c=>c.reps>0&&c.due<=now+20*60000).sort((a,b)=>a.due-b.due);
+  return q;
+}
+function fmtDays(n){
+  if(n<30)return n+' 天';
+  if(n<365)return Math.round(n/30)+' 个月';
+  return (n/365).toFixed(1)+' 年';
+}
+function fmtWhen(ts){
+  const now=Date.now(), diff=ts-now;
+  if(diff<3600000)return Math.max(1,Math.round(diff/60000))+' 分钟后';
+  const days=Math.round((dayStart(ts,0)-dayStart(now,0))/DAY);
+  return days<=1?'明天':days+' 天后';
+}
+function preview(c,g){
+  if(g===1)return '10 分钟内';
+  return fmtDays(interval(schedule(c,g,Date.now(),store.settings.retention).s,store.settings.retention));
+}
+
+function rate(g){
+  if(!current)return;
+  const now=Date.now(), wasNew=current.reps===0;
+  const i=store.cards.findIndex(c=>c.id===current.id);
+  if(i<0)return;
+  store.cards[i]=schedule(current,g,now,store.settings.retention);
+  if(wasNew){
+    const nc=store.settings.newCount, k=dayKey(now);
+    if(nc.day!==k){nc.day=k;nc.n=0;}
+    nc.n++;
+  }
+  store.log.push({t:now,g:g,r:wasNew?0:1});
+  if(store.log.length>1000)store.log=store.log.slice(-1000);
+  save(); revealed=false; current=null; render();
+}
+
+function renderNav(){
+  const tabs=[['study','学习','📚'],['game','闯关','🎮'],['shop','商店','🛍️'],['list','词库','🗂️'],['add','添加','✏️'],['stats','统计','📊']];
+  $('#nav').innerHTML=tabs.map(t=>'<button data-tab="'+t[0]+'"'+(tab===t[0]?' aria-current="true"':'')+'><span class="ic">'+t[2]+'</span><span>'+t[1]+'</span></button>').join('');
+}
+
+function viewStudy(){
+  if(!store.cards.length){
+    return '<div class="empty">词库是空的。<br><br><button class="primary" data-tab="add">去添加单词</button></div>';
+  }
+  const now=Date.now();
+  const dueN=store.cards.filter(c=>c.reps>0&&c.due<=now).length;
+  const newN=Math.min(newLeft(),store.cards.filter(c=>c.reps===0).length);
+  const head='<div class="meta"><span>待复习 <b>'+dueN+'</b></span><span>新词 <b>'+newN+'</b></span></div>';
+  if(!current||!store.cards.some(c=>c.id===current.id)){
+    current=buildQueue()[0]||null; revealed=false;
+  }
+  if(!current){
+    const later=store.cards.filter(c=>c.reps>0).sort((a,b)=>a.due-b.due)[0];
+    const todayDone=store.log.filter(l=>l.t>=dayStart(now,0)).length;
+    return head+'<div class="card"><p class="emo">🎉</p><p class="word" style="font-size:1.6rem">今天的学习完成了</p><p class="hint">今天已完成 '+todayDone+' 次复习'+(later?'，下一张 '+fmtWhen(later.due)+'到期':'')+'。</p></div>';
+  }
+  if(store.settings.autoSpeak&&spoken!==current.id){spoken=current.id;speak(current.word);}
+  let h=head+'<div class="card'+(revealed?'':' tap')+'" id="card" '+(revealed?'':'data-act="reveal"')+'>';
+  h+='<p class="word">'+esc(current.word)+'</p>';
+  h+='<button class="spk" data-act="speak">朗读</button>';
+  if(!revealed){
+    h+='<p class="hint">点击卡片或按空格键显示释义</p>';
+  }else{
+    h+='<div class="answer"><p class="meaning">'+esc(current.meaning)+'</p>';
+    if(current.example)h+='<p class="example">'+esc(current.example)+'</p>';
+    h+='</div>';
+  }
+  h+='</div>';
+  if(revealed){
+    const names=['重来','较难','记得','简单'];
+    h+='<div class="rate">'+[1,2,3,4].map(g=>'<button class="r'+g+'" data-rate="'+g+'"><strong>'+names[g-1]+'</strong><small>'+preview(current,g)+'</small></button>').join('')+'</div>';
+    h+='<p class="note" style="text-align:center;margin-top:10px">快捷键 1 / 2 / 3 / 4</p>';
+  }
+  return h;
+}
+
+function statusOf(c){
+  if(c.reps===0)return '新词';
+  if(c.due<=Date.now())return '待复习';
+  return fmtWhen(c.due);
+}
+function viewList(){
+  const q=listQuery.trim().toLowerCase();
+  const rows=store.cards.filter(c=>!q||c.word.toLowerCase().includes(q)||c.meaning.toLowerCase().includes(q));
+  let h=viewDecks()+'<input type="search" id="q" placeholder="搜索单词或释义" value="'+esc(listQuery)+'"><p class="note">共 '+store.cards.length+' 个单词'+(q?'，匹配 '+rows.length+' 个':'')+'</p><div class="list">';
+  if(!rows.length)h+='<div class="empty">没有匹配的单词</div>';
+  h+=rows.slice(0,200).map(c=>'<div class="item"><div class="t"><b>'+esc(c.word)+'</b><span>'+esc(c.meaning)+'</span></div><div class="s">'+esc(statusOf(c))+'</div><button data-del="'+c.id+'" class="'+(confirmKey==='del:'+c.id?'danger':'')+'">'+(confirmKey==='del:'+c.id?'确认删除':'删除')+'</button></div>').join('');
+  if(rows.length>200)h+='<p class="note">仅显示前 200 条，请用搜索缩小范围。</p>';
+  return h+'</div>';
+}
+function viewAdd(){
+  return '<label for="w">单词或短语</label><input type="text" id="w" autocomplete="off" autocapitalize="off">'
+  +'<label for="m">中文释义</label><input type="text" id="m" autocomplete="off">'
+  +'<label for="e">例句（可选）</label><input type="text" id="e" autocomplete="off">'
+  +'<div class="row"><button class="primary" data-act="addone">添加</button></div>'
+  +viewImport();
+}
+
+/* ===== 导入外部词库 ===== */
+let impState={text:'',name:'',target:'new',parsed:null,done:null};
+const IMP_ALIAS={
+  word:['word','words','english','en','eng','front','term','question','单词','英文','英语','正面','词','词汇'],
+  meaning:['meaning','chinese','zh','cn','translation','back','definition','answer','中文','释义','意思','翻译','背面','解释'],
+  example:['example','sentence','eg','examples','例句','句子'],
+  emoji:['emoji','icon','picture','表情','图标'],
+  unit:['unit','group','chapter','lesson','单元','分组','章节','课']
+};
+function aliasKey(h){h=String(h==null?'':h).trim().toLowerCase();for(const k in IMP_ALIAS){if(IMP_ALIAS[k].indexOf(h)>=0)return k;}return null;}
+const hasCJK=t=>/[\u3400-\u9fff]/.test(t);
+const hasLatin=t=>/[A-Za-z]/.test(t);
+function cleanCell(v){
+  return String(v==null?'':v).replace(/<br\s*\/?>/gi,' ').replace(/<[^>]+>/g,'').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();
+}
+function splitLine(line,delim){
+  if(delim!==','&&delim!==';')return line.split(delim);
+  const out=[]; let cur='', q=false;
+  for(let i=0;i<line.length;i++){
+    const ch=line[i];
+    if(q){if(ch==='"'){if(line[i+1]==='"'){cur+='"';i++;}else q=false;}else cur+=ch;}
+    else if(ch==='"'&&cur===''){q=true;}
+    else if(ch===delim){out.push(cur);cur='';}
+    else cur+=ch;
+  }
+  out.push(cur);
+  return out;
+}
+function validateRows(raw){
+  const rows=[], skipped=[], seen=new Set(); let dup=0;
+  raw.forEach(r=>{
+    const line=r.line;
+    const word=cleanCell(r.word).replace(/[‘’]/g,"'");
+    let meaning=cleanCell(r.meaning), example=cleanCell(r.example), emoji=cleanCell(r.emoji), unit=cleanCell(r.unit);
+    if(!word&&!meaning)return;
+    if(!word){skipped.push({line:line,why:'没有英文单词'});return;}
+    if(!meaning){skipped.push({line:line,why:'没有中文意思：'+word});return;}
+    if(!hasLatin(word)){skipped.push({line:line,why:'第一列不是英文：'+word});return;}
+    if(word.length>60){skipped.push({line:line,why:'单词太长：'+word.slice(0,20)+'…'});return;}
+    meaning=meaning.slice(0,120); example=example.slice(0,200); unit=unit.slice(0,40);
+    if(emoji.length>8||hasLatin(emoji)||hasCJK(emoji))emoji='';
+    const key=word.toLowerCase();
+    if(seen.has(key)){dup++;return;}
+    seen.add(key);
+    rows.push({word:word,meaning:meaning,example:example,emoji:emoji,unit:unit});
+  });
+  if(rows.length>2000){skipped.push({line:0,why:'超过 2000 个词，只导入前 2000 个'});rows.length=2000;}
+  return {rows:rows,skipped:skipped,dup:dup};
+}
+function fromJSON(v){
+  let items=v, name='';
+  if(v&&!Array.isArray(v)&&typeof v==='object'){
+    name=typeof v.name==='string'?v.name:'';
+    items=v.words||v.cards||v.items||v.list||v.data||null;
+  }
+  if(!Array.isArray(items))return null;
+  const raw=items.map((it,i)=>{
+    const r={line:i+1};
+    if(Array.isArray(it)){r.word=it[0];r.meaning=it[1];r.example=it[2];r.emoji=it[3];r.unit=it[4];}
+    else if(it&&typeof it==='object'){
+      Object.keys(it).forEach(k=>{const a=aliasKey(k);if(a&&r[a]==null)r[a]=it[k];});
+    }else{r.word=it;}
+    return r;
+  });
+  return {raw:raw,name:name};
+}
+function fromText(text){
+  const lines=text.split(/\r?\n/).map((l,i)=>({t:l,n:i+1})).filter(x=>x.t.trim()&&x.t.trim()[0]!=='#');
+  if(!lines.length)return {raw:[],format:'空'};
+  const sample=lines.slice(0,30);
+  let delim=null, fmt='';
+  for(const c of [['\t','TSV（制表符）'],['|','竖线分隔'],[';','分号分隔'],[',','CSV（逗号）']]){
+    const n=sample.filter(x=>x.t.indexOf(c[0])>=0).length;
+    if(n>=Math.max(1,Math.ceil(sample.length*0.6))){delim=c[0];fmt=c[1];break;}
+  }
+  if(!delim){
+    const re=/^\s*([A-Za-z][A-Za-z'’.\- ]*?[A-Za-z.]|[A-Za-z])\s*[-–—:：=]*\s*([\u3400-\u9fff（(].*)$/;
+    const raw=lines.map(x=>{const m=re.exec(x.t);return m?{line:x.n,word:m[1],meaning:m[2]}:{line:x.n,word:'',meaning:'',bad:x.t};});
+    raw.forEach(r=>{if(r.bad!==undefined){r.word=r.bad;r.meaning='';}});
+    return {raw:raw,format:'每行“英文 中文”'};
+  }
+  const rowsCells=lines.map(x=>({n:x.n,c:splitLine(x.t,delim)}));
+  let map={word:0,meaning:1,example:2,emoji:3,unit:4}, start=0, header=false;
+  const keys=rowsCells[0].c.map(aliasKey);
+  if(keys.indexOf('word')>=0&&keys.indexOf('meaning')>=0){
+    header=true; start=1; map={};
+    keys.forEach((k,i)=>{if(k&&map[k]==null)map[k]=i;});
+  }else{
+    const body=rowsCells.slice(0,30); let cjkFirst=0;
+    body.forEach(r=>{const a=cleanCell(r.c[0]),b=cleanCell(r.c[1]);if(a&&b&&hasCJK(a)&&!hasLatin(a)&&hasLatin(b))cjkFirst++;});
+    if(cjkFirst>body.length/2){map.word=1;map.meaning=0;}
+  }
+  const raw=rowsCells.slice(start).map(r=>({line:r.n,word:r.c[map.word],meaning:r.c[map.meaning],example:map.example!=null?r.c[map.example]:'',emoji:map.emoji!=null?r.c[map.emoji]:'',unit:map.unit!=null?r.c[map.unit]:''}));
+  return {raw:raw,format:fmt+(header?'，含表头':'')};
+}
+function parseWordList(text){
+  text=String(text||'').replace(/^\uFEFF/,'').trim();
+  if(!text)return {format:'空',rows:[],skipped:[],dup:0,name:''};
+  let raw=null, format='', name='';
+  if(text[0]==='['||text[0]==='{'){
+    try{const j=fromJSON(JSON.parse(text)); if(j){raw=j.raw;format='JSON';name=j.name||'';}}catch(e){}
+  }
+  if(!raw){const t=fromText(text); raw=t.raw; format=t.format;}
+  const v=validateRows(raw);
+  return {format:format,rows:v.rows,skipped:v.skipped,dup:v.dup,name:name};
+}
+function impPreview(){
+  impState.done=null;
+  impState.parsed=parseWordList(impState.text);
+  if(!impState.name&&impState.parsed.name)impState.name=impState.parsed.name;
+  render();
+}
+function importConfirm(){
+  const pr=impState.parsed;
+  if(!pr||!pr.rows.length)return toast('没有可导入的单词');
+  const name=(impState.name||'导入的词库').trim().slice(0,30)||'导入的词库';
+  if(impState.target==='my'){
+    const have=new Set(store.cards.map(c=>c.word.toLowerCase())); let added=0, skip=0;
+    pr.rows.forEach(r=>{
+      if(have.has(r.word.toLowerCase())){skip++;return;}
+      have.add(r.word.toLowerCase());
+      const c=mk(r.word,r.meaning,r.example); if(r.emoji)c.emoji=r.emoji;
+      store.cards.push(c); added++;
+    });
+    save();
+    impState.done={msg:'已加入“我的词库”'+added+' 个词'+(skip?'，'+skip+' 个已经有了，被跳过':'')+'。',src:'my'};
+  }else{
+    if(store.decks.length>=20)return toast('最多保存 20 个词库，请先删除不用的');
+    const total=store.decks.reduce((a,d)=>a+d.words.length,0)+pr.rows.length;
+    if(total>5000)return toast('导入的词库一共最多 5000 个词，请先删除不用的');
+    let nm=name, k=2;
+    while(store.decks.some(d=>d.name===nm))nm=name+'（'+(k++)+'）';
+    const d={id:uid(),name:nm,created:Date.now(),words:pr.rows.map(r=>({id:'u:'+uid(),word:r.word,meaning:r.meaning,example:r.example,emoji:r.emoji,unit:r.unit}))};
+    store.decks.push(d); store.game.src='d:'+d.id; save();
+    impState.done={msg:'已新建词库“'+nm+'”，共 '+d.words.length+' 个词。',src:'d:'+d.id};
+  }
+  impState.text=''; impState.parsed=null; impState.name='';
+  render();
+}
+function decodeBuffer(buf){
+  try{return new TextDecoder('utf-8',{fatal:true}).decode(buf);}catch(e){}
+  try{return new TextDecoder('gbk').decode(buf);}catch(e){}
+  try{return new TextDecoder('utf-8').decode(buf);}catch(e){return '';}
+}
+function readImportFile(inp){
+  const f=inp.files&&inp.files[0]; if(!f)return;
+  if(f.size>2*1024*1024){toast('文件太大了（最多 2 MB）');inp.value='';return;}
+  const r=new FileReader();
+  r.onload=()=>{
+    impState.text=decodeBuffer(r.result);
+    impState.name=f.name.replace(/\.[^.]+$/,'').slice(0,30);
+    inp.value=''; impPreview();
+  };
+  r.onerror=()=>toast('读取文件失败');
+  r.readAsArrayBuffer(f);
+}
+function srcLearn(){
+  const have=new Set(store.cards.map(c=>c.word.toLowerCase())); let added=0;
+  gwords().forEach(w=>{
+    const k=w.word.toLowerCase(); if(have.has(k))return; have.add(k);
+    const c=mk(w.word,w.meaning,w.example); if(w.emoji)c.emoji=w.emoji;
+    store.cards.push(c); added++;
+  });
+  save(); toast(added?'已把 '+added+' 个新词加入学习':'这些词已经都在学习里了'); render();
+}
+function importAct(a,t){
+  if(a==='imp-preview'){impPreview();}
+  else if(a==='imp-confirm'){importConfirm();}
+  else if(a==='imp-clear'){impState={text:'',name:'',target:impState.target,parsed:null,done:null};render();}
+  else if(a==='imp-play'){const src=impState.done&&impState.done.src;impState.done=null;if(src){store.game.src=src;save();}game=null;tab='game';render();}
+  else if(a==='deck-play'){store.game.src='d:'+t.dataset.id;save();game=null;tab='game';render();}
+  else if(a==='deck-learn'){
+    const d=store.decks.find(x=>x.id===t.dataset.id); if(!d)return;
+    const have=new Set(store.cards.map(c=>c.word.toLowerCase())); let added=0;
+    d.words.forEach(w=>{if(have.has(w.word.toLowerCase()))return;have.add(w.word.toLowerCase());const c=mk(w.word,w.meaning,w.example);if(w.emoji)c.emoji=w.emoji;store.cards.push(c);added++;});
+    save(); toast('已把 '+added+' 个新词加入学习'); render();
+  }
+  else if(a==='deck-del'){
+    const k='deck:'+t.dataset.id;
+    if(confirmKey!==k){confirmKey=k;render();return;}
+    store.decks=store.decks.filter(x=>x.id!==t.dataset.id); confirmKey=null;
+    if(store.game.src==='d:'+t.dataset.id)store.game.src='wy4';
+    save(); render();
+  }
+}
+function viewDecks(){
+  if(!store.decks.length)return '';
+  return '<h2>导入的词库</h2><div class="list">'+store.decks.map(d=>'<div class="item"><div class="t"><b>'+esc(d.name)+'</b><span>'+d.words.length+' 个词</span></div><button data-act="deck-play" data-id="'+d.id+'">去闯关</button><button data-act="deck-learn" data-id="'+d.id+'">加入学习</button><button data-act="deck-del" data-id="'+d.id+'" class="'+(confirmKey==='deck:'+d.id?'danger':'')+'">'+(confirmKey==='deck:'+d.id?'确认删除':'删除')+'</button></div>').join('')+'</div><h2>我的词库里的词</h2>';
+}
+function viewImport(){
+  let h='<h2>导入词库</h2><p class="note">支持 CSV、TSV、TXT、JSON 文件，也可以直接粘贴。一行一个词：英文、中文意思、例句（可选）、表情（可选）、单元（可选）。第一行如果是“单词、释义……”这样的表头，会自动识别；也能读 Excel、Anki、Quizlet 导出的文本，和“apple 苹果”这样的每行一词。</p>';
+  h+='<div class="row"><label class="filebtn">选择文件<input type="file" id="impfile" accept=".csv,.tsv,.txt,.json,text/plain,text/csv,application/json"></label></div>';
+  h+='<textarea id="imptext" style="margin-top:12px" placeholder="resilient, 有韧性的, A resilient system keeps working.\nbamboo\t竹子\nlibrary 图书馆">'+esc(impState.text)+'</textarea>';
+  h+='<label for="impname">词库名称</label><input type="text" id="impname" maxlength="30" value="'+esc(impState.name)+'" placeholder="例如：外研版五年级上册">';
+  h+='<label for="imptarget">导入到</label><select id="imptarget"><option value="new"'+(impState.target==='new'?' selected':'')+'>新词库（用来闯关）</option><option value="my"'+(impState.target==='my'?' selected':'')+'>我的词库（用来学习复习，也能闯关）</option></select>';
+  h+='<div class="row"><button class="primary" data-act="imp-preview">预览</button><button class="ghost" data-act="imp-clear">清空</button></div>';
+  if(impState.done){
+    h+='<div class="tip" style="margin-top:14px"><span>'+esc(impState.done.msg)+'</span><button class="ghost" data-act="imp-play">去闯关</button></div>';
+  }
+  const pr=impState.parsed;
+  if(pr){
+    h+='<div class="impbox"><p><b>识别为：'+esc(pr.format)+'</b>。可导入 <b>'+pr.rows.length+'</b> 个词'+(pr.dup?'，重复 '+pr.dup+' 个已合并':'')+(pr.skipped.length?'，跳过 '+pr.skipped.length+' 行':'')+'。</p>';
+    if(pr.rows.length){
+      h+='<div class="imptable">'+pr.rows.slice(0,6).map(r=>'<div><b>'+(r.emoji?esc(r.emoji)+' ':'')+esc(r.word)+'</b><span>'+esc(r.meaning)+'</span>'+(r.example?'<i>'+esc(r.example)+'</i>':'')+'</div>').join('')+(pr.rows.length>6?'<div class="more">……还有 '+(pr.rows.length-6)+' 个</div>':'')+'</div>';
+    }
+    if(pr.skipped.length){
+      h+='<ul class="note">'+pr.skipped.slice(0,4).map(x=>'<li>'+(x.line?'第 '+x.line+' 行：':'')+esc(x.why)+'</li>').join('')+(pr.skipped.length>4?'<li>……</li>':'')+'</ul>';
+    }
+    if(pr.rows.length)h+='<div class="row"><button class="primary" data-act="imp-confirm">'+(impState.target==='my'?'加入我的词库':'新建词库并导入')+'</button></div>';
+    h+='</div>';
+  }
+  return h;
+}
+function viewStats(){
+  const now=Date.now(), cs=store.cards;
+  const fresh=cs.filter(c=>c.reps===0).length;
+  const mature=cs.filter(c=>c.reps>0&&c.s>=21).length;
+  const learning=cs.length-fresh-mature;
+  const dueN=cs.filter(c=>c.reps>0&&c.due<=now).length;
+  const today=store.log.filter(l=>l.t>=dayStart(now,0)).length;
+  const rev=store.log.filter(l=>l.r===1&&l.t>=now-30*DAY);
+  const ret=rev.length?Math.round(100*rev.filter(l=>l.g>=2).length/rev.length)+'%':'—';
+  const st=store.settings;
+  const sel=(id,opts,val)=>'<select id="'+id+'">'+opts.map(o=>'<option value="'+o[0]+'"'+(String(o[0])===String(val)?' selected':'')+'>'+o[1]+'</option>').join('')+'</select>';
+  let h='<div class="grid">'
+   +'<div class="stat"><b>'+cs.length+'</b><span>单词总数</span></div>'
+   +'<div class="stat"><b>'+dueN+'</b><span>现在待复习</span></div>'
+   +'<div class="stat"><b>'+today+'</b><span>今天已复习</span></div>'
+   +'<div class="stat"><b>'+ret+'</b><span>近 30 天复习正确率</span></div>'
+   +'<div class="stat"><b>'+fresh+'</b><span>新词</span></div>'
+   +'<div class="stat"><b>'+learning+' / '+mature+'</b><span>学习中 / 稳定（稳定性≥21 天）</span></div><div class="stat"><b>'+store.wallet.earned+'</b><span>累计获得积分</span></div><div class="stat"><b>'+store.wallet.pts+'</b><span>现有积分</span></div></div>';
+  h+='<h2>设置</h2>'
+   +'<label for="npd">每天新词数</label>'+sel('npd',[[5,'5'],[10,'10'],[20,'20'],[30,'30'],[50,'50']],st.newPerDay)
+   +'<label for="ret">目标记忆保持率</label>'+sel('ret',[[0.8,'80%（复习更少）'],[0.85,'85%'],[0.9,'90%（默认）'],[0.95,'95%（复习更多）']],st.retention)
+   +'<label for="as">自动朗读</label>'+sel('as',[['0','关闭'],['1','翻到新卡时自动朗读']],st.autoSpeak?'1':'0')
+   +'<label for="snd">通关音效和语音 Good job</label>'+sel('snd',[['1','开启'],['0','关闭']],st.sound===false?'0':'1');
+  h+='<h2>备份与恢复</h2><p class="note">学习进度、积分、小人的装扮和闯关星数，只保存在这台设备的浏览器里。清理浏览器数据，或者很久没打开，都可能让它消失，所以建议隔一段时间导出一份备份文件。</p>'
+   +'<p class="note"><b>'+backupStatus()+'</b></p>'
+   +'<div class="row"><button class="ghost" data-act="export">导出备份</button><label class="filebtn">从文件恢复<input type="file" id="backupfile" accept=".json,application/json,text/plain"></label></div>'
+   +'<textarea id="backup" style="margin-top:12px" placeholder="如果不能保存文件，导出后备份文本会出现在这里，请复制到备忘录；恢复时也可以把备份文本粘贴到这里">'+esc(backupText)+'</textarea>'
+   +'<div class="row"><button class="ghost'+(confirmKey==='restore'?' danger':'')+'" data-act="restore">'+(confirmKey==='restore'?'再点一次确认覆盖':'用文本框里的备份恢复')+'</button></div>';
+  h+='<h2>算法说明</h2><p class="note">调度使用 FSRS-4.5 的默认参数，没有针对你的复习记录做参数优化；同一天内的重复复习做了简化处理。</p>';
+  return h;
+}
+
+function render(){
+  renderNav();
+  const nv=$('#nav'); if(nv&&nv.offsetHeight)document.documentElement.style.setProperty('--nav-h',nv.offsetHeight+'px');
+  const chip=$('#pts'); if(chip){chip.innerHTML=coinSVG(26)+'<b>'+store.wallet.pts+'</b>';chip.setAttribute('aria-label','积分 '+store.wallet.pts);}
+  const av=$('#avatar'); if(av)av.innerHTML='<svg viewBox="95 22 110 120" aria-hidden="true">'+figureSVG(IDLE,{style:store.wallet.equip,uid:'av'})+'</svg>';
+  const v=$('#view');
+  const keepFocus=document.activeElement&&document.activeElement.id;
+  const pos=document.activeElement&&document.activeElement.selectionStart;
+  let h='';
+  if(tab==='study'||(tab==='game'&&!(game&&game.view==='play')))h+=backupTip();
+  if(!persist)h+='<div class="warn">当前环境无法保存进度，刷新页面后数据会丢失。</div>';
+  h+= tab==='study'?viewStudy():tab==='game'?viewGame():tab==='shop'?viewShop():tab==='list'?viewList():tab==='add'?viewAdd():viewStats();
+  v.innerHTML=h;
+  if(tab==='game'&&game&&game.view==='play'){const sp=$('#spell');if(sp)sp.focus();}
+  { const ae=document.activeElement; document.documentElement.classList.toggle('typing',!!(ae&&/INPUT|TEXTAREA|SELECT/.test(ae.tagName))); }
+  if(keepFocus==='q'&&tab==='list'){const q=$('#q');q.focus();try{q.setSelectionRange(pos,pos);}catch(e){}}
+}
+
+function addOne(){
+  const w=$('#w').value.trim(), m=$('#m').value.trim(), e=$('#e').value.trim();
+  if(!w||!m)return toast('请填写单词和中文释义');
+  if(store.cards.some(c=>c.word.toLowerCase()===w.toLowerCase()))return toast('这个单词已经在词库里');
+  store.cards.push(mk(w,m,e)); save(); toast('已添加 '+w);
+  $('#w').value='';$('#m').value='';$('#e').value='';$('#w').focus();
+}
+function backupStatus(){
+  const t=store.meta.lastBackup;
+  if(!t)return '还没有导出过备份。';
+  const d=Math.floor((Date.now()-t)/DAY);
+  return '上次备份：'+(d<=0?'今天':d+' 天前')+'。';
+}
+function backupTip(){
+  const m=store.meta, now=Date.now();
+  if(!(store.wallet.earned>=30||store.log.length>=20))return '';
+  if(now<m.hintUntil)return '';
+  if(m.lastBackup&&now-m.lastBackup<7*DAY)return '';
+  return '<div class="tip"><span>已经攒了不少进度啦！建议到“统计”里导出一份备份，万一浏览器数据被清理也能恢复。</span><button class="ghost" data-act="hint-dismiss">知道了</button></div>';
+}
+async function exportBackup(){
+  const text=JSON.stringify(store), d=new Date();
+  const name='xiwanci-backup-'+d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')+'.json';
+  backupText=text;
+  let done=false;
+  try{
+    const dl=(window.claude&&window.claude.use)?await window.claude.use('downloads'):null;
+    if(dl){await dl.save({filename:name,data:text});done=true;}
+  }catch(e){if(e&&e.code==='declined'){toast('已取消');return;}}
+  if(!done){
+    try{
+      if(window.File&&navigator.canShare&&navigator.share){
+        const f=new File([text],name,{type:'application/json'});
+        if(navigator.canShare({files:[f]})){await navigator.share({files:[f],title:'习万词备份'});done=true;}
+      }
+    }catch(e){if(e&&e.name==='AbortError'){toast('已取消');return;}}
+  }
+  if(done){store.meta.lastBackup=Date.now();save();toast('备份完成');render();return;}
+  render();
+  const ta=$('#backup'); if(ta){ta.focus();ta.select();}
+  try{await navigator.clipboard.writeText(text);store.meta.lastBackup=Date.now();save();toast('备份文本已复制，请粘贴保存');}
+  catch(e){toast('请手动复制文本框里的备份');}
+}
+function readBackupFile(inp){
+  const f=inp.files&&inp.files[0]; if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{
+    try{
+      const o=JSON.parse(String(r.result));
+      if(!o||!Array.isArray(o.cards))throw new Error('bad');
+      backupText=String(r.result); confirmKey='restore'; render();
+      toast('已读入备份文件，请再点一次确认覆盖');
+    }catch(e){toast('这个文件不是有效的备份');}
+    inp.value='';
+  };
+  r.onerror=()=>toast('读取文件失败');
+  r.readAsText(f);
+}
+function restoreBackup(){
+  if(confirmKey!=='restore'){confirmKey='restore';render();return;}
+  confirmKey=null;
+  try{
+    const o=JSON.parse($('#backup').value);
+    if(!o||!Array.isArray(o.cards))throw new Error('bad');
+    store.cards=o.cards; store.log=Array.isArray(o.log)?o.log:[]; store.seeded=true;
+    store.game=(o.game&&o.game.stars)?o.game:{stars:{}}; game=null;
+    store.wallet=Object.assign({pts:0,earned:0,owned:{},equip:{}},o.wallet||{}); ensureWallet();
+    store.meta=Object.assign({lastBackup:0,hintUntil:0},o.meta||{});
+    store.decks=Array.isArray(o.decks)?o.decks:[]; migrateGame();
+    store.settings=Object.assign({newPerDay:10,retention:0.9,autoSpeak:false,newCount:{day:'',n:0}},o.settings||{});
+    current=null; revealed=false; save(); toast('已恢复'); render();
+  }catch(e){toast('备份文本无效，未做任何修改');render();}
+}
+
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-tab],[data-act],[data-rate],[data-del]'); if(!t)return;
+  if(t.dataset.tab){tab=t.dataset.tab;confirmKey=null;render();return;}
+  if(t.dataset.rate){rate(+t.dataset.rate);return;}
+  if(t.dataset.del){
+    const k='del:'+t.dataset.del;
+    if(confirmKey!==k){confirmKey=k;render();return;}
+    store.cards=store.cards.filter(c=>c.id!==t.dataset.del); confirmKey=null; save(); render(); return;
+  }
+  const a=t.dataset.act;
+  if(a==='reveal'){revealed=true;render();}
+  else if(a==='speak'){e.stopPropagation();if(current)speak(current.word);}
+  else if(a==='addone')addOne();
+  else if(a&&(a.indexOf('imp-')===0||a.indexOf('deck-')===0))importAct(a,t);
+  else if(a==='export')exportBackup();
+  else if(a==='restore')restoreBackup();
+  else if(a&&a.indexOf('g-')===0)gameAct(a,t);
+  else if(a==='rw-close')hideReward();
+  else if(a==='src-learn')srcLearn();
+  else if(a==='hint-dismiss'){store.meta.hintUntil=Date.now()+7*DAY;save();render();}
+  else if(a&&a.indexOf('sh-')===0)shopAct(a,t);
+});
+document.addEventListener('input',e=>{
+  const iid=e.target.id;
+  if(iid==='q'){listQuery=e.target.value;render();}
+  else if(iid==='imptext'){impState.text=e.target.value;}
+  else if(iid==='impname'){impState.name=e.target.value;}
+});
+document.addEventListener('change',e=>{
+  const id=e.target.id, v=e.target.value, st=store.settings;
+  if(id==='npd'){st.newPerDay=+v;}
+  else if(id==='ret'){st.retention=+v;}
+  else if(id==='as'){st.autoSpeak=v==='1';}
+  else if(id==='snd'){st.sound=v==='1';}
+  else if(id==='backupfile'){readBackupFile(e.target);return;}
+  else if(id==='impfile'){readImportFile(e.target);return;}
+  else if(id==='imptarget'){impState.target=v==='my'?'my':'new';render();return;}
+  else return;
+  current=null; save(); render();
+});
+document.addEventListener('keydown',e=>{
+  if(tab!=='study'||!current)return;
+  if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;
+  if(!revealed&&(e.key===' '||e.key==='Enter')){e.preventDefault();revealed=true;render();}
+  else if(revealed&&['1','2','3','4'].includes(e.key)){rate(+e.key);}
+});
+
+/* ===== 闯关 ===== */
+const STAGES=[{name:'选义',icon:'👀'},{name:'选词',icon:'🎯'},{name:'填空',icon:'✏️'},{name:'拼写',icon:'🔠'}];
+const CH=6, LIVES=5;
+const PACK=[
+['classroom','教室','We have a new classroom.','🏫'],
+['window','窗户','Open the window, please.','🪟'],
+['blackboard','黑板','The blackboard is green.',''],
+['light','电灯','Turn on the light.','💡'],
+['picture','图画','I draw a picture.','🖼️'],
+['door','门','Close the door, please.','🚪'],
+['computer','电脑','I have a new computer.','💻'],
+['fan','风扇','The fan is on the wall.',''],
+['wall','墙','The picture is on the wall.','🧱'],
+['floor','地板','The floor is clean.',''],
+['TV','电视','I watch TV at home.','📺'],
+['schoolbag','书包','My schoolbag is blue.','🎒'],
+['storybook','故事书','I like this storybook.','📖'],
+['candy','糖果','I want some candy.','🍬'],
+['notebook','笔记本','This is my notebook.','📓'],
+['toy','玩具','The toy is on the bed.','🧸'],
+['key','钥匙','Where is the key?','🔑'],
+['strong','强壮的','My dad is strong.','💪'],
+['friendly','友好的','She is a friendly girl.','😊'],
+['quiet','安静的','Please be quiet.','🤫'],
+['hair','头发','She has long hair.',''],
+['shoe','鞋','This shoe is too big.','👟'],
+['glasses','眼镜','He has new glasses.','👓'],
+['bedroom','卧室','I sleep in my bedroom.',''],
+['living room','客厅','We watch TV in the living room.',''],
+['study','书房','My father is in the study.',''],
+['kitchen','厨房','Mom is in the kitchen.','🍳'],
+['bathroom','卫生间','I wash my hands in the bathroom.','🛁'],
+['phone','电话','The phone is on the table.','📞'],
+['table','桌子','The book is on the table.',''],
+['bed','床','The cat is on the bed.','🛏️'],
+['sofa','沙发','The cat is on the sofa.','🛋️'],
+['fridge','冰箱','The milk is in the fridge.',''],
+['beef','牛肉','I like beef.','🥩'],
+['noodles','面条','I like noodles.','🍜'],
+['soup','汤','The soup is hot.','🥣'],
+['vegetable','蔬菜','Eat more vegetables.','🥦'],
+['chopsticks','筷子','I use chopsticks.','🥢'],
+['spoon','勺子','Use a spoon for the rice.','🥄'],
+['fork','叉子','I eat with a fork.','🍴'],
+['knife','刀','Be careful with the knife.',''],
+['plate','盘子','Put the apple on the plate.','🍽️'],
+['uncle','叔叔','My uncle is a doctor.','👨'],
+['aunt','姑姑；阿姨','My aunt is kind.','👩'],
+['baby','婴儿','The baby is sleeping.','👶'],
+['doctor','医生','The doctor is kind.','🧑‍⚕️'],
+['driver','司机','My uncle is a bus driver.','🚌'],
+['farmer','农民','The farmer works hard.','🧑‍🌾'],
+['nurse','护士','The nurse helps the doctor.','👩‍⚕️'],
+['carrot','胡萝卜','I like carrots.','🥕'],
+['tomato','西红柿','These tomatoes are red.','🍅']
+];
+const PACKW=PACK.map(x=>({id:'p:'+x[0],word:x[0],meaning:x[1],example:x[2],emoji:x[3]||'',unit:''}));
+// [单元, 单词, 中文意思, 例句, 表情]
+// 单词和中文意思：外研版（三起）（孙有中）2024 版四年级上册、下册，取自教习网英语朗读宝整理的各单元全册单词表；
+// 上册另外并入一份教辅资料“核心单词”里多出来的词。例句和表情是自编的。
+const A1='Unit 1 I love sports', A2='Unit 2 Helping at home', A3='Unit 3 What’s the weather like?', A4='Unit 4 Wonderful seasons', A5='Unit 5 Let’s go!', A6='Unit 6 Find your way';
+const B1='Unit 1 People at work', B2='Unit 2 How do you feel today?', B3='Unit 3 Everyone’s got talent!', B4='Unit 4 Plant life', B5='Unit 5 School activities', B6='Unit 6 Cool clothes';
+const WY4A=[
+[A1,'sport','体育运动','Swimming is my favourite sport.','🏅'],
+[A1,'jump','跳','The rabbit can jump.','🤸'],
+[A1,'high','高高地','The bird flies high.',''],
+[A1,'far','远','The school is not far.',''],
+[A1,'ping-pong','乒乓球运动','We play ping-pong after class.','🏓'],
+[A1,'volleyball','排球（运动）','She plays volleyball well.','🏐'],
+[A1,'across','穿过；越过','He ran across the road.',''],
+[A1,'hope','希望','I hope you are happy.','🤞'],
+[A1,'lose','失去','Don’t lose your key.',''],
+[A1,'because','因为','I am happy because it is sunny.',''],
+[A1,'because of','因为某人或某事物','We stay home because of the rain.',''],
+[A1,'cancer','癌（症）','Doctors work hard to fight cancer.','🎗️'],
+[A1,'other','别的；其他的','I have no other pen.',''],
+[A1,'money','钱','I save my money in a box.','💰'],
+[A1,'hard','困难的','Math is hard, but I try.',''],
+[A1,'kind','亲切的；友好的；善良的','My teacher is very kind.',''],
+[A1,'keep','持续；继续','Keep running!',''],
+[A1,'month','一个月','There are twelve months in a year.',''],
+[A1,'ill','生病的','I am ill today.','🤒'],
+[A1,'anymore','（不）再','I don’t want to play anymore.',''],
+[A1,'year','年；年度','This year I am ten.','📅'],
+[A1,'remember','纪念；记住','I remember my first day at school.',''],
+[A1,'fail','失败','Don’t be afraid to fail.',''],
+[A1,'give','给予','Please give me a pen.',''],
+[A1,'give up','放弃','Don’t give up, you can do it.',''],
+[A1,'never','决不；永不','I will never give up.',''],
+[A1,'try','努力；尝试','I will try again.',''],
+[A1,'try your best','尽最大努力','Please try your best.','💪'],
+[A1,'star','明星；最出色者','He is a football star.','🌟'],
+[A1,'ability','才能；能力','She has the ability to sing well.',''],
+[A1,'player','运动员；选手；球员','He is a good football player.',''],
+[A1,'first','最初；第一','I am first in line.','🥇'],
+[A2,'phew','啊；哟；唉','Phew! The test is over.','😮‍💨'],
+[A2,'wash','洗','I wash my hands.','🧼'],
+[A2,'dish','盘子；碟子','The dish is on the table.','🍽️'],
+[A2,'feed','喂养','I feed the dog.','🐕'],
+[A2,'sweep','扫；打扫','She sweeps the floor.','🧹'],
+[A2,'floor','地板；地面','The floor is clean.',''],
+[A2,'rubbish','垃圾','Put the rubbish in the bin.','🗑️'],
+[A2,'chore','家庭杂务','I do a chore every day.',''],
+[A2,'to-do list','待办清单','I make a to-do list.','📝'],
+[A2,'Mr','先生','Mr Li is my teacher.',''],
+[A2,'may','可以（表示允许）','May I go outside?',''],
+[A2,'outside','在室外','Let’s play outside.','🌳'],
+[A2,'tidy','整洁的；整齐的','My room is tidy.',''],
+[A2,'easy','容易的','This game is easy.',''],
+[A2,'clean','弄干净；清洁','I clean my desk every day.','✨'],
+[A2,'woof','汪汪（狗叫声）','Woof! The dog is happy.','🐶'],
+[A2,'job','任务；事情','Dad has a new job.','💼'],
+[A2,'good job','干得好','Good job! You did it.','👍'],
+[A2,'dirty','脏的','The shoes are dirty.',''],
+[A2,'desk','书桌','My book is on the desk.',''],
+[A2,'wall','墙','There is a map on the wall.','🧱'],
+[A2,'again','又；再一次','Please say it again.','🔁'],
+[A2,'also','还；也','I also like apples.',''],
+[A2,'sunshine','阳光','I like the sunshine.','☀️'],
+[A2,'must','应该；必须','You must wash your hands.',''],
+[A2,'sometimes','有时','Sometimes I walk to school.',''],
+[A2,'feel','感受到；觉得','I feel happy today.','😊'],
+[A2,'tired','疲惫的；累的','I am tired after the run.','😴'],
+[A2,'helpful','乐于助人的','She is a helpful girl.',''],
+[A2,'warm','温暖的；（使）温暖起来','It is warm in the sun.',''],
+[A2,'warm up','（使）变暖；热身','Let’s warm up before the game.',''],
+[A2,'house','房子；房屋','My house is near the park.','🏠'],
+[A2,'water','给……浇水','Please water the flowers.','💧'],
+[A2,'yard','庭院','The dog is in the yard.','🏡'],
+[A2,'helper','帮手；助手','Tom is my little helper.','🙋'],
+[A2,'pick','采；摘','Let’s pick some apples.','🍎'],
+[A2,'pig','猪','The pig is pink.','🐷'],
+[A2,'cow','奶牛','The cow eats grass.','🐮'],
+[A2,'cut','修剪；切','Dad cuts the grass.','✂️'],
+[A2,'grass','草；草地','The grass is green.','🌱'],
+[A2,'collect','收集','I collect stamps.',''],
+[A2,'finish','完成；做完','I finish my homework at six.','✅'],
+[A2,'problem','问题','I have a problem.','❓'],
+[A3,'weather','天气','What’s the weather like today?','🌦️'],
+[A3,'sunny','阳光充足的','It is sunny today.','🌞'],
+[A3,'cloud','云','I see a big cloud.','☁️'],
+[A3,'by','经过；靠；乘','I go to school by bike.',''],
+[A3,'cloudy','多云的；阴天的','It is cloudy today.','⛅'],
+[A3,'wind','风','The wind is strong.','🌬️'],
+[A3,'blow','吹；刮','The wind can blow my hat away.','💨'],
+[A3,'windy','风大的；多风的','It is windy today.',''],
+[A3,'rain','雨','I like the rain.','🌧️'],
+[A3,'rainy','多雨的','It is rainy today.','☔'],
+[A3,'snow','雪','We play in the snow.','❄️'],
+[A3,'any','任何一个','Do you have any pets?',''],
+[A3,'cold','冷的；寒冷的','It is cold in winter.','🥶'],
+[A3,'or','或者','Is it hot or cold?',''],
+[A3,'enjoy','享受……的乐趣','I enjoy swimming.','😄'],
+[A3,'diary','日记','I write in my diary.','📔'],
+[A3,'teacher','教师；老师','My teacher is nice.','🧑‍🏫'],
+[A3,'taste','有……的味道','The cake tastes good.','😋'],
+[A3,'ice cream','冰淇淋；雪糕','I like ice cream.','🍦'],
+[A3,'real','真的；真正的','Is it real?',''],
+[A3,'later','之后','See you later!',''],
+[A3,'December','十二月','My birthday is in December.','🎄'],
+[A3,'coat','外套','Put on your coat.','🧥'],
+[A3,'turn','转身；转动','Turn left at the corner.','🔄'],
+[A3,'turn on','打开','Please turn on the light.','💡'],
+[A3,'TV','电视','I watch TV at night.','📺'],
+[A3,'report','报道','I watch the weather report.','📰'],
+[A3,'hot','热的','It is hot in summer.','🥵'],
+[A3,'cool','凉爽的','It is cool in autumn.','😎'],
+[A3,'snowy','下雪的','It is snowy today.','⛄'],
+[A3,'sun','太阳','The sun is bright.','🌞'],
+[A3,'surprise','意想不到的事；惊喜','What a nice surprise!','🎁'],
+[A3,'special','特殊的；特别的','Today is a special day.','⭐'],
+[A4,'wonderful','令人惊叹的；奇妙的','What a wonderful day!','🤩'],
+[A4,'season','季节','Summer is my favourite season.',''],
+[A4,'spring','春天；春季','Flowers come out in spring.','🌸'],
+[A4,'summer','夏天；夏季','We swim in summer.','🏖️'],
+[A4,'autumn','秋天；秋季','Leaves fall in autumn.','🍁'],
+[A4,'winter','冬天；冬季','It snows in winter.',''],
+[A4,'favourite','最喜欢的','Blue is my favourite colour.','❤️'],
+[A4,'birthday','生日','My birthday is in May.','🎂'],
+[A4,'fly','放飞；飞','Birds can fly.','🕊️'],
+[A4,'happen','发生','What will happen next?',''],
+[A4,'snowstorm','暴风雪','There is a big snowstorm tonight.','🌨️'],
+[A4,'wait','等；等候','Please wait here.','⏳'],
+[A4,'beach','海滩；沙滩','We play on the beach.',''],
+[A4,'sea','海；海洋','The sea is blue.','🌊'],
+[A4,'equator','赤道','The equator is a hot place.','🌍'],
+[A4,'round','循环地；周围','We walk round the lake.',''],
+[A4,'all year round','全年','It is warm all year round here.',''],
+[A4,'quite','非常；十分','It is quite cold today.',''],
+[A4,'join','参与；加入','Can I join you?',''],
+[A5,'bus','公交车；公共汽车','I go to school by bus.','🚌'],
+[A5,'car','汽车','My dad has a red car.','🚗'],
+[A5,'train','火车；列车','The train is fast.','🚆'],
+[A5,'city','城市','Beijing is a big city.','🏙️'],
+[A5,'town','镇；城镇','My grandma lives in a small town.','🏘️'],
+[A5,'ship','大船','The ship is on the sea.','🚢'],
+[A5,'plane','飞机','The plane flies in the sky.','✈️'],
+[A5,'sky','天；天空','The sky is blue.',''],
+[A5,'place','地方；地点','This is a nice place.','📍'],
+[A5,'near','（距离）近的','The park is near my home.',''],
+[A5,'travel','旅行','I like to travel.','🧳'],
+[A5,'way','方式；方法','Which way is the park?','🛣️'],
+[A5,'picnic','野餐','Let’s have a picnic.','🧺'],
+[A5,'minute','分钟','Wait a minute.','⏱️'],
+[A5,'wear','穿；戴','I wear a coat in winter.','👕'],
+[A5,'live','住；居住','I live in a small town.',''],
+[A5,'away','离开；相距','The bird flew away.',''],
+[A5,'truck','货车；卡车','A big truck is on the road.','🚚'],
+[A5,'bamboo','竹；竹子','Pandas eat bamboo.','🎋'],
+[A5,'bike','自行车','I ride my bike to the park.','🚲'],
+[A5,'ring','（钟、铃）鸣响','The school bell will ring.','🔔'],
+[A5,'beep','（汽车喇叭）鸣响','Listen to the car horn: beep!','📣'],
+[A5,'subway','地铁','We take the subway to work.','🚇'],
+[A5,'whoosh','（呼呼地）飞快移动','The train goes whoosh!','💨'],
+[A5,'tram','有轨电车','The tram is slow.','🚊'],
+[A5,'chug','（汽车、火车等）突突地缓慢前进','The little train can chug up the hill.','🚂'],
+[A6,'wheel','车轮','The car has four wheels.','🛞'],
+[A6,'left','向左；左边','Turn left at the shop.','⬅️'],
+[A6,'straight','笔直地','Go straight on.','⬆️'],
+[A6,'library','图书馆；图书室','I read books in the library.','📚'],
+[A6,'cinema','电影院','We watch films at the cinema.','🎬'],
+[A6,'hospital','医院','The doctor is in the hospital.','🏥'],
+[A6,'supermarket','超市','Mum buys fruit at the supermarket.','🛒'],
+[A6,'museum','博物馆','We visit the museum on Sunday.','🏛️'],
+[A6,'tomorrow','（在）明天','See you tomorrow.','📆'],
+[A6,'woman','成年女子；妇女','The woman is a nurse.','👩'],
+[A6,'wish','愿望','I make a wish.','🌠'],
+[A6,'step','步；一步的距离','Take a big step.','👣'],
+[A6,'own','自己的','I can do it on my own.',''],
+[A6,'walk','走；行走','I walk to school with my friend.','🚶'],
+[A6,'cross','横穿','Look before you cross the road.','🚸'],
+[A6,'careful','谨慎的；小心的','She is a careful girl.',''],
+[A6,'be careful','当心；小心','Be careful on the road.','⚠️'],
+[A6,'girl','女孩；女儿','The girl has a red bag.','👧'],
+[A6,'underground','在地下','The underground train is fast.',''],
+[A6,'aunt','姑母；姨母','My aunt is kind.','👩'],
+[A6,'right','向右；右边','Turn right at the bank.','➡️'],
+[A6,'true','真的；真实的','The story is true.',''],
+[A6,'sports centre','体育中心','Let’s go to the sports centre.','🏟️'],
+[A6,'excuse me','劳驾；打扰一下','Excuse me, where is the library?','🙏']
+];
+const WY4B=[
+[B1,'doctor','医生；大夫','The doctor is kind.','🧑‍⚕️'],
+[B1,'fireman','消防队员','The fireman is brave.','🧑‍🚒'],
+[B1,'farmer','农民；农场主','The farmer works in the field.','🧑‍🌾'],
+[B1,'cook','厨师；炊事员','My uncle is a cook.','🧑‍🍳'],
+[B1,'police','警察','The police help us.','👮'],
+[B1,'police officer','警察；警官','The police officer is helping the girl.','👮'],
+[B1,'station','所；站；台；局','The bus station is near here.','🚉'],
+[B1,'police station','警察局；派出所','Let’s go to the police station.',''],
+[B1,'often','经常；时常','I often read books.',''],
+[B1,'field','田地；田野','The cows are in the field.','🌾'],
+[B1,'painter','画家','The painter has a big brush.','🧑‍🎨'],
+[B1,'use','用；使用','I use a pen to write.',''],
+[B1,'brush','刷子；毛刷','I brush my teeth.','🪥'],
+[B1,'scientist','科学家','A scientist looks at the stars.','🧑‍🔬'],
+[B1,'writer','作家；作者','She is a famous writer.','✍️'],
+[B1,'worker','工人','The worker builds a house.','👷'],
+[B1,'aunt','姑母；姨母','My aunt is kind.','👩'],
+[B1,'night','夜晚；夜间','The stars are out at night.','🌙'],
+[B1,'owl','猫头鹰','An owl sleeps in the day.','🦉'],
+[B1,'night owl','夜猫子；喜欢熬夜的人','My dad is a night owl.','🦉'],
+[B1,'driver','司机；驾驶员','My uncle is a bus driver.','🚌'],
+[B1,'taxi','出租车','We take a taxi to the airport.','🚕'],
+[B1,'safe','安全的','The road is safe here.',''],
+[B1,'nurse','护士','The nurse helps the doctor.','👩‍⚕️'],
+[B1,'light','照亮','The moon can light the road.','💡'],
+[B1,'uncle','叔叔；伯伯','My uncle is a doctor.','👨'],
+[B1,'bake','烘；烤','Mum will bake a cake.','🧁'],
+[B1,'bee','蜜蜂','A bee is on the flower.','🐝'],
+[B1,'same','相同的','We have the same bag.',''],
+[B1,'sound','声；声音','I like the sound of rain.','🔊'],
+[B1,'postman','邮递员','The postman brings a letter.','📮'],
+[B1,'life','生活','Life in the town is nice.',''],
+[B1,'mountain','高山','We climb the mountain.','⛰️'],
+[B2,'laugh','发出笑声；（大）笑','The joke makes me laugh.','😂'],
+[B2,'sad','不愉快的；伤心的','I feel sad today.','😢'],
+[B2,'scared','害怕的；紧张的','I am scared of the dark.','😨'],
+[B2,'angry','发怒的；生气的','Dad is not angry.','😠'],
+[B2,'excited','兴奋的；激动的','We are excited about the trip.','🤩'],
+[B2,'opera','歌剧','We watch an opera.','🎭'],
+[B2,'next','（时间）紧接着的；下次的','See you next week.',''],
+[B2,'cough','咳嗽','I have a cough.','🤧'],
+[B2,'better','（健康状况）好转的','I feel better now.',''],
+[B2,'gift','礼物','This gift is for you.','🎁'],
+[B2,'model','（可拼装的）模型','I make a model plane.',''],
+[B2,'shout','大声说；喊叫','Don’t shout in the library.','📢'],
+[B2,'should','应当；应该','You should wash your hands.',''],
+[B2,'feeling','感觉；感触','I have a good feeling about this.',''],
+[B2,'huge','巨大的','The whale is huge.',''],
+[B2,'worried','担心的；焦虑的','Mum is worried about me.','😟'],
+[B2,'street','大街；街道','There is a bus on the street.','🛣️'],
+[B2,'hit','撞击；碰撞','The ball can hit the wall.',''],
+[B3,'talent','天资；天赋；才能','She has a talent for music.','🌟'],
+[B3,'act','演出；扮演','I like to act in plays.','🎭'],
+[B3,'magic','魔术；戏法','He can do magic.','🪄'],
+[B3,'shine','表现突出；闪耀','Stars shine at night.','✨'],
+[B3,'puzzle','拼图游戏；难题','I finish the puzzle.','🧩'],
+[B3,'dancer','舞蹈演员','The dancer is on the stage.','💃'],
+[B3,'win','获胜；赢','Our team can win.','🏆'],
+[B3,'just','就；只是','It is just a dream.',''],
+[B3,'boy','男孩；儿子','The boy is playing football.','👦'],
+[B3,'slowly','缓慢地；慢慢地','The turtle walks slowly.','🐢'],
+[B4,'seed','种子；籽','Plant a seed in the earth.','🌰'],
+[B4,'earth','泥土；土壤','Put the seed in the earth.',''],
+[B4,'root','根','The root is under the ground.',''],
+[B4,'stem','（植物的）茎；梗；柄','The stem is green.',''],
+[B4,'thin','细的','The paper is thin.',''],
+[B4,'leaf','叶；叶子','A leaf falls from the tree.','🍃'],
+[B4,'dig','挖；掘','Let’s dig a hole.','⛏️'],
+[B4,'sunflower','向日葵','A sunflower follows the sun.','🌻'],
+[B4,'plant','种植；栽种','We plant trees in spring.','🌳'],
+[B4,'dream','梦想；愿望；理想','I have a dream.','💭'],
+[B4,'sleep','睡；睡觉','I sleep at nine.','😴'],
+[B4,'will','将；会；要','I will help you.',''],
+[B4,'true','真的；真实的','The story is true.',''],
+[B4,'come true','实现','Dreams can come true.','🌠'],
+[B4,'paper','纸','I write on paper.','📄'],
+[B5,'drama','戏剧','We act in a drama.','🎭'],
+[B5,'trip','旅游；旅行；出行','We go on a school trip.','🚌'],
+[B5,'fair','集市；义卖会；游艺会','We have a school fair.','🎪'],
+[B5,'festival','节；节庆；汇演','The spring festival is fun.','🎊'],
+[B5,'horn','角；喇叭','The car has a loud horn.','📯'],
+[B5,'dot','点；小圆点','Draw a dot here.',''],
+[B5,'raindrop','雨点；雨滴','A raindrop falls on my hand.','💧'],
+[B5,'more','更多的','I want more juice.',''],
+[B5,'special','特殊的；特别的','Today is a special day.','⭐'],
+[B5,'keeper','看守人；保管人','The zoo keeper feeds the pig.',''],
+[B5,'hey','嘿；喂','Hey, wait for me!','👋'],
+[B5,'lovely','美好的；令人愉快的；可爱的','What a lovely day!','🥰'],
+[B5,'student','学生','I am a student.','🧑‍🎓'],
+[B5,'culture','文化','I love Chinese culture.','🏮'],
+[B5,'hour','小时','One hour has sixty minutes.','🕐'],
+[B5,'note','笔记；记录','I take a note.','🗒️'],
+[B5,'vote','选票；投票','Let’s vote for the best one.','🗳️'],
+[B5,'design','设计','I design a poster.','🎨'],
+[B5,'hometown','家乡；故乡','My hometown is beautiful.','🏞️'],
+[B6,'T-shirt','T恤（衫）','I wear a T-shirt in summer.','👕'],
+[B6,'skirt','半身裙；裙子','She has a pink skirt.',''],
+[B6,'shorts','短裤','I wear shorts in summer.','🩳'],
+[B6,'shirt','衬衫','This shirt is blue.','👔'],
+[B6,'trousers','裤子','My trousers are black.','👖'],
+[B6,'scarf','围巾','I wear a scarf in winter.','🧣'],
+[B6,'sweater','毛线衣；羊毛衫','The sweater is warm.','🧶'],
+[B6,'dress','连衣裙','She wears a nice dress.','👗'],
+[B6,'dressmaker','裁缝','The dressmaker makes clothes.','🧵'],
+[B6,'wrong','不正确的；错误的','Something is wrong.','❌'],
+[B6,'clever','聪明的','He is a clever boy.','🧠'],
+[B6,'whale','鲸','A whale lives in the sea.','🐋'],
+[B6,'Mr','先生','Mr Li is my teacher.',''],
+[B6,'uniform','制服','I wear a school uniform.','🎽'],
+[B6,'robe','长袍','He wears a long robe.','🥋']
+];
+const WY4AW=WY4A.map(x=>({id:'wa:'+x[1],word:x[1],meaning:x[2],example:x[3],emoji:x[4]||'',unit:x[0]}));
+const WY4BW=WY4B.map(x=>({id:'wb:'+x[1],word:x[1],meaning:x[2],example:x[3],emoji:x[4]||'',unit:x[0]}));
+const WY4W=(()=>{
+  const seen=new Set(), out=[];
+  WY4A.forEach(x=>{seen.add(x[1].toLowerCase());out.push({id:'wc:'+x[1],word:x[1],meaning:x[2],example:x[3],emoji:x[4]||'',unit:'上册 '+x[0]});});
+  WY4B.forEach(x=>{const k=x[1].toLowerCase();if(seen.has(k))return;seen.add(k);out.push({id:'wc:'+x[1],word:x[1],meaning:x[2],example:x[3],emoji:x[4]||'',unit:'下册 '+x[0]});});
+  return out;
+})();
+const WY_NOTE='词表来自教习网整理的外研版（三起·孙有中）2024 版四年级各单元单词表，上册另外并入了一份教辅资料里多出来的核心词；单元名称也来自这些资料。例句和表情是自编的。教材版本不同的话，可以在“添加”里导入自己的词库。';
+const BUILTIN={
+  wy4a:{name:'外研版（三起）四年级上册',short:'外研版四上',words:WY4AW,note:WY_NOTE},
+  wy4b:{name:'外研版（三起）四年级下册',short:'外研版四下',words:WY4BW,note:WY_NOTE},
+  wy4:{name:'外研版（三起）四年级上下册',short:'外研版四年级全册',words:WY4W,note:WY_NOTE+'全册词库把上、下册合在一起，重复的词只留一个。'},
+  pep4:{name:'人教版（PEP）四年级',short:'人教版PEP四年级',words:PACKW,note:'词表取自人教版（PEP）四年级教材，例句为自编。保留这个词库是为了不丢掉之前的闯关星星。'}
+};
+let actx=null;
+function getAudio(){
+  const AC=window.AudioContext||window.webkitAudioContext;
+  if(!AC)return null;
+  if(!actx)actx=new AC();
+  if(actx.state==='suspended')actx.resume();
+  return actx;
+}
+let speechPrimed=false;
+function unlockAudio(){
+  try{getAudio();}catch(e){}
+  if(!speechPrimed&&'speechSynthesis' in window){
+    speechPrimed=true;
+    try{const u=new SpeechSynthesisUtterance(' ');u.volume=0;speechSynthesis.speak(u);}catch(e){}
+  }
+}
+['click','touchend','pointerup'].forEach(ev=>document.addEventListener(ev,unlockAudio,{passive:true,capture:true}));
+document.addEventListener('focusin',e=>{if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))document.documentElement.classList.add('typing');});
+document.addEventListener('focusout',()=>{document.documentElement.classList.remove('typing');});
+function chime(stars){
+  try{
+    const ac=getAudio(); if(!ac)return;
+    const base=[523.25,659.25,783.99,1046.5,1318.5,1568,2093];
+    const n=[4,5,7][Math.min(3,Math.max(1,stars||1))-1], t0=ac.currentTime;
+    for(let i=0;i<n;i++){
+      const o=ac.createOscillator(), g=ac.createGain(), t=t0+i*0.1, last=i===n-1;
+      o.type='triangle'; o.frequency.value=base[i];
+      g.gain.setValueAtTime(0.0001,t);
+      g.gain.exponentialRampToValueAtTime(0.22,t+0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001,t+(last?0.8:0.26));
+      o.connect(g); g.connect(ac.destination);
+      o.start(t); o.stop(t+(last?0.85:0.3));
+    }
+  }catch(e){}
+}
+function sayGoodJob(){
+  try{
+    if('speechSynthesis' in window){
+      speechSynthesis.cancel();
+      const u=new SpeechSynthesisUtterance('Good job!');
+      u.lang='en-US'; u.rate=0.95; u.pitch=1.2;
+      speechSynthesis.speak(u);
+    }
+  }catch(e){}
+}
+/* 奖励动画：打太极的小人，最后给你点大拇指并说 Good job */
+const LIM={u:38,f:36};
+const POSE0={bx:0,drop:0,sw:24,a1:10,a2:4,b1:10,b2:4,tilt:0};
+const KEYS=[
+  [0,{}],
+  [650,{drop:8,sw:36,a1:72,a2:38,b1:72,b2:38}],
+  [1300,{drop:20,sw:42,a1:42,a2:8,b1:42,b2:8}],
+  [1900,{bx:-16,drop:16,sw:42,a1:125,a2:165,b1:20,b2:-30,tilt:-4}],
+  [2500,{bx:16,drop:16,sw:42,a1:20,a2:-30,b1:125,b2:165,tilt:4}],
+  [3100,{bx:-16,drop:16,sw:42,a1:125,a2:165,b1:20,b2:-30,tilt:-4}],
+  [3700,{bx:12,drop:6,sw:30,a1:30,a2:25,b1:155,b2:172,tilt:6}],
+  [4300,{drop:2,sw:24,a1:12,a2:4,b1:12,b2:4}],
+  [4900,{sw:26,a1:40,a2:-50,b1:65,b2:170,tilt:-3}]
+].map(k=>[k[0],Object.assign({},POSE0,k[1])]);
+function poseAt(t){
+  const last=KEYS[KEYS.length-1];
+  if(t>=last[0])return last[1];
+  let i=0;
+  while(i<KEYS.length-2&&t>=KEYS[i+1][0])i++;
+  const a=KEYS[i], b=KEYS[i+1];
+  let u=(t-a[0])/(b[0]-a[0]); u=u*u*(3-2*u);
+  const p={};
+  for(const k in POSE0)p[k]=a[1][k]+(b[1][k]-a[1][k])*u;
+  return p;
+}
+const PTS=[1,2,3,5];
+function coinSVG(size){
+  return `<svg class='coin' width='${size}' height='${size}' viewBox='0 0 24 24' aria-hidden='true'><circle cx='12' cy='12' r='10' fill='#FFC21A' stroke='#1F2A44' stroke-width='2.2'/><circle cx='12' cy='12' r='6.4' fill='none' stroke='#FFE07A' stroke-width='1.6'/><polygon points='${starPts(12,12.4,4.2,1.9)}' fill='#FFE07A'/></svg>`;
+}
+function starsSVG(n,total,size){
+  let s=`<svg class='stars' width='${Math.round(size*total*1.1)}' height='${size}' viewBox='0 0 ${total*24} 24' role='img' aria-label='${n} 颗星，共 ${total} 颗'>`;
+  for(let i=0;i<total;i++){
+    s+=`<polygon class='${i<n?'on':''}' points='${starPts(12+i*24,12.5,10.5,4.6)}' fill='${i<n?'#FFC21A':'#D5DCEB'}' stroke='#1F2A44' stroke-width='1.8' stroke-linejoin='round'/>`;
+  }
+  return s+'</svg>';
+}
+const DEFAULT_EQUIP={top:'top-teal',hat:'hat-none',acc:'acc-none',hold:'hold-none',shoe:'shoe-black',bg:'bg-none'};
+const ITEMS=[
+ {id:'top-teal',cat:'top',name:'青绿唐装',price:0,color:'#2A9D8F'},
+ {id:'top-red',cat:'top',name:'中国红',price:30,color:'#D64545'},
+ {id:'top-blue',cat:'top',name:'天空蓝',price:30,color:'#3A86FF'},
+ {id:'top-yellow',cat:'top',name:'阳光黄',price:40,color:'#F2B705'},
+ {id:'top-purple',cat:'top',name:'葡萄紫',price:40,color:'#8E5BD9'},
+ {id:'top-white',cat:'top',name:'功夫白',price:60,color:'#F4F4EE',trim:'#1B1B1B',outline:'#B5B5AC'},
+ {id:'top-rainbow',cat:'top',name:'彩虹装',price:120,color:'#4DABF7',stripes:['#FF5D5D','#FFA94D','#FFE066','#69DB7C','#4DABF7','#9775FA']},
+ {id:'hat-none',cat:'hat',name:'不戴帽子',price:0},
+ {id:'hat-cap',cat:'hat',name:'棒球帽',price:40},
+ {id:'hat-straw',cat:'hat',name:'草帽',price:50},
+ {id:'hat-bamboo',cat:'hat',name:'斗笠',price:80},
+ {id:'hat-wizard',cat:'hat',name:'魔法帽',price:100},
+ {id:'hat-crown',cat:'hat',name:'皇冠',price:150},
+ {id:'acc-none',cat:'acc',name:'不戴配饰',price:0},
+ {id:'acc-badge',cat:'acc',name:'星星徽章',price:30},
+ {id:'acc-bow',cat:'acc',name:'蝴蝶结',price:35},
+ {id:'acc-glasses',cat:'acc',name:'圆眼镜',price:40},
+ {id:'acc-scarf',cat:'acc',name:'红围巾',price:50},
+ {id:'acc-medal',cat:'acc',name:'金牌',price:60},
+ {id:'acc-shades',cat:'acc',name:'墨镜',price:60},
+ {id:'acc-cape',cat:'acc',name:'红披风',price:90},
+ {id:'acc-wings',cat:'acc',name:'小翅膀',price:130},
+ {id:'hold-none',cat:'hold',name:'空手',price:0},
+ {id:'hold-pencil',cat:'hold',name:'大铅笔',price:30},
+ {id:'hold-book',cat:'hold',name:'英语书',price:40},
+ {id:'hold-balloons',cat:'hold',name:'彩色气球',price:40},
+ {id:'hold-magnifier',cat:'hold',name:'放大镜',price:50},
+ {id:'hold-umbrella',cat:'hold',name:'小雨伞',price:60},
+ {id:'hold-fan',cat:'hold',name:'太极扇',price:70},
+ {id:'hold-wand',cat:'hold',name:'魔法棒',price:80},
+ {id:'hold-sword',cat:'hold',name:'木剑',price:100},
+ {id:'hold-shield',cat:'hold',name:'盾牌',price:110},
+ {id:'shoe-black',cat:'shoe',name:'黑布鞋',price:0,color:'#1B1B1B'},
+ {id:'shoe-red',cat:'shoe',name:'红布鞋',price:25,color:'#D64545'},
+ {id:'shoe-blue',cat:'shoe',name:'蓝布鞋',price:25,color:'#3A86FF'},
+ {id:'shoe-gold',cat:'shoe',name:'金鞋',price:80,color:'#F2B705'},
+ {id:'bg-none',cat:'bg',name:'无背景',price:0},
+ {id:'bg-grass',cat:'bg',name:'青青草地',price:30},
+ {id:'bg-beach',cat:'bg',name:'海边沙滩',price:40},
+ {id:'bg-sakura',cat:'bg',name:'樱花树下',price:60},
+ {id:'bg-bamboo',cat:'bg',name:'竹林',price:60},
+ {id:'bg-snow',cat:'bg',name:'雪山',price:80},
+ {id:'bg-sunset',cat:'bg',name:'夕阳山峦',price:80},
+ {id:'bg-night',cat:'bg',name:'星空夜晚',price:100},
+ {id:'bg-space',cat:'bg',name:'太空月球',price:130},
+ {id:'bg-rainbow',cat:'bg',name:'彩虹乐园',price:150},
+ {id:'top-pink',cat:'top',name:'樱花粉',price:30,color:'#FF9EC4'},
+ {id:'top-mint',cat:'top',name:'薄荷绿',price:30,color:'#4FD6A6'},
+ {id:'top-orange',cat:'top',name:'橘子橙',price:40,color:'#FF9F43'},
+ {id:'top-dots',cat:'top',name:'波点红',price:70,color:'#E63946',pattern:'dots',pc:'#FFFFFF'},
+ {id:'top-navy',cat:'top',name:'海军条纹',price:80,color:'#F4F4EE',pattern:'hstripes',pc:'#2B4C8C',outline:'#B5B5AC'},
+ {id:'top-stars',cat:'top',name:'星空衣',price:90,color:'#2B2F7A',pattern:'stars',pc:'#FFF3B0'},
+ {id:'top-plaid',cat:'top',name:'格子衫',price:90,color:'#D64545',pattern:'plaid',pc:'#FFFFFF',pc2:'#1B1B1B'},
+ {id:'top-panda',cat:'top',name:'熊猫装',price:110,color:'#F4F4EE',sleeve:'#1B1B1B',trim:'#1B1B1B',outline:'#B5B5AC'},
+ {id:'top-gold',cat:'top',name:'金色礼服',price:160,color:'#F2B705',pattern:'gold',trim:'#C98F00'},
+ {id:'hat-party',cat:'hat',name:'生日帽',price:40},
+ {id:'hat-bear',cat:'hat',name:'熊耳头箍',price:50},
+ {id:'hat-bunny',cat:'hat',name:'兔耳朵',price:60},
+ {id:'hat-chef',cat:'hat',name:'厨师帽',price:60},
+ {id:'hat-cowboy',cat:'hat',name:'牛仔帽',price:70},
+ {id:'hat-flower',cat:'hat',name:'花环',price:70},
+ {id:'hat-grad',cat:'hat',name:'学士帽',price:80},
+ {id:'hat-pirate',cat:'hat',name:'海盗帽',price:90},
+ {id:'hat-prop',cat:'hat',name:'螺旋桨帽',price:90},
+ {id:'acc-necklace',cat:'acc',name:'项链',price:50},
+ {id:'acc-bag',cat:'acc',name:'小背包',price:60},
+ {id:'acc-phones',cat:'acc',name:'耳机',price:60},
+ {id:'acc-hearts',cat:'acc',name:'爱心眼镜',price:70},
+ {id:'acc-rscarf',cat:'acc',name:'彩虹围巾',price:70},
+ {id:'acc-halo',cat:'acc',name:'天使光环',price:70},
+ {id:'acc-cape2',cat:'acc',name:'蓝披风',price:100},
+ {id:'acc-bfly',cat:'acc',name:'蝴蝶翅膀',price:140},
+ {id:'hold-lolly',cat:'hold',name:'棒棒糖',price:30},
+ {id:'hold-icecream',cat:'hold',name:'冰淇淋',price:40},
+ {id:'hold-flag',cat:'hold',name:'小红旗',price:40},
+ {id:'hold-brush',cat:'hold',name:'画笔',price:50},
+ {id:'hold-mic',cat:'hold',name:'麦克风',price:60},
+ {id:'hold-hammer',cat:'hold',name:'玩具锤',price:60},
+ {id:'hold-telescope',cat:'hold',name:'望远镜',price:70},
+ {id:'hold-potion',cat:'hold',name:'魔法药水',price:70},
+ {id:'hold-guitar',cat:'hold',name:'吉他',price:90},
+ {id:'hold-taichi',cat:'hold',name:'太极剑',price:120},
+ {id:'hold-goldsword',cat:'hold',name:'黄金剑',price:130},
+ {id:'shoe-pink',cat:'shoe',name:'粉色鞋',price:25,color:'#FF9EC4'},
+ {id:'shoe-green',cat:'shoe',name:'绿布鞋',price:25,color:'#3DC97F'},
+ {id:'shoe-white',cat:'shoe',name:'小白鞋',price:30,color:'#FFFFFF',outline:'#1F2A44',kind:'sneaker',stripe:'#4DA3FF'},
+ {id:'shoe-star',cat:'shoe',name:'星星鞋',price:60,color:'#8E5BD9',kind:'star'},
+ {id:'shoe-boot',cat:'shoe',name:'小靴子',price:60,color:'#8B5A2B',cuff:'#C98F4A',kind:'boot'},
+ {id:'shoe-rainbow',cat:'shoe',name:'彩虹鞋',price:70,color:'#FFFFFF',kind:'rainbow'},
+ {id:'shoe-skate',cat:'shoe',name:'溜冰鞋',price:90,color:'#F4F4EE',cuff:'#E63946',kind:'skate'},
+ {id:'bg-school',cat:'bg',name:'校园',price:50},
+ {id:'bg-farm',cat:'bg',name:'农场',price:60},
+ {id:'bg-maple',cat:'bg',name:'枫叶林',price:60},
+ {id:'bg-desert',cat:'bg',name:'沙漠',price:70},
+ {id:'bg-jungle',cat:'bg',name:'丛林',price:90},
+ {id:'bg-park',cat:'bg',name:'游乐园',price:100},
+ {id:'bg-ocean',cat:'bg',name:'海底世界',price:100},
+ {id:'bg-city',cat:'bg',name:'夜晚城市',price:110},
+ {id:'bg-castle',cat:'bg',name:'城堡',price:120},
+ {id:'bg-aurora',cat:'bg',name:'极光',price:130}
+];
+const IT={};
+ITEMS.forEach(i=>{IT[i.id]=i;});
+const OLD_WY_SHAPE=[4,6,5,3,4,3];
+function migrateGame(){
+  const g=store.game; if(!g||!g.stars)return;
+  const units=['Unit 1 I love sports','Unit 2 Helping at home','Unit 3 What’s the weather like?','Unit 4 Wonderful seasons','Unit 5 Let’s go!','Unit 6 Find your way'];
+  Object.keys(g.stars).forEach(k=>{
+    if(k.indexOf('pack|')===0){g.stars['pep4|'+k.slice(5)]=g.stars[k];delete g.stars[k];return;}
+    const m=/^wy4a\|(\d+)-(\d)$/.exec(k);
+    if(m){
+      let c=+m[1], u=0;
+      while(u<OLD_WY_SHAPE.length&&c>=OLD_WY_SHAPE[u]){c-=OLD_WY_SHAPE[u];u++;}
+      if(u<units.length){const nk='wy4a|'+units[u]+'#'+c+'-'+m[2];if(!(nk in g.stars)||g.stars[nk]<g.stars[k])g.stars[nk]=g.stars[k];}
+      delete g.stars[k];
+    }
+  });
+  if(!g.src||g.src==='pack')g.src='wy4';
+}
+function ensureWallet(){
+  const w=store.wallet;
+  w.pts=Math.max(0,Math.floor(+w.pts||0)); w.earned=Math.max(0,Math.floor(+w.earned||0));
+  w.owned=(w.owned&&typeof w.owned==='object')?w.owned:{};
+  w.equip=Object.assign({},DEFAULT_EQUIP,w.equip||{});
+  Object.keys(DEFAULT_EQUIP).forEach(k=>{w.owned[DEFAULT_EQUIP[k]]=true;});
+  Object.keys(w.equip).forEach(k=>{if(!IT[w.equip[k]]||!w.owned[w.equip[k]])w.equip[k]=DEFAULT_EQUIP[k];});
+}
+const f1=n=>Math.round(n*10)/10;
+function starPts(x,y,R,r){
+  const a=[];
+  for(let i=0;i<10;i++){const ang=-Math.PI/2+i*Math.PI/5, rad=i%2?r:R;a.push(f1(x+Math.cos(ang)*rad)+','+f1(y+Math.sin(ang)*rad));}
+  return a.join(' ');
+}
+function noneSVG(){
+  return `<svg viewBox='0 0 100 100' aria-hidden='true'><circle cx='50' cy='50' r='30' fill='none' stroke='#9AA7C4' stroke-width='6' stroke-dasharray='7 7'/><path d='M38 38L62 62M62 38L38 62' stroke='#9AA7C4' stroke-width='6' stroke-linecap='round'/></svg>`;
+}
+function sceneSVG(id,u){
+  if(!id||id==='bg-none')return '';
+  const sky=(a,b)=>`<defs><linearGradient id='sg${u}' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='${a}'/><stop offset='1' stop-color='${b}'/></linearGradient></defs><rect width='300' height='340' fill='url(#sg${u})'/>`;
+  const cloud=(x,y,k)=>`<g transform='translate(${x} ${y}) scale(${k})' fill='#fff'><ellipse cx='0' cy='0' rx='26' ry='11'/><ellipse cx='-14' cy='-8' rx='14' ry='11'/><ellipse cx='8' cy='-12' rx='16' ry='13'/></g>`;
+  const st=(x,y,r,c)=>`<polygon points='${starPts(x,y,r,r*0.45)}' fill='${c||'#FFF3B0'}'/>`;
+  const dots=(arr,r,c)=>arr.map(d=>`<circle cx='${d[0]}' cy='${d[1]}' r='${d[2]||r}' fill='${c}'/>`).join('');
+  switch(id){
+    case 'bg-grass':
+      return sky('#8ED4FF','#E3F6FF')+`<circle cx='238' cy='58' r='38' fill='#FFE88A' opacity='.55'/><circle cx='238' cy='58' r='26' fill='#FFD23F'/>`+cloud(70,70,1)+cloud(190,124,.8)
+        +`<path d='M0 262 Q80 222 160 256 T300 244 L300 340 L0 340Z' fill='#7BD88F'/><rect x='244' y='208' width='12' height='56' fill='#9C6B3C'/><circle cx='250' cy='200' r='30' fill='#3FAE5E'/><circle cx='238' cy='214' r='18' fill='#4CBF6B'/>`
+        +`<path d='M0 290 Q150 262 300 292 L300 340 L0 340Z' fill='#4CBF6B'/>`
+        +[[40,312,'#FF7EB6'],[92,326,'#FFD23F'],[200,318,'#FF7EB6'],[270,330,'#FFFFFF'],[140,334,'#FFD23F']].map(f=>`<circle cx='${f[0]}' cy='${f[1]}' r='4.5' fill='${f[2]}'/><circle cx='${f[0]}' cy='${f[1]}' r='1.8' fill='#FF9F43'/>`).join('');
+    case 'bg-beach':
+      return sky('#7FD8FF','#FFF1D2')+`<circle cx='232' cy='88' r='24' fill='#FFD23F'/>`+cloud(80,66,.9)
+        +`<rect y='206' width='300' height='84' fill='#34B6E6'/>`+[222,240,258,276].map((y,i)=>`<path d='M${-10+i*8} ${y} q15 -9 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0' fill='none' stroke='#fff' stroke-width='2.4' opacity='.7'/>`).join('')
+        +`<path d='M0 288 Q150 266 300 290 L300 340 L0 340Z' fill='#F7DCA0'/>`
+        +`<path d='M40 300 Q58 240 40 186' fill='none' stroke='#8B5A2B' stroke-width='9' stroke-linecap='round'/>`+[[-50,0],[-15,-30],[20,-35],[55,-5]].map(a=>`<ellipse cx='${40+a[0]*0.6}' cy='${186+(a[1]>0?0:a[1]*0.4)}' rx='26' ry='8' transform='rotate(${a[0]} ${40+a[0]*0.6} ${186+(a[1]>0?0:a[1]*0.4)})' fill='#3FAE5E'/>`).join('')
+        +st(236,320,9,'#FF7E6B')+st(120,330,6,'#FF9F43');
+    case 'bg-sakura':
+      return sky('#FFE1EC','#FFF8FB')+`<path d='M262 340 Q252 270 268 206' fill='none' stroke='#8B5A2B' stroke-width='20' stroke-linecap='round'/><path d='M266 236 Q232 214 214 188' fill='none' stroke='#8B5A2B' stroke-width='9' stroke-linecap='round'/>`
+        +dots([[252,150,34],[286,176,26],[214,172,28],[262,112,26],[228,126,22],[292,128,20]],0,'#FFB3CF')+dots([[246,142,16],[218,166,13],[270,108,12],[285,170,11]],0,'#FFD2E3')
+        +dots([[60,70,4],[110,120,3.5],[170,60,4],[40,180,3.5],[130,200,4],[90,250,3.5]],0,'#FFB3CF')
+        +`<path d='M0 292 Q150 276 300 294 L300 340 L0 340Z' fill='#BFE8A6'/>`+dots([[40,312,3],[80,326,3],[150,318,3],[210,332,3],[120,334,2.6]],0,'#FFB3CF');
+    case 'bg-bamboo':
+      return sky('#DDF7E2','#F4FFF2')+`<ellipse cx='150' cy='250' rx='170' ry='40' fill='#fff' opacity='.5'/>`
+        +[28,66,240,274,206].map((x,i)=>`<rect x='${x-6}' y='0' width='12' height='300' rx='5' fill='${i%2?'#5FBF6E':'#4FAF60'}' stroke='#2F8F4A' stroke-width='2'/>`+[50,110,170,230].map(y=>`<rect x='${x-8}' y='${y+i*7%30}' width='16' height='5' rx='2' fill='#2F8F4A'/><ellipse cx='${x+(i%2?18:-18)}' cy='${y+i*7%30-8}' rx='16' ry='5' transform='rotate(${i%2?-25:25} ${x+(i%2?18:-18)} ${y+i*7%30-8})' fill='#7BD88F'/>`).join('')).join('')
+        +`<path d='M0 294 Q150 274 300 296 L300 340 L0 340Z' fill='#8CCB7A'/><path d='M0 316 Q150 300 300 318 L300 340 L0 340Z' fill='#6DB866'/>`;
+    case 'bg-snow':
+      return sky('#BFE3FF','#F6FBFF')+`<polygon points='-10,262 70,128 150,262' fill='#8FA8D8'/><polygon points='70,128 48,170 70,160 92,174' fill='#fff'/>`
+        +`<polygon points='100,262 196,98 292,262' fill='#7B96CF'/><polygon points='196,98 170,150 196,138 222,154' fill='#fff'/>`
+        +dots([[40,50,2.6],[100,90,2.2],[160,40,2.8],[230,70,2.4],[270,30,2.2],[30,140,2.2],[130,150,2.6],[260,150,2.4],[190,200,2.2],[60,220,2.4]],0,'#fff')
+        +`<path d='M0 282 Q150 262 300 284 L300 340 L0 340Z' fill='#FFFFFF' stroke='#D3E4F7' stroke-width='3'/><path d='M0 310 Q150 296 300 312 L300 340 L0 340Z' fill='#EAF3FC'/>`;
+    case 'bg-sunset':
+      return sky('#FF9A6B','#FFE9A8')+`<circle cx='150' cy='236' r='70' fill='#FFE07A' opacity='.5'/><circle cx='150' cy='236' r='52' fill='#FFD23F'/>`
+        +`<path d='M60 80 q8 -9 16 0 q8 -9 16 0M210 56 q6 -7 12 0 q6 -7 12 0' fill='none' stroke='#5E3FA8' stroke-width='2.6' stroke-linecap='round'/>`
+        +`<path d='M0 256 Q60 202 130 246 T300 224 L300 340 L0 340Z' fill='#8A63D2'/><path d='M0 294 Q120 252 300 288 L300 340 L0 340Z' fill='#5E3FA8'/>`;
+    case 'bg-night':
+      return sky('#14194D','#3F2F82')+`<circle cx='236' cy='66' r='26' fill='#FFF3B0'/><circle cx='228' cy='58' r='5' fill='#F0E09A'/><circle cx='246' cy='74' r='4' fill='#F0E09A'/>`
+        +st(50,48,7)+st(110,90,5)+st(170,40,6)+st(28,150,5)+st(140,150,4)+st(270,140,5)+st(80,200,4)+st(200,190,4)
+        +`<path d='M0 262 Q80 226 160 258 T300 244 L300 340 L0 340Z' fill='#1F2A6B'/><path d='M0 296 Q150 270 300 298 L300 340 L0 340Z' fill='#2A3690'/>`
+        +dots([[50,300,2.6],[100,318,2.2],[220,310,2.6],[260,328,2.2]],0,'#FFE66D');
+    case 'bg-space':
+      return sky('#0A0D2B','#231A5C')+st(40,40,6)+st(120,70,4)+st(200,36,5)+st(270,90,4)+st(30,170,4)+st(150,130,3.5)+st(250,200,4)+st(90,230,3.5)
+        +`<circle cx='70' cy='98' r='30' fill='#FF9F43'/><circle cx='60' cy='88' r='7' fill='#FFB86B'/><ellipse cx='70' cy='98' rx='50' ry='10' transform='rotate(-20 70 98)' fill='none' stroke='#FFD28A' stroke-width='5'/>`
+        +`<circle cx='238' cy='146' r='17' fill='#4DA3FF'/><circle cx='232' cy='140' r='5' fill='#8CC4FF'/>`
+        +`<path d='M0 296 Q150 270 300 298 L300 340 L0 340Z' fill='#B9BED6'/><ellipse cx='60' cy='318' rx='22' ry='6' fill='#9AA0BE'/><ellipse cx='210' cy='326' rx='28' ry='7' fill='#9AA0BE'/><ellipse cx='260' cy='306' rx='14' ry='4' fill='#9AA0BE'/>`;
+    case 'bg-school':
+      return sky('#9ED8FF','#E6F7FF')+cloud(60,64,.9)+cloud(210,48,.7)
+        +`<rect x='140' y='148' width='160' height='14' fill='#D64545' stroke='#1F2A44' stroke-width='3'/><rect x='150' y='160' width='140' height='110' fill='#FFC46B' stroke='#1F2A44' stroke-width='3'/>`
+        +[0,1,2].map(i=>`<rect x='${164+i*40}' y='176' width='26' height='28' fill='#9ED8FF' stroke='#1F2A44' stroke-width='2.4'/><path d='M${177+i*40} 176v28M${164+i*40} 190h26' stroke='#1F2A44' stroke-width='1.6'/>`).join('')
+        +`<rect x='204' y='222' width='32' height='48' rx='3' fill='#8B5A2B' stroke='#1F2A44' stroke-width='2.4'/><line x1='270' y1='148' x2='270' y2='84' stroke='#8B5A2B' stroke-width='4'/><path d='M272 86 h30 l-8 9 l8 9 h-30z' fill='#E63946' stroke='#1F2A44' stroke-width='2'/>`
+        +`<path d='M0 282 Q150 266 300 284 L300 340 L0 340Z' fill='#8DE8A5'/><path d='M0 306 Q150 292 300 308 L300 340 L0 340Z' fill='#6FD58D'/><rect x='26' y='214' width='10' height='58' fill='#9C6B3C'/><circle cx='31' cy='204' r='28' fill='#4CBF6B'/>`;
+    case 'bg-farm':
+      return sky('#B8E6FF','#FFF4D6')+`<circle cx='62' cy='60' r='24' fill='#FFD23F'/>`+cloud(190,64,1)
+        +`<path d='M0 250 Q120 226 300 252 L300 340 L0 340Z' fill='#9ADB8A'/>`
+        +`<rect x='188' y='176' width='96' height='84' fill='#D64545' stroke='#1F2A44' stroke-width='3'/><polygon points='178,178 236,128 294,178' fill='#8E2A2A' stroke='#1F2A44' stroke-width='3'/><rect x='214' y='208' width='44' height='52' fill='#fff' stroke='#1F2A44' stroke-width='2.4'/><path d='M214 208L258 260M258 208L214 260' stroke='#D64545' stroke-width='3'/>`
+        +`<path d='M0 292 Q150 270 300 294 L300 340 L0 340Z' fill='#7FCB6F'/>`
+        +[0,1,2,3].map(i=>`<path d='M${i*80-20} 332 Q${i*80+40} 304 ${i*80+100} 332' fill='none' stroke='#6AB85C' stroke-width='6'/>`).join('')
+        +[18,52,86].map(x=>`<rect x='${x}' y='258' width='8' height='40' fill='#C98F4A' stroke='#1F2A44' stroke-width='1.8'/>`).join('')+`<path d='M14 270H98M14 286H98' stroke='#C98F4A' stroke-width='5'/><circle cx='250' cy='292' r='14' fill='#F2C94C' stroke='#1F2A44' stroke-width='2'/>`;
+    case 'bg-maple':
+      return sky('#FFE3B5','#FFF7E6')+`<circle cx='240' cy='60' r='24' fill='#FFB347' opacity='.8'/>`
+        +[[40,250,34,'#FF8C42'],[104,242,28,'#E85D3A'],[240,246,36,'#F2A33A'],[282,262,26,'#D64545']].map(t=>`<rect x='${t[0]-5}' y='${t[1]}' width='10' height='60' fill='#8B5A2B'/><circle cx='${t[0]}' cy='${t[1]-6}' r='${t[2]}' fill='${t[3]}'/><circle cx='${f1(t[0]-t[2]*0.5)}' cy='${t[1]+4}' r='${f1(t[2]*0.6)}' fill='${t[3]}'/><circle cx='${f1(t[0]+t[2]*0.5)}' cy='${t[1]+4}' r='${f1(t[2]*0.6)}' fill='${t[3]}'/>`).join('')
+        +`<path d='M0 294 Q150 276 300 296 L300 340 L0 340Z' fill='#E7B364'/>`
+        +[[60,100],[150,60],[200,150],[30,170],[260,110],[120,210],[240,200]].map((l,i)=>`<ellipse cx='${l[0]}' cy='${l[1]}' rx='7' ry='4' transform='rotate(${i*40} ${l[0]} ${l[1]})' fill='${['#E85D3A','#FF8C42','#F2A33A','#D64545'][i%4]}'/>`).join('')
+        +dots([[70,318],[120,330],[200,320],[250,332],[160,308]],4,'#E85D3A');
+    case 'bg-desert': {
+      const cac=(x,y,k)=>`<g transform='translate(${x} ${y}) scale(${k})'><rect x='-9' y='-70' width='18' height='72' rx='9' fill='#4CAF50' stroke='#1F2A44' stroke-width='2.4'/><rect x='-28' y='-46' width='20' height='9' rx='4.5' fill='#4CAF50' stroke='#1F2A44' stroke-width='2'/><rect x='-28' y='-62' width='10' height='24' rx='5' fill='#4CAF50' stroke='#1F2A44' stroke-width='2'/><rect x='8' y='-38' width='20' height='9' rx='4.5' fill='#4CAF50' stroke='#1F2A44' stroke-width='2'/><rect x='18' y='-54' width='10' height='24' rx='5' fill='#4CAF50' stroke='#1F2A44' stroke-width='2'/></g>`;
+      return sky('#FFD59A','#FFF2D6')+`<circle cx='230' cy='70' r='44' fill='#FFB703' opacity='.25'/><circle cx='230' cy='70' r='34' fill='#FFB703'/>`+cloud(70,60,.8)
+        +`<path d='M0 250 Q80 214 170 246 T300 232 L300 340 L0 340Z' fill='#F6C177'/><path d='M0 288 Q120 260 300 292 L300 340 L0 340Z' fill='#EAA95E'/>`+cac(40,296,1)+cac(262,304,.8)+st(150,330,6,'#FF7E6B'); }
+    case 'bg-jungle':
+      return sky('#BFF0C8','#7FD38F')
+        +`<path d='M90 0 Q70 60 96 120' fill='none' stroke='#2E7D32' stroke-width='5'/><path d='M214 0 Q240 50 208 112' fill='none' stroke='#2E7D32' stroke-width='5'/><path d='M150 0 Q136 40 154 80' fill='none' stroke='#2E7D32' stroke-width='4'/>`
+        +`<g fill='#2E9E5B' stroke='#1F2A44' stroke-width='2.4'><ellipse cx='30' cy='70' rx='60' ry='20' transform='rotate(30 30 70)'/><ellipse cx='20' cy='118' rx='56' ry='18' transform='rotate(-10 20 118)'/><ellipse cx='280' cy='80' rx='60' ry='20' transform='rotate(-30 280 80)'/><ellipse cx='290' cy='128' rx='54' ry='18' transform='rotate(12 290 128)'/></g>`
+        +`<path d='M0 288 Q150 268 300 290 L300 340 L0 340Z' fill='#3F8F4F'/><path d='M0 314 Q150 300 300 316 L300 340 L0 340Z' fill='#2F7A40'/>`
+        +[[60,262,9],[250,268,8],[34,300,7],[280,310,7]].map(f=>`<circle cx='${f[0]}' cy='${f[1]}' r='${f[2]}' fill='#FF5D8F' stroke='#1F2A44' stroke-width='1.6'/><circle cx='${f[0]}' cy='${f[1]}' r='3' fill='#FFD23F'/>`).join('');
+    case 'bg-park': {
+      const gcol=['#FF5D5D','#FFD23F','#4DABF7','#69DB7C'];
+      let wheel='';
+      for(let i=0;i<8;i++){const a=i*Math.PI/4,x=64*Math.cos(a),y=64*Math.sin(a);wheel+=`<line x1='0' y1='0' x2='${f1(x)}' y2='${f1(y)}' stroke='#E63946' stroke-width='2.2'/><rect x='${f1(x-7)}' y='${f1(y-3)}' width='14' height='14' rx='3' fill='${gcol[i%4]}' stroke='#1F2A44' stroke-width='1.8'/>`;}
+      return sky('#9ED8FF','#FFF1D2')+cloud(60,50,.8)
+        +`<path d='M222 150 L188 292 M222 150 L256 292' stroke='#1F2A44' stroke-width='5'/><g transform='translate(222 150)'><circle r='64' fill='none' stroke='#E63946' stroke-width='4'/><circle r='38' fill='none' stroke='#F2B705' stroke-width='3'/>${wheel}<circle r='7' fill='#1F2A44'/></g>`
+        +`<polygon points='20,264 62,216 104,264' fill='#E63946' stroke='#1F2A44' stroke-width='2.4'/><polygon points='50,264 62,216 74,264' fill='#fff'/><rect x='28' y='262' width='68' height='30' fill='#FFD23F' stroke='#1F2A44' stroke-width='2.4'/>`
+        +[[118,86,'#FF5D5D'],[138,72,'#FFD23F'],[158,88,'#4DABF7']].map(b=>`<line x1='${b[0]}' y1='${b[1]+14}' x2='138' y2='180' stroke='#1F2A44' stroke-width='1.4'/><ellipse cx='${b[0]}' cy='${b[1]}' rx='11' ry='14' fill='${b[2]}' stroke='#1F2A44' stroke-width='2'/>`).join('')
+        +`<path d='M0 292 Q150 272 300 294 L300 340 L0 340Z' fill='#8DE8A5'/>`; }
+    case 'bg-ocean': {
+      const fish=(x,y,c,fl)=>`<g transform='translate(${x} ${y}) scale(${fl} 1)'><ellipse rx='18' ry='11' fill='${c}' stroke='#1F2A44' stroke-width='2'/><polygon points='16,0 30,-10 30,10' fill='${c}' stroke='#1F2A44' stroke-width='2' stroke-linejoin='round'/><circle cx='-8' cy='-2' r='2.4' fill='#1F2A44'/></g>`;
+      return sky('#37C8F5','#0A5DA8')+`<polygon points='60,0 100,0 150,340 40,340' fill='#fff' opacity='.12'/><polygon points='170,0 210,0 270,340 160,340' fill='#fff' opacity='.1'/>`
+        +`<g opacity='.75'>`+dots([[40,230,5],[52,200,3.5],[250,120,6],[262,90,4],[200,60,3.5],[120,150,4],[90,100,3]],0,'#fff')+`</g>`
+        +`<path d='M30 340 Q8 300 34 270 Q56 240 30 206' fill='none' stroke='#2E9E5B' stroke-width='9' stroke-linecap='round'/><path d='M270 340 Q292 304 268 276 Q250 250 272 226' fill='none' stroke='#2E9E5B' stroke-width='9' stroke-linecap='round'/>`
+        +fish(70,92,'#FF9F43',1)+fish(236,160,'#FFD23F',-1)+fish(60,190,'#FF7EB6',-1)
+        +`<path d='M0 304 Q150 288 300 306 L300 340 L0 340Z' fill='#F2D49B'/><path d='M222 340 v-34 M222 322 l-12 -18 M222 316 l14 -22' stroke='#FF7E6B' stroke-width='8' fill='none' stroke-linecap='round'/>`+st(80,326,8,'#FF7E6B'); }
+    case 'bg-city': {
+      const bl=[[8,196,44],[52,166,40],[94,208,36],[130,150,46],[176,188,40],[216,158,38],[254,198,44]];
+      let b='';
+      bl.forEach(q=>{b+=`<rect x='${q[0]}' y='${q[1]}' width='${q[2]}' height='${300-q[1]}' fill='#2A2F7A'/>`;for(let y=q[1]+10;y<290;y+=16)for(let x=q[0]+6;x<q[0]+q[2]-8;x+=12)b+=`<rect x='${x}' y='${y}' width='6' height='8' fill='${(x*7+y*3)%5<3?'#FFE66D':'#3B4391'}'/>`;});
+      return sky('#1B1F5E','#5B3FA8')+`<circle cx='236' cy='54' r='22' fill='#FFF3B0'/>`+st(50,40,6)+st(110,70,4)+st(170,36,5)+st(24,110,4)+b
+        +`<rect y='298' width='300' height='42' fill='#232860'/><path d='M0 320H300' stroke='#FFD23F' stroke-width='3' stroke-dasharray='16 12'/>`; }
+    case 'bg-castle':
+      return sky('#BFE3FF','#F6FBFF')+cloud(60,70,1)+cloud(130,124,.7)
+        +`<path d='M0 270 Q100 230 200 262 T300 250 L300 340 L0 340Z' fill='#8ED081'/>`
+        +`<g stroke='#1F2A44' stroke-width='3'><rect x='172' y='172' width='108' height='96' fill='#D9CFF2'/><rect x='160' y='140' width='34' height='128' fill='#C7BBEA'/><rect x='258' y='140' width='34' height='128' fill='#C7BBEA'/><polygon points='154,142 177,98 200,142' fill='#E63946'/><polygon points='252,142 275,98 298,142' fill='#E63946'/><path d='M207 268 v-34 a19 19 0 0 1 38 0 v34Z' fill='#6B3F1D'/><rect x='170' y='160' width='12' height='14' fill='#D9CFF2' stroke-width='2'/><rect x='194' y='160' width='12' height='14' fill='#D9CFF2' stroke-width='2'/><rect x='218' y='160' width='12' height='14' fill='#D9CFF2' stroke-width='2'/><rect x='242' y='160' width='12' height='14' fill='#D9CFF2' stroke-width='2'/></g>`
+        +`<path d='M177 98 v-22 l16 6 l-16 6' fill='#FFD23F' stroke='#1F2A44' stroke-width='1.6'/><rect x='170' y='170' width='9' height='16' rx='4.5' fill='#3B4391'/><rect x='268' y='170' width='9' height='16' rx='4.5' fill='#3B4391'/>`
+        +`<path d='M0 296 Q150 276 300 298 L300 340 L0 340Z' fill='#6FC46A'/>`;
+    case 'bg-aurora':
+      return sky('#071337','#103A63')+st(40,40,5)+st(110,70,4)+st(250,40,5)+st(180,110,3.5)+st(24,130,4)+st(270,120,4)
+        +[['#4CFFB0',70,.5],['#7C5CFF',100,.4],['#4CFFB0',130,.28]].map(a=>`<path d='M-10 ${a[1]} Q70 ${a[1]-50} 150 ${a[1]} T310 ${a[1]-10}' fill='none' stroke='${a[0]}' stroke-width='28' opacity='${a[2]}' stroke-linecap='round'/>`).join('')
+        +`<polygon points='-10,292 60,204 130,292' fill='#2D4A78'/><polygon points='60,204 44,226 60,220 76,230' fill='#fff'/><polygon points='90,292 180,184 270,292' fill='#38598C'/><polygon points='180,184 160,214 180,206 200,218' fill='#fff'/><polygon points='190,292 252,222 320,292' fill='#2D4A78'/>`
+        +`<path d='M0 292 Q150 274 300 294 L300 340 L0 340Z' fill='#EAF3FF'/>`;
+    case 'bg-rainbow':
+      return sky('#A5E4FF','#FFF1FA')+['#FF5D5D','#FFA94D','#FFE066','#69DB7C','#4DABF7','#9775FA'].map((c,i)=>{const r=134-i*11;return `<path d='M${150-r} 300 A${r} ${r} 0 0 1 ${150+r} 300' fill='none' stroke='${c}' stroke-width='11'/>`;}).join('')
+        +cloud(40,286,1.1)+cloud(262,286,1.1)
+        +`<path d='M0 298 Q150 278 300 298 L300 340 L0 340Z' fill='#8DE8A5'/>`
+        +[[50,'#FF7EB6'],[250,'#4DA3FF']].map(l=>`<rect x='${l[0]-2}' y='286' width='4' height='38' fill='#fff' stroke='#1F2A44' stroke-width='1.5'/><circle cx='${l[0]}' cy='280' r='13' fill='${l[1]}' stroke='#1F2A44' stroke-width='2'/><path d='M${l[0]} 280 m-7 0 a7 7 0 1 1 7 7' fill='none' stroke='#fff' stroke-width='2.4'/>`).join('');
+  }
+  return '';
+}
+const HOLD_TILT={'hold-umbrella':-26,'hold-balloons':-16,'hold-sword':-14,'hold-wand':-10,'hold-pencil':-8,'hold-magnifier':-6,'hold-taichi':-16,'hold-goldsword':-14,'hold-flag':-12,'hold-telescope':-18,'hold-brush':-10,'hold-lolly':-8,'hold-hammer':-10,'hold-potion':-6,'hold-icecream':-6,'hold-mic':-8,'hold-guitar':-12};
+function holdSVG(id,x,y,rot,u){
+  const D="stroke='#1F2A44' stroke-width='2.5' stroke-linejoin='round'";
+  let g='';
+  switch(id){
+    case 'hold-pencil':
+      g=`<rect x='-5' y='-70' width='10' height='62' fill='#FFD23F' ${D}/><polygon points='-5,-70 5,-70 0,-86' fill='#F2C9A5' ${D}/><polygon points='-1.8,-80 1.8,-80 0,-86' fill='#1F2A44'/><rect x='-5' y='-12' width='10' height='6' fill='#C3CADB' ${D}/><rect x='-5' y='-6' width='10' height='9' rx='2' fill='#FF8FB1' ${D}/>`;break;
+    case 'hold-book':
+      g=`<rect x='-15' y='-42' width='30' height='42' rx='3' fill='#3A86FF' ${D}/><rect x='-11' y='-38' width='4' height='34' fill='#2B63C9'/><text x='4' y='-18' text-anchor='middle' font-size='11' font-weight='700' fill='#fff' font-family='sans-serif'>ABC</text>`;break;
+    case 'hold-balloons':
+      g=[[-24,-96,'#FF6B6B'],[0,-112,'#FFD23F'],[24,-96,'#4DA3FF']].map(b=>`<path d='M0 0 L${b[0]} ${b[1]+17}' stroke='#1F2A44' stroke-width='1.6' fill='none'/><ellipse cx='${b[0]}' cy='${b[1]}' rx='14' ry='17' fill='${b[2]}' ${D}/><ellipse cx='${b[0]-5}' cy='${b[1]-6}' rx='3' ry='5' fill='#fff' opacity='.6'/><polygon points='${b[0]-3},${b[1]+17} ${b[0]+3},${b[1]+17} ${b[0]},${b[1]+21}' fill='${b[2]}' ${D}/>`).join('');break;
+    case 'hold-magnifier':
+      g=`<line x1='0' y1='4' x2='0' y2='-30' stroke='#8B5A2B' stroke-width='7' stroke-linecap='round'/><circle cx='0' cy='-50' r='19' fill='rgba(160,224,255,.55)' stroke='#C98F00' stroke-width='5'/><path d='M-9 -56 a11 11 0 0 1 9 -7' fill='none' stroke='#fff' stroke-width='3' stroke-linecap='round'/>`;break;
+    case 'hold-umbrella':
+      g=`<line x1='0' y1='4' x2='0' y2='-72' stroke='#1F2A44' stroke-width='4' stroke-linecap='round'/><path d='M-46 -72 Q-46 -122 0 -122 Q46 -122 46 -72 Q34 -81 23 -72 Q11 -81 0 -72 Q-11 -81 -23 -72 Q-34 -81 -46 -72Z' fill='#FF6B6B' ${D}/><path d='M0 -122 L-23 -74 M0 -122 L0 -74 M0 -122 L23 -74' stroke='#1F2A44' stroke-width='1.6' fill='none'/><circle cx='0' cy='-124' r='3' fill='#1F2A44'/>`;break;
+    case 'hold-fan': {
+      const pts=[]; for(let k=0;k<=14;k++){const a=(-72+k*144/14)*Math.PI/180;pts.push(f1(52*Math.sin(a))+','+f1(-6-52*Math.cos(a)));}
+      const ribs=pts.filter((_,k)=>k%2===0).map(q=>`<line x1='0' y1='-6' x2='${q.split(',')[0]}' y2='${q.split(',')[1]}' stroke='#FFD23F' stroke-width='1.8'/>`).join('');
+      g=`<polygon points='0,-6 ${pts.join(' ')}' fill='#E63946' ${D}/>`+ribs+`<rect x='-3.5' y='-8' width='7' height='18' rx='3.5' fill='#8B5A2B' ${D}/>`;break; }
+    case 'hold-wand':
+      g=`<line x1='0' y1='8' x2='0' y2='-54' stroke='#5B3A1E' stroke-width='5.5' stroke-linecap='round'/><polygon points='${starPts(0,-66,14,6)}' fill='#FFD23F' ${D}/><path d='M-22 -78H-14M-18 -82V-74M20 -60H28M24 -64V-56' stroke='#F4B400' stroke-width='2.4' stroke-linecap='round'/>`;break;
+    case 'hold-sword':
+      g=`<rect x='-6.5' y='-82' width='13' height='66' rx='6.5' fill='#E8B778' ${D}/><line x1='0' y1='-74' x2='0' y2='-24' stroke='#C98F4A' stroke-width='2'/><rect x='-17' y='-20' width='34' height='8' rx='4' fill='#8B5A2B' ${D}/><rect x='-4.5' y='-13' width='9' height='17' rx='3' fill='#6B3F1D' ${D}/><circle cx='0' cy='6' r='5' fill='#F4B400' ${D}/>`;break;
+    case 'hold-lolly':
+      g=`<line x1='0' y1='6' x2='0' y2='-44' stroke='#1F2A44' stroke-width='6.5' stroke-linecap='round'/><line x1='0' y1='6' x2='0' y2='-44' stroke='#fff' stroke-width='3' stroke-linecap='round'/><circle cx='0' cy='-60' r='17' fill='#FF7EB6' ${D}/><path d='M0 -60 m0 -4 a4 4 0 1 1 -4 4 a8 8 0 1 1 8 8 a12 12 0 1 1 -12 -12' fill='none' stroke='#fff' stroke-width='2.6' stroke-linecap='round'/>`;break;
+    case 'hold-icecream':
+      g=`<polygon points='-11,-34 11,-34 0,6' fill='#E8B778' ${D}/><path d='M-7 -28L5 -8M7 -28L-5 -8M-9 -20H9' stroke='#C98F4A' stroke-width='1.6'/><circle cx='0' cy='-42' r='13' fill='#FF9EC4' ${D}/><circle cx='0' cy='-57' r='11' fill='#FFF6DC' ${D}/><circle cx='1' cy='-68' r='4' fill='#E63946' ${D}/>`;break;
+    case 'hold-flag':
+      g=`<line x1='0' y1='8' x2='0' y2='-92' stroke='#8B5A2B' stroke-width='4.5' stroke-linecap='round'/><path d='M2 -90 Q15 -98 28 -90 T52 -90 L52 -62 Q40 -54 28 -62 T2 -62Z' fill='#E63946' ${D}/><polygon points='${starPts(27,-76,8,3.4)}' fill='#FFD23F' stroke='#1F2A44' stroke-width='1.4'/>`;break;
+    case 'hold-brush':
+      g=`<rect x='-3.5' y='-62' width='7' height='66' rx='3.5' fill='#E63946' ${D}/><rect x='-5.5' y='-72' width='11' height='11' rx='2' fill='#C3CADB' ${D}/><path d='M-5 -72 Q-6 -90 0 -98 Q6 -90 5 -72Z' fill='#4DA3FF' ${D}/><circle cx='12' cy='-98' r='5' fill='#4DA3FF'/><circle cx='-12' cy='-88' r='3.4' fill='#FFD23F'/>`;break;
+    case 'hold-mic':
+      g=`<rect x='-5' y='-32' width='10' height='38' rx='5' fill='#9AA7C4' ${D}/><circle cx='0' cy='-44' r='14' fill='#4B5575' ${D}/><path d='M-10 -50 Q0 -40 10 -50M-12 -42 Q0 -32 12 -42M-6 -56 Q0 -46 6 -56' fill='none' stroke='#9AA7C4' stroke-width='1.4'/><rect x='-8' y='-32' width='16' height='6' rx='3' fill='#E63946' ${D}/>`;break;
+    case 'hold-hammer':
+      g=`<rect x='-3.5' y='-60' width='7' height='66' rx='3.5' fill='#C98F4A' ${D}/><rect x='-24' y='-84' width='48' height='28' rx='7' fill='#FFD23F' ${D}/><rect x='-24' y='-84' width='10' height='28' rx='5' fill='#E63946' ${D}/><rect x='14' y='-84' width='10' height='28' rx='5' fill='#E63946' ${D}/>`;break;
+    case 'hold-telescope':
+      g=`<rect x='-7' y='-34' width='14' height='38' rx='3' fill='#C98F4A' ${D}/><rect x='-9' y='-62' width='18' height='30' rx='3' fill='#8B5A2B' ${D}/><rect x='-12' y='-92' width='24' height='32' rx='4' fill='#FFD23F' ${D}/><ellipse cx='0' cy='-92' rx='9' ry='3.4' fill='#9ED8FF' stroke='#1F2A44' stroke-width='1.6'/><path d='M-9 -64H9M-7 -36H7' stroke='#1F2A44' stroke-width='1.6'/>`;break;
+    case 'hold-potion':
+      g=`<circle cx='0' cy='-24' r='21' fill='#C9A8FF' ${D}/><path d='M-17 -26 Q0 -18 17 -26' fill='none' stroke='#fff' stroke-width='2.2' opacity='.7'/><rect x='-6.5' y='-62' width='13' height='20' rx='3' fill='#E8F4FF' ${D}/><rect x='-5.5' y='-70' width='11' height='9' rx='2.5' fill='#C98F4A' ${D}/><circle cx='-7' cy='-20' r='3' fill='#fff' opacity='.85'/><circle cx='6' cy='-30' r='2.2' fill='#fff' opacity='.85'/><polygon points='${starPts(-18,-60,6,2.4)}' fill='#FFD23F'/>`;break;
+    case 'hold-guitar':
+      g=`<rect x='-4' y='-74' width='8' height='48' fill='#8B5A2B' ${D}/><rect x='-7' y='-88' width='14' height='15' rx='3.5' fill='#5B3A1E' ${D}/><path d='M-4 -62H4M-4 -52H4M-4 -42H4M-4 -34H4' stroke='#E8B778' stroke-width='1.4'/><ellipse cx='0' cy='-20' rx='19' ry='15' fill='#E8B778' ${D}/><ellipse cx='0' cy='2' rx='25' ry='20' fill='#E8B778' ${D}/><circle cx='0' cy='-8' r='6.5' fill='#3B2A1A'/><rect x='-8' y='9' width='16' height='3.4' rx='1.7' fill='#5B3A1E'/>`;break;
+    case 'hold-taichi':
+      g=`<polygon points='-3.8,-98 3.8,-98 4.6,-22 -4.6,-22' fill='#DDE6F4' ${D}/><line x1='0' y1='-94' x2='0' y2='-24' stroke='#9AA7C4' stroke-width='1.6'/><ellipse cx='0' cy='-20' rx='13' ry='4.4' fill='#C98F00' ${D}/><rect x='-3.2' y='-18' width='6.4' height='20' rx='2.6' fill='#8B1E1E' ${D}/><circle cx='0' cy='4' r='4' fill='#C98F00' ${D}/><path d='M0 8 q-5 12 2 26' fill='none' stroke='#E63946' stroke-width='3' stroke-linecap='round'/><path d='M-2 30 l4 0 l1 10 l-6 0z' fill='#E63946'/>`;break;
+    case 'hold-goldsword':
+      g=`<polygon points='-7,-86 0,-100 7,-86 6,-22 -6,-22' fill='#FFD23F' ${D}/><line x1='0' y1='-92' x2='0' y2='-26' stroke='#E8A800' stroke-width='2'/><rect x='-19' y='-23' width='38' height='9' rx='4.5' fill='#E63946' ${D}/><circle cx='0' cy='-18.5' r='3.2' fill='#fff'/><rect x='-4.4' y='-14' width='8.8' height='17' rx='3' fill='#6B3F1D' ${D}/><circle cx='0' cy='6' r='5.6' fill='#4DA3FF' ${D}/>`;break;
+    case 'hold-shield':
+      g=`<g transform='translate(-2 -14)'><circle r='29' fill='#4DA3FF' ${D}/><circle r='21' fill='none' stroke='#fff' stroke-width='4'/><polygon points='${starPts(0,0,13,5.6)}' fill='#FFD23F' ${D}/></g>`;break;
+  }
+  return `<g transform='translate(${f1(x)} ${f1(y)}) rotate(${f1(rot)})'>${g}</g>`;
+}
+function wingsSVG(cx,sy){
+  const w=side=>`<g transform='translate(${f1(cx+side*28)} ${f1(sy+6)}) scale(${side} 1)'><ellipse cx='28' cy='-16' rx='38' ry='15' transform='rotate(-35 28 -16)' fill='#fff' stroke='#1F2A44' stroke-width='2.5'/><ellipse cx='34' cy='6' rx='30' ry='12' transform='rotate(-12 34 6)' fill='#F2F8FF' stroke='#1F2A44' stroke-width='2.5'/><ellipse cx='30' cy='24' rx='22' ry='9' transform='rotate(8 30 24)' fill='#fff' stroke='#1F2A44' stroke-width='2.5'/></g>`;
+  return w(-1)+w(1);
+}
+function patternTop(T,torso,cx,sy,hy,uid){
+  const y0=sy-14, y1=hy+10, x0=cx-40, x1=cx+40, pc=T.pc||'#fff', pc2=T.pc2||'#1B1B1B';
+  let sh='';
+  if(T.pattern==='dots'){for(let r=0,y=y0+6;y<y1;y+=15,r++)for(let x=x0+(r%2?8:0)+4;x<x1;x+=16)sh+=`<circle cx='${f1(x)}' cy='${f1(y)}' r='4.2' fill='${pc}'/>`;}
+  else if(T.pattern==='stars'){for(let r=0,y=y0+8;y<y1;y+=20,r++)for(let x=x0+(r%2?11:0)+6;x<x1;x+=22)sh+=`<polygon points='${starPts(x,y,5.2,2.3)}' fill='${pc}'/>`;}
+  else if(T.pattern==='hstripes'){for(let y=y0+4;y<y1;y+=14)sh+=`<rect x='${f1(x0)}' y='${f1(y)}' width='80' height='7' fill='${pc}'/>`;}
+  else if(T.pattern==='plaid'){
+    for(let x=x0+6;x<x1;x+=18)sh+=`<rect x='${f1(x)}' y='${f1(y0)}' width='7' height='${f1(y1-y0)}' fill='${pc}' opacity='.55'/>`;
+    for(let y=y0+8;y<y1;y+=18)sh+=`<rect x='${f1(x0)}' y='${f1(y)}' width='80' height='7' fill='${pc}' opacity='.55'/>`;
+    for(let x=x0+9;x<x1;x+=18)sh+=`<rect x='${f1(x)}' y='${f1(y0)}' width='1.5' height='${f1(y1-y0)}' fill='${pc2}'/>`;
+  }
+  else if(T.pattern==='gold'){
+    sh=`<polygon points='${f1(cx-40)},${f1(y1)} ${f1(cx-6)},${f1(y0)} ${f1(cx+8)},${f1(y0)} ${f1(cx-26)},${f1(y1)}' fill='#FFF3B0' opacity='.55'/>`+[[-16,6],[18,28],[-6,48],[22,-2]].map(q=>`<polygon points='${starPts(cx+q[0],sy+q[1],4.5,1.8)}' fill='#fff' opacity='.9'/>`).join('');
+  }
+  return `<defs><clipPath id='tp${uid}'><path d='${torso}'/></clipPath></defs><path d='${torso}' fill='${T.color}'${T.outline?` stroke='${T.outline}' stroke-width='2'`:''}/><g clip-path='url(#tp${uid})'>${sh}</g>`;
+}
+function shoeSVG(SH,fx,u){
+  const x=f1(fx), k=SH.kind||'plain', D="stroke='#1F2A44' stroke-width='2'";
+  let s='';
+  if(k==='boot'||k==='skate'){
+    s+=`<rect x='${f1(fx-11)}' y='294' width='22' height='28' rx='6' fill='${SH.color}' ${D}/><rect x='${f1(fx-12)}' y='294' width='24' height='7' rx='3' fill='${SH.cuff||'#C98F4A'}' stroke='#1F2A44' stroke-width='1.6'/><ellipse cx='${x}' cy='321' rx='18' ry='8' fill='${SH.color}' ${D}/>`;
+    if(k==='skate')s+=`<rect x='${f1(fx-16)}' y='327' width='32' height='4' rx='2' fill='#9AA7C4'/><circle cx='${f1(fx-10)}' cy='333' r='4.6' fill='#FF6B6B' stroke='#1F2A44' stroke-width='1.6'/><circle cx='${f1(fx+10)}' cy='333' r='4.6' fill='#FF6B6B' stroke='#1F2A44' stroke-width='1.6'/>`;
+    return s;
+  }
+  if(k==='rainbow'){
+    return `<defs><linearGradient id='sr${u}' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='#FF5D5D'/><stop offset='.25' stop-color='#FFD23F'/><stop offset='.5' stop-color='#69DB7C'/><stop offset='.75' stop-color='#4DABF7'/><stop offset='1' stop-color='#9775FA'/></linearGradient></defs><ellipse cx='${x}' cy='320' rx='16' ry='7' fill='url(#sr${u})' stroke='#1F2A44' stroke-width='1.6'/>`;
+  }
+  s+=`<ellipse cx='${x}' cy='320' rx='16' ry='7' fill='${SH.color}'${SH.outline?` stroke='${SH.outline}' stroke-width='1.8'`:''}/>`;
+  if(k==='sneaker')s+=`<rect x='${f1(fx-16)}' y='324' width='32' height='3.5' rx='1.7' fill='#fff' stroke='#1F2A44' stroke-width='1.2'/><path d='M${f1(fx-6)} 316 q6 -3 12 0' stroke='${SH.stripe||'#FF6B6B'}' stroke-width='2.6' fill='none' stroke-linecap='round'/>`;
+  if(k==='star')s+=`<polygon points='${starPts(fx,319.5,5,2.2)}' fill='#FFD23F' stroke='#1F2A44' stroke-width='1'/>`;
+  return s;
+}
+function behindAcc(A,cx,sy,hy){
+  if(A==='acc-bfly'){
+    const w=side=>`<g transform='translate(${f1(cx+side*26)} ${f1(sy+4)}) scale(${side} 1)'><ellipse cx='36' cy='-20' rx='40' ry='26' transform='rotate(-25 36 -20)' fill='#FF9EC4' stroke='#1F2A44' stroke-width='2.5'/><ellipse cx='28' cy='24' rx='28' ry='20' transform='rotate(20 28 24)' fill='#8F6BFF' stroke='#1F2A44' stroke-width='2.5'/><circle cx='42' cy='-22' r='7' fill='#fff' opacity='.85'/><circle cx='30' cy='24' r='5' fill='#fff' opacity='.85'/></g>`;
+    return w(-1)+w(1);
+  }
+  if(A==='acc-bag')return `<rect x='${f1(cx-40)}' y='${f1(sy-2)}' width='80' height='66' rx='14' fill='#FF9F43' stroke='#1F2A44' stroke-width='2.5'/><rect x='${f1(cx-26)}' y='${f1(sy+34)}' width='52' height='24' rx='8' fill='#FFC46B' stroke='#1F2A44' stroke-width='2'/>`;
+  if(A==='acc-cape2')return `<path d='M${f1(cx-30)} ${f1(sy-4)} L${f1(cx+30)} ${f1(sy-4)} L${f1(cx+66)} ${f1(hy+64)} Q${f1(cx)} ${f1(hy+86)} ${f1(cx-66)} ${f1(hy+64)} Z' fill='#3A86FF' stroke='#F2B705' stroke-width='3'/>`;
+  return '';
+}
+function frontAcc(A,cx,sy,hc,hy,u){
+  if(A==='acc-bag')return `<rect x='${f1(cx-25)}' y='${f1(sy-2)}' width='9' height='${f1(hy-sy-6)}' fill='#FF9F43' stroke='#1F2A44' stroke-width='1.6'/><rect x='${f1(cx+16)}' y='${f1(sy-2)}' width='9' height='${f1(hy-sy-6)}' fill='#FF9F43' stroke='#1F2A44' stroke-width='1.6'/>`;
+  if(A==='acc-necklace'){const ym=((hc+34)+(sy+30))/2;return `<path d='M${f1(cx-16)} ${f1(hc+34)} Q${f1(cx)} ${f1(sy+30)} ${f1(cx+16)} ${f1(hc+34)}' fill='none' stroke='#F4B400' stroke-width='3' stroke-linecap='round'/><circle cx='${f1(cx)}' cy='${f1(ym+1)}' r='5' fill='#4DA3FF' stroke='#1F2A44' stroke-width='1.8'/>`;}
+  if(A==='acc-rscarf'){
+    const bands=(x,y,w,h,vert)=>['#FF5D5D','#FFD23F','#4DABF7'].map((c,i)=>vert?`<rect x='${f1(x+i*w/3)}' y='${f1(y)}' width='${f1(w/3+.5)}' height='${h}' fill='${c}'/>`:`<rect x='${f1(x)}' y='${f1(y+i*h/3)}' width='${w}' height='${f1(h/3+.5)}' fill='${c}'/>`).join('');
+    return `<defs><clipPath id='rs${u}'><rect x='${f1(cx-18)}' y='${f1(hc+22)}' width='36' height='13' rx='6.5'/></clipPath><clipPath id='rt${u}'><rect x='${f1(cx+6)}' y='${f1(hc+30)}' width='11' height='28' rx='5'/></clipPath></defs><g clip-path='url(#rs${u})'>${bands(cx-18,hc+22,36,13,false)}</g><g clip-path='url(#rt${u})'>${bands(cx+6,hc+30,11,28,false)}</g>`;
+  }
+  return '';
+}
+function headAcc(A,cx,hc){
+  if(A==='acc-halo')return `<ellipse cx='${f1(cx)}' cy='${f1(hc-46)}' rx='21' ry='6.5' fill='none' stroke='#F4B400' stroke-width='5'/><ellipse cx='${f1(cx)}' cy='${f1(hc-46)}' rx='21' ry='6.5' fill='none' stroke='#FFF3B0' stroke-width='2'/>`;
+  if(A==='acc-phones')return `<path d='M${f1(cx-29)} ${f1(hc+2)} Q${f1(cx)} ${f1(hc-52)} ${f1(cx+29)} ${f1(hc+2)}' fill='none' stroke='#1F2A44' stroke-width='5' stroke-linecap='round'/><rect x='${f1(cx-38)}' y='${f1(hc-8)}' width='12' height='22' rx='6' fill='#FF6B6B' stroke='#1F2A44' stroke-width='2'/><rect x='${f1(cx+26)}' y='${f1(hc-8)}' width='12' height='22' rx='6' fill='#FF6B6B' stroke='#1F2A44' stroke-width='2'/>`;
+  if(A==='acc-hearts'){
+    const h=(x,y)=>`<path d='M${f1(x)} ${f1(y+8)} C${f1(x-14)} ${f1(y-2)} ${f1(x-9)} ${f1(y-13)} ${f1(x)} ${f1(y-6)} C${f1(x+9)} ${f1(y-13)} ${f1(x+14)} ${f1(y-2)} ${f1(x)} ${f1(y+8)}Z' fill='#FF7EB6' stroke='#1F2A44' stroke-width='2'/>`;
+    return h(cx-11,hc+5)+h(cx+11,hc+5)+`<path d='M${f1(cx-2)} ${f1(hc+3)}H${f1(cx+2)}' stroke='#1F2A44' stroke-width='2'/>`;
+  }
+  return '';
+}
+function hatSVG(H,cx,hc){
+  const D="stroke='#1F2A44' stroke-width='2' stroke-linejoin='round'", c=f1(cx);
+  switch(H){
+    case 'hat-party':
+      return `<polygon points='${f1(cx-18)},${f1(hc-24)} ${f1(cx+18)},${f1(hc-24)} ${f1(cx+3)},${f1(hc-70)}' fill='#FF7EB6' ${D}/>`+[[-6,-34],[4,-44],[8,-30],[-2,-52],[-10,-27]].map(d=>`<circle cx='${f1(cx+d[0])}' cy='${f1(hc+d[1])}' r='2.8' fill='#fff'/>`).join('')+`<circle cx='${f1(cx+3)}' cy='${f1(hc-72)}' r='5.5' fill='#FFD23F' ${D}/>`;
+    case 'hat-bear':
+      return `<circle cx='${f1(cx-23)}' cy='${f1(hc-27)}' r='10' fill='#8B5A2B' ${D}/><circle cx='${f1(cx-23)}' cy='${f1(hc-27)}' r='5' fill='#F2C9A5'/><circle cx='${f1(cx+23)}' cy='${f1(hc-27)}' r='10' fill='#8B5A2B' ${D}/><circle cx='${f1(cx+23)}' cy='${f1(hc-27)}' r='5' fill='#F2C9A5'/><path d='M${f1(cx-27)} ${f1(hc-8)} Q${c} ${f1(hc-50)} ${f1(cx+27)} ${f1(hc-8)}' fill='none' stroke='#8B5A2B' stroke-width='5' stroke-linecap='round'/>`;
+    case 'hat-bunny':
+      return [-1,1].map(sd=>`<g transform='rotate(${sd*10} ${f1(cx+sd*13)} ${f1(hc-30)})'><ellipse cx='${f1(cx+sd*13)}' cy='${f1(hc-52)}' rx='8.5' ry='23' fill='#fff' ${D}/><ellipse cx='${f1(cx+sd*13)}' cy='${f1(hc-52)}' rx='4' ry='16' fill='#FFB3CF'/></g>`).join('');
+    case 'hat-chef':
+      return `<circle cx='${f1(cx-17)}' cy='${f1(hc-44)}' r='14' fill='#fff' ${D}/><circle cx='${f1(cx+17)}' cy='${f1(hc-44)}' r='14' fill='#fff' ${D}/><circle cx='${c}' cy='${f1(hc-54)}' r='16' fill='#fff' ${D}/><rect x='${f1(cx-25)}' y='${f1(hc-34)}' width='50' height='13' rx='4' fill='#fff' ${D}/>`;
+    case 'hat-cowboy':
+      return `<ellipse cx='${c}' cy='${f1(hc-17)}' rx='47' ry='10' fill='#A86F3A' ${D}/><path d='M${f1(cx-22)} ${f1(hc-19)} Q${f1(cx-24)} ${f1(hc-50)} ${c} ${f1(hc-44)} Q${f1(cx+24)} ${f1(hc-50)} ${f1(cx+22)} ${f1(hc-19)}Z' fill='#C98F4A' ${D}/><rect x='${f1(cx-22)}' y='${f1(hc-27)}' width='44' height='7' fill='#6B3F1D'/>`;
+    case 'hat-flower': {
+      let g='';
+      for(let k=0;k<7;k++){const a=(-165+k*25)*Math.PI/180,x=cx+31*Math.cos(a),y=hc-2+31*Math.sin(a),col=['#FF7EB6','#FFD23F','#FFFFFF','#FF9F43'][k%4];
+        g+=`<ellipse cx='${f1(x+Math.cos(a+1.57)*9)}' cy='${f1(y+Math.sin(a+1.57)*9)}' rx='7' ry='3.5' transform='rotate(${f1(a*57.3)} ${f1(x+Math.cos(a+1.57)*9)} ${f1(y+Math.sin(a+1.57)*9)})' fill='#3FAE5E'/><circle cx='${f1(x)}' cy='${f1(y)}' r='6' fill='${col}' stroke='#1F2A44' stroke-width='1.6'/><circle cx='${f1(x)}' cy='${f1(y)}' r='2' fill='#FF9F43'/>`;}
+      return g;}
+    case 'hat-grad':
+      return `<path d='M${f1(cx-18)} ${f1(hc-20)} L${f1(cx-18)} ${f1(hc-8)} Q${c} ${f1(hc-1)} ${f1(cx+18)} ${f1(hc-8)} L${f1(cx+18)} ${f1(hc-20)}Z' fill='#2B3A67' ${D}/><polygon points='${f1(cx-38)},${f1(hc-23)} ${c},${f1(hc-36)} ${f1(cx+38)},${f1(hc-23)} ${c},${f1(hc-10)}' fill='#1F2A44' ${D}/><path d='M${f1(cx+30)} ${f1(hc-22)} V${f1(hc-2)}' stroke='#F4B400' stroke-width='3'/><circle cx='${f1(cx+30)}' cy='${f1(hc-1)}' r='3.5' fill='#F4B400'/>`;
+    case 'hat-pirate':
+      return `<path d='M${f1(cx-46)} ${f1(hc-12)} Q${c} ${f1(hc-56)} ${f1(cx+46)} ${f1(hc-12)} Q${c} ${f1(hc-24)} ${f1(cx-46)} ${f1(hc-12)}Z' fill='#2B2B3A' stroke='#F4B400' stroke-width='2.6' stroke-linejoin='round'/><polygon points='${starPts(cx,hc-30,6,2.6)}' fill='#fff'/>`;
+    case 'hat-prop':
+      return `<path d='M${f1(cx-26)} ${f1(hc-10)} A26 26 0 0 1 ${f1(cx+26)} ${f1(hc-10)}Z' fill='#4DA3FF' ${D}/><path d='M${f1(cx-9)} ${f1(hc-35)} Q${c} ${f1(hc-30)} ${f1(cx+9)} ${f1(hc-35)} L${f1(cx+14)} ${f1(hc-11)} L${f1(cx-14)} ${f1(hc-11)}Z' fill='#FFD23F'/><rect x='${f1(cx-2)}' y='${f1(hc-46)}' width='4' height='12' fill='#1F2A44'/><ellipse cx='${f1(cx-14)}' cy='${f1(hc-47)}' rx='14' ry='4' fill='#FF6B6B' ${D}/><ellipse cx='${f1(cx+14)}' cy='${f1(hc-47)}' rx='14' ry='4' fill='#FFD23F' ${D}/>`;
+  }
+  return '';
+}
+function figureSVG(p,o){
+  o=o||{};
+  const st=Object.assign({},DEFAULT_EQUIP,o.style||{});
+  const T=IT[st.top]||IT[DEFAULT_EQUIP.top], SH=IT[st.shoe]||IT[DEFAULT_EQUIP.shoe], HAT=st.hat, ACC=st.acc, HOLD=st.hold, BG=st.bg, uid=o.uid||'x';
+  const skin='#F2C9A5', skinLn='#C99A74', pants='#264653', hair='#2B2B2B';
+  const cx=150+p.bx, sy=150+p.drop, hy=225+p.drop, hc=108+p.drop;
+  const sx=[cx-26,cx+26];
+  const arm=(i,t1,t2)=>{
+    const side=i===0?-1:1, r1=t1*Math.PI/180, r2=t2*Math.PI/180;
+    const ex=sx[i]+side*Math.sin(r1)*LIM.u, ey=sy+Math.cos(r1)*LIM.u;
+    return {sx:sx[i],ex:ex,ey:ey,hx:ex+side*Math.sin(r2)*LIM.f,hy:ey+Math.cos(r2)*LIM.f};
+  };
+  const A=arm(0,p.a1,p.a2), B=arm(1,p.b1,p.b2);
+  const legs=[0,1].map(i=>{
+    const side=i===0?-1:1, fx=150+side*p.sw, hx=cx+side*14, hyy=hy+4;
+    return {hx:hx,hy:hyy,kx:(fx+hx)/2+side*(6+p.drop*0.9),ky:(322+hyy)/2,fx:fx};
+  });
+  let s=sceneSVG(BG,uid)+`<ellipse cx='150' cy='331' rx='${f1(64+p.sw)}' ry='8' fill='rgba(0,0,0,.16)'/>`;
+  s+=behindAcc(ACC,cx,sy,hy);
+  if(ACC==='acc-wings')s+=wingsSVG(cx,sy);
+  if(ACC==='acc-cape')s+=`<path d='M${f1(cx-30)} ${f1(sy-4)} L${f1(cx+30)} ${f1(sy-4)} L${f1(cx+66)} ${f1(hy+64)} Q${f1(cx)} ${f1(hy+86)} ${f1(cx-66)} ${f1(hy+64)} Z' fill='#D64545' stroke='#F2B705' stroke-width='3'/>`;
+  legs.forEach((L,li)=>{
+    s+=`<polyline points='${f1(L.hx)},${f1(L.hy)} ${f1(L.kx)},${f1(L.ky)} ${f1(L.fx)},316' fill='none' stroke='${pants}' stroke-width='17' stroke-linecap='round' stroke-linejoin='round'/>`;
+    s+=shoeSVG(SH,L.fx,uid+li);
+  });
+  s+=`<rect x='${f1(cx-7)}' y='${f1(hc+18)}' width='14' height='22' rx='6' fill='${skin}'/>`;
+  const torso=`M${f1(cx-30)} ${f1(sy-4)} Q${f1(cx)} ${f1(sy-14)} ${f1(cx+30)} ${f1(sy-4)} L${f1(cx+35)} ${f1(hy)} Q${f1(cx)} ${f1(hy+10)} ${f1(cx-35)} ${f1(hy)} Z`;
+  if(T.stripes){
+    const y0=sy-14, y1=hy+10, h=(y1-y0)/T.stripes.length;
+    s+=`<defs><clipPath id='tc${uid}'><path d='${torso}'/></clipPath></defs><g clip-path='url(#tc${uid})'>`;
+    T.stripes.forEach((c,i)=>{s+=`<rect x='${f1(cx-40)}' y='${f1(y0+i*h)}' width='80' height='${f1(h+0.6)}' fill='${c}'/>`;});
+    s+='</g>';
+  }else if(T.pattern){
+    s+=patternTop(T,torso,cx,sy,hy,uid);
+  }else{
+    s+=`<path d='${torso}' fill='${T.color}'${T.outline?` stroke='${T.outline}' stroke-width='2'`:''}/>`;
+  }
+  s+=`<rect x='${f1(cx-35)}' y='${f1(hy-14)}' width='70' height='9' rx='4' fill='${T.trim||'#F4E3A1'}'/>`;
+  s+=frontAcc(ACC,cx,sy,hc,hy,uid);
+  if(ACC==='acc-bow')s+=`<polygon points='${f1(cx-3)},${f1(hc+31)} ${f1(cx-19)},${f1(hc+22)} ${f1(cx-19)},${f1(hc+40)}' fill='#E63946' stroke='#1F2A44' stroke-width='1.6' stroke-linejoin='round'/><polygon points='${f1(cx+3)},${f1(hc+31)} ${f1(cx+19)},${f1(hc+22)} ${f1(cx+19)},${f1(hc+40)}' fill='#E63946' stroke='#1F2A44' stroke-width='1.6' stroke-linejoin='round'/><circle cx='${f1(cx)}' cy='${f1(hc+31)}' r='4.6' fill='#B72A36' stroke='#1F2A44' stroke-width='1.6'/>`;
+  if(ACC==='acc-medal')s+=`<polygon points='${f1(cx-9)},${f1(hc+32)} ${f1(cx-2)},${f1(sy+24)} ${f1(cx+3)},${f1(sy+24)} ${f1(cx-3)},${f1(hc+32)}' fill='#E63946'/><polygon points='${f1(cx+9)},${f1(hc+32)} ${f1(cx+2)},${f1(sy+24)} ${f1(cx-3)},${f1(sy+24)} ${f1(cx+3)},${f1(hc+32)}' fill='#3A86FF'/><circle cx='${f1(cx)}' cy='${f1(sy+34)}' r='11' fill='#FFC21A' stroke='#1F2A44' stroke-width='2'/><polygon points='${starPts(cx,sy+34,6.5,2.8)}' fill='#FFF3B0'/>`;
+  if(ACC==='acc-scarf')s+=`<rect x='${f1(cx-18)}' y='${f1(hc+22)}' width='36' height='13' rx='6.5' fill='#E63946'/><rect x='${f1(cx+6)}' y='${f1(hc+30)}' width='11' height='28' rx='5' fill='#E63946'/>`;
+  if(ACC==='acc-badge')s+=`<polygon points='${starPts(cx-14,sy+18,10,4.5)}' fill='#F4B400' stroke='#C98F00' stroke-width='1.2'/>`;
+  [A,B].forEach((m,i)=>{
+    if(T.outline){
+      s+=`<polyline points='${f1(m.sx)},${f1(sy)} ${f1(m.ex)},${f1(m.ey)} ${f1(m.hx)},${f1(m.hy)}' fill='none' stroke='${T.outline}' stroke-width='17' stroke-linecap='round' stroke-linejoin='round'/>`;
+    }
+    s+=`<polyline points='${f1(m.sx)},${f1(sy)} ${f1(m.ex)},${f1(m.ey)}' fill='none' stroke='${T.sleeve||T.color}' stroke-width='15' stroke-linecap='round'/>`;
+    s+=`<polyline points='${f1(m.ex)},${f1(m.ey)} ${f1(m.hx)},${f1(m.hy)}' fill='none' stroke='${T.sleeve||T.color}' stroke-width='13' stroke-linecap='round'/>`;
+    if(i===0&&HOLD&&HOLD!=='hold-none')s+=holdSVG(HOLD,m.hx,m.hy,-(p.a2*0.25)-8+(HOLD_TILT[HOLD]||0),uid);
+    if(o.thumb&&i===1){
+      s+=`<rect x='${f1(m.hx-6)}' y='${f1(m.hy-28)}' width='12' height='23' rx='6' fill='${skin}' stroke='${skinLn}' stroke-width='1.5'/>`;
+      s+=`<circle cx='${f1(m.hx)}' cy='${f1(m.hy)}' r='11.5' fill='${skin}' stroke='${skinLn}' stroke-width='1.5'/>`;
+    }else{
+      s+=`<circle cx='${f1(m.hx)}' cy='${f1(m.hy)}' r='7.5' fill='${skin}' stroke='${skinLn}' stroke-width='1.5'/>`;
+    }
+  });
+  if(o.thumb){
+    [[20,-36,5],[36,-12,4],[-18,-42,4]].forEach(q=>{
+      const x=B.hx+q[0], y=B.hy+q[1], r=q[2];
+      s+=`<path d='M${f1(x-r)} ${f1(y)}H${f1(x+r)}M${f1(x)} ${f1(y-r)}V${f1(y+r)}' stroke='#F4B400' stroke-width='2.5' stroke-linecap='round'/>`;
+    });
+  }
+  s+=`<g transform='rotate(${f1(p.tilt||0)} ${f1(cx)} ${f1(hc+24)})'>`;
+  s+=`<circle cx='${f1(cx)}' cy='${f1(hc-33)}' r='9' fill='${hair}'/>`;
+  s+=`<circle cx='${f1(cx)}' cy='${f1(hc)}' r='27' fill='${skin}' stroke='${skinLn}' stroke-width='1.5'/>`;
+  s+=`<path d='M${f1(cx-27)} ${f1(hc-2)} A27 27 0 0 1 ${f1(cx+27)} ${f1(hc-2)} Q${f1(cx)} ${f1(hc-17)} ${f1(cx-27)} ${f1(hc-2)} Z' fill='${hair}'/>`;
+  s+=`<circle cx='${f1(cx-10)}' cy='${f1(hc+5)}' r='3' fill='#1B1B1B'/>`;
+  if(o.wink)s+=`<path d='M${f1(cx+6)} ${f1(hc+6)} Q${f1(cx+10)} ${f1(hc+1)} ${f1(cx+14)} ${f1(hc+6)}' fill='none' stroke='#1B1B1B' stroke-width='2.5' stroke-linecap='round'/>`;
+  else s+=`<circle cx='${f1(cx+10)}' cy='${f1(hc+5)}' r='3' fill='#1B1B1B'/>`;
+  s+=`<circle cx='${f1(cx-17)}' cy='${f1(hc+14)}' r='5' fill='#F08A7E' opacity='.45'/><circle cx='${f1(cx+17)}' cy='${f1(hc+14)}' r='5' fill='#F08A7E' opacity='.45'/>`;
+  if(o.thumb)s+=`<path d='M${f1(cx-9)} ${f1(hc+12)} Q${f1(cx)} ${f1(hc+30)} ${f1(cx+9)} ${f1(hc+12)} Z' fill='#7A2E2E'/>`;
+  else s+=`<path d='M${f1(cx-8)} ${f1(hc+13)} Q${f1(cx)} ${f1(hc+21)} ${f1(cx+8)} ${f1(hc+13)}' fill='none' stroke='#7A2E2E' stroke-width='2.5' stroke-linecap='round'/>`;
+  if(ACC==='acc-glasses'){
+    s+=`<circle cx='${f1(cx-10)}' cy='${f1(hc+5)}' r='7.5' fill='rgba(255,255,255,.25)' stroke='#1B1B1B' stroke-width='1.8'/><circle cx='${f1(cx+10)}' cy='${f1(hc+5)}' r='7.5' fill='rgba(255,255,255,.25)' stroke='#1B1B1B' stroke-width='1.8'/><path d='M${f1(cx-1.5)} ${f1(hc+5)}H${f1(cx+1.5)}' stroke='#1B1B1B' stroke-width='2'/>`;
+  }
+  if(ACC==='acc-shades'){
+    s+=`<ellipse cx='${f1(cx-10)}' cy='${f1(hc+5)}' rx='10' ry='7' fill='#1B1B1B'/><ellipse cx='${f1(cx+10)}' cy='${f1(hc+5)}' rx='10' ry='7' fill='#1B1B1B'/><path d='M${f1(cx-2)} ${f1(hc+4)}H${f1(cx+2)}' stroke='#1B1B1B' stroke-width='3'/>`;
+  }
+  if(HAT==='hat-cap'){
+    s+=`<path d='M${f1(cx-28)} ${f1(hc-6)} A28 28 0 0 1 ${f1(cx+28)} ${f1(hc-6)} Z' fill='#E63946'/><path d='M${f1(cx-31)} ${f1(hc-6)} Q${f1(cx)} ${f1(hc+9)} ${f1(cx+31)} ${f1(hc-6)} Z' fill='#B72A36'/><circle cx='${f1(cx)}' cy='${f1(hc-33)}' r='3' fill='#B72A36'/>`;
+  }
+  if(HAT==='hat-straw'){
+    s+=`<ellipse cx='${f1(cx)}' cy='${f1(hc-19)}' rx='44' ry='10' fill='#E9C46A' stroke='#B8923F' stroke-width='1.5'/><path d='M${f1(cx-24)} ${f1(hc-20)} Q${f1(cx)} ${f1(hc-54)} ${f1(cx+24)} ${f1(hc-20)} Z' fill='#F1D58A' stroke='#B8923F' stroke-width='1.5'/><rect x='${f1(cx-24)}' y='${f1(hc-28)}' width='48' height='7' fill='#E63946'/>`;
+  }
+  if(HAT==='hat-bamboo'){
+    s+=`<path d='M${f1(cx-24)} ${f1(hc-14)} L${f1(cx-24)} ${f1(hc+22)} M${f1(cx+24)} ${f1(hc-14)} L${f1(cx+24)} ${f1(hc+22)}' stroke='#A67C37' stroke-width='2' fill='none'/><path d='M${f1(cx-52)} ${f1(hc-10)} L${f1(cx)} ${f1(hc-48)} L${f1(cx+52)} ${f1(hc-10)} Q${f1(cx)} ${f1(hc-20)} ${f1(cx-52)} ${f1(hc-10)} Z' fill='#D9B26F' stroke='#A67C37' stroke-width='2'/>`;
+  }
+  if(HAT==='hat-wizard'){
+    s+=`<path d='M${f1(cx-30)} ${f1(hc-16)} L${f1(cx+8)} ${f1(hc-76)} L${f1(cx+30)} ${f1(hc-16)} Z' fill='#5B3FB5'/><ellipse cx='${f1(cx)}' cy='${f1(hc-16)}' rx='42' ry='9' fill='#4A3399'/><polygon points='${starPts(cx+2,hc-42,7,3)}' fill='#FFD43B'/>`;
+  }
+  if(HAT==='hat-crown'){
+    s+=`<path d='M${f1(cx-22)} ${f1(hc-24)} L${f1(cx-22)} ${f1(hc-46)} L${f1(cx-11)} ${f1(hc-34)} L${f1(cx)} ${f1(hc-50)} L${f1(cx+11)} ${f1(hc-34)} L${f1(cx+22)} ${f1(hc-46)} L${f1(cx+22)} ${f1(hc-24)} Z' fill='#F4B400' stroke='#C98F00' stroke-width='2' stroke-linejoin='round'/><circle cx='${f1(cx)}' cy='${f1(hc-30)}' r='3.2' fill='#E63946'/><circle cx='${f1(cx-12)}' cy='${f1(hc-29)}' r='2.6' fill='#3A86FF'/><circle cx='${f1(cx+12)}' cy='${f1(hc-29)}' r='2.6' fill='#2EC4B6'/>`;
+  }
+  s+=headAcc(ACC,cx,hc);
+  s+=hatSVG(HAT,cx,hc);
+  s+='</g>';
+  return s;
+}
+/* ===== 商店 ===== */
+const CATS=[['top','衣服'],['hat','帽子'],['acc','配饰'],['hold','道具'],['shoe','鞋子'],['bg','风景']];
+const VIEWBOX={top:'70 136 160 96',hat:'95 22 110 120',acc:'40 30 220 210',shoe:'80 285 140 55',bg:'0 0 300 340'};
+let shopCat='top', shopSel=null;
+const IDLE=Object.assign({},POSE0,{sw:28});
+function previewStyle(){
+  const st=Object.assign({},store.wallet.equip);
+  if(shopSel&&IT[shopSel])st[IT[shopSel].cat]=shopSel;
+  return st;
+}
+function viewShop(){
+  const w=store.wallet, last=KEYS[KEYS.length-1][1], ps=previewStyle();
+  let h='<div class="shop-wrap"><div class="shop-left"><div class="shop-top"><div class="shop-fig'+(ps.bg&&ps.bg!=='bg-none'?' has-bg':'')+'"><svg viewBox="0 0 300 340" role="img" aria-label="小人试穿预览">'+figureSVG(last,{thumb:true,style:ps,uid:'main'})+'</svg></div>';
+  h+='<p class="shop-bal"><span>现有积分</span>'+coinSVG(26)+'<b>'+w.pts+'</b></p></div></div><div class="shop-right">';
+  h+='<div class="seg">'+CATS.map(c=>'<button data-act="sh-cat" data-cat="'+c[0]+'" aria-pressed="'+(shopCat===c[0])+'">'+c[1]+'</button>').join('')+'</div>';
+  h+='<div class="items">'+ITEMS.filter(i=>i.cat===shopCat).slice().sort((a,b)=>a.price-b.price).map(i=>{
+    const worn=w.equip[i.cat]===i.id, owned=!!w.owned[i.id];
+    const st=Object.assign({},DEFAULT_EQUIP); st[i.cat]=i.id;
+    const label=worn?'穿着中':(owned?'已拥有':coinSVG(14)+i.price);
+    let thumb;
+    if(i.id==='hold-none'||i.id==='bg-none')thumb=noneSVG();
+    else if(i.cat==='hold')thumb='<svg viewBox="-56 -134 112 152" aria-hidden="true">'+holdSVG(i.id,0,0,0,'i'+i.id)+'</svg>';
+    else thumb='<svg viewBox="'+VIEWBOX[i.cat]+'" aria-hidden="true"'+(i.cat==='bg'?' class="bgthumb"':'')+'>'+figureSVG(IDLE,{style:st,uid:'i'+i.id})+'</svg>';
+    return '<button class="itm'+(worn?' worn':'')+'" data-act="sh-pick" data-id="'+i.id+'" aria-pressed="'+(shopSel===i.id)+'">'+thumb+'<span class="nm">'+esc(i.name)+'</span><span class="pr">'+label+'</span></button>';
+  }).join('')+'</div>';
+  h+='<div class="shop-act">';
+  const it=shopSel&&IT[shopSel];
+  if(!it)h+='<p class="note">点一件物品就能试穿，积分够了就可以兑换。</p>';
+  else if(w.equip[it.cat]===it.id)h+='<p class="note">“'+esc(it.name)+'”已经穿在身上了。</p>';
+  else if(w.owned[it.id])h+='<button class="primary" data-act="sh-buy">穿上“'+esc(it.name)+'”</button>';
+  else if(w.pts>=it.price)h+='<button class="primary" data-act="sh-buy">花 '+it.price+' 积分兑换并穿上</button>';
+  else h+='<p class="note">兑换“'+esc(it.name)+'”还差 '+(it.price-w.pts)+' 积分，去闯关赚积分吧。</p>';
+  return h+'</div></div></div>';
+}
+function shopAct(a,t){
+  const w=store.wallet;
+  if(a==='sh-cat'){shopCat=t.dataset.cat;shopSel=null;render();}
+  else if(a==='sh-pick'){shopSel=t.dataset.id;render();}
+  else if(a==='sh-buy'){
+    const it=shopSel&&IT[shopSel]; if(!it)return;
+    if(!w.owned[it.id]){
+      if(w.pts<it.price)return toast('积分不够');
+      w.pts-=it.price; w.owned[it.id]=true;
+      toast('兑换成功：'+it.name); fireworks(1);
+    }else toast('已穿上：'+it.name);
+    w.equip[it.cat]=it.id; shopSel=null; save(); render();
+  }
+}
+let rwRaf=0;
+function hideReward(){
+  const el=document.getElementById('reward');
+  if(el)el.hidden=true;
+  cancelAnimationFrame(rwRaf);
+  try{if('speechSynthesis' in window)speechSynthesis.cancel();}catch(e){}
+}
+function showReward(stars,pts){
+  const el=document.getElementById('reward'), fig=document.getElementById('rw-fig'), bub=document.getElementById('rw-bubble'), st=document.getElementById('rw-stars');
+  if(!el||!fig)return;
+  st.innerHTML=starsSVG(stars,3,40);
+  const rt=document.getElementById('rw-title'); if(rt)rt.textContent=['','通关啦！','真不错！','太棒了！'][Math.min(3,Math.max(1,stars||1))];
+  const stg=document.querySelector('.rw-stage'); if(stg)stg.classList.toggle('has-bg',!!(store.wallet.equip.bg&&store.wallet.equip.bg!=='bg-none'));
+  const rp=document.getElementById('rw-pts'); if(rp)rp.textContent=pts?'+'+pts+' 积分':'';
+  bub.classList.remove('on'); el.hidden=false;
+  const cb=document.getElementById('rw-close'); if(cb)cb.focus();
+  const sound=store.settings.sound!==false;
+  const reduced=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const T=KEYS[KEYS.length-1][0];
+  let said=false;
+  const draw=t=>{
+    const done=t>=T;
+    fig.innerHTML=figureSVG(poseAt(t),{thumb:t>=T-300,wink:done,style:store.wallet.equip,uid:'rw'});
+    if(done&&!said){said=true;bub.classList.add('on');if(sound)sayGoodJob();}
+    return done;
+  };
+  cancelAnimationFrame(rwRaf);
+  if(sound)chime(stars);
+  if(reduced){draw(T);return;}
+  const t0=performance.now();
+  const loop=now=>{if(!draw(Math.max(0,now-t0)))rwRaf=requestAnimationFrame(loop);};
+  draw(0);
+  rwRaf=requestAnimationFrame(loop);
+}
+document.addEventListener('keydown',e=>{const el=document.getElementById('reward');if(e.key==='Escape'&&el&&!el.hidden)hideReward();});
+let fxRaf=0;
+function fireworks(level){
+  try{
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    const cv=document.getElementById('fx'); if(!cv)return;
+    const lv=Math.min(3,Math.max(1,level)), dpr=Math.min(2,window.devicePixelRatio||1), W=window.innerWidth, H=window.innerHeight;
+    cv.width=W*dpr; cv.height=H*dpr; cv.style.display='block';
+    const ctx=cv.getContext('2d'); ctx.setTransform(dpr,0,0,dpr,0,0);
+    cancelAnimationFrame(fxRaf);
+    const C=['#ff3b6b','#ff9f1c','#ffd23f','#2ec4b6','#1e90ff','#9b5de5','#f15bb5','#4cd964','#ffffff'];
+    const R=(a,b)=>a+Math.random()*(b-a), pick=a=>a[Math.floor(Math.random()*a.length)];
+    const sparks=[], conf=[], streams=[], floats=[], glints=[], rockets=[];
+    const totalBursts=[8,14,22][lv-1], volleys=[2,3,4][lv-1], volleyN=[40,60,80][lv-1], rainN=[60,90,140][lv-1], nStream=[3,6,10][lv-1], nFloat=[6,10,16][lv-1];
+    const shapes=['sphere','ring','star','heart','willow','sphere'], EM=['🎈','⭐','🌟','🎉','✨','🎈','💖'];
+    let launched=0, nextBurst=0, vDone=0, rained=0, sDone=0, fDone=0, nextFloat=0, finale=false, last=null, T0=null;
+    function explode(x,y,shape,col){
+      const col2=pick(C), n=shape==='sphere'||shape==='willow'?54:46;
+      for(let i=0;i<n;i++){
+        let vx,vy,decay=R(.011,.017),drag=.985,g=.045,c=i%3===0?col2:col;
+        if(shape==='sphere'){const a=R(0,6.283),v=R(1.2,5);vx=Math.cos(a)*v;vy=Math.sin(a)*v;}
+        else if(shape==='ring'){const a=i/n*6.283;vx=Math.cos(a)*3.6;vy=Math.sin(a)*3.6;}
+        else if(shape==='star'){const a=i/n*6.283,m=1+0.6*Math.cos(5*a);vx=Math.cos(a)*3.1*m;vy=Math.sin(a)*3.1*m;}
+        else if(shape==='heart'){const t=i/n*6.283;vx=16*Math.pow(Math.sin(t),3)*0.2;vy=-(13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t))*0.2;c='#ff3b6b';}
+        else{const a=R(0,6.283),v=R(1,3.6);vx=Math.cos(a)*v;vy=Math.sin(a)*v;decay=R(.007,.011);drag=.99;g=.03;c='#ffd23f';}
+        sparks.push({x:x,y:y,px:x,py:y,vx:vx,vy:vy,life:1,decay:decay,drag:drag,g:g,c:c,w:R(2,3.2)});
+      }
+    }
+    const launch=()=>{const x=R(W*.12,W*.88),y=R(H*.14,H*.5);rockets.push({x:x+R(-30,30),y:H+10,sx:x,tx:x,ty:y,t:0,dur:R(16,26),shape:pick(shapes),col:pick(C)});};
+    const mkConf=(x,y,vx,vy)=>({x:x,y:y,vx:vx,vy:vy,w:R(4,8),h:R(12,26),r:R(4,7),rot:R(0,6.28),vr:R(-.3,.3),sw:R(0,6.28),col:pick(C),type:pick(['rect','rect','rect','circle','tri','star'])});
+    const volley=n=>{for(let i=0;i<n;i++){const k=i%(lv===3?3:2),x=k===0?0:(k===1?W:W/2),vx=k===0?R(2.5,7.5):(k===1?-R(2.5,7.5):R(-2,2));conf.push(mkConf(x,H*.92,vx,-R(10,18)));}};
+    function frame(now){
+      if(T0===null){T0=now;last=now;}
+      const T=(now-T0)/1000, k=Math.min(2.5,Math.max(.2,(now-last)/16.667)); last=now;
+      ctx.clearRect(0,0,W,H);
+      // 发射
+      if(launched<totalBursts&&T>=nextBurst){launch();launched++;nextBurst=T+R(.1,.22);}
+      if(launched>=totalBursts&&!finale&&rockets.length===0){finale=true;for(let i=0;i<[0,3,5][lv-1];i++)explode(R(W*.15,W*.85),R(H*.15,H*.5),pick(shapes),pick(C));}
+      if(vDone<volleys&&T>=vDone*0.55){volley(volleyN);vDone++;}
+      if(rained<rainN&&T<1.8){const n=Math.min(rainN-rained,Math.ceil(rainN/100*k));for(let i=0;i<n;i++)conf.push(mkConf(R(0,W),-R(10,60),R(-1,1),R(1,3)));rained+=n;}
+      if(sDone<nStream&&T>=sDone*.2){streams.push({x:R(30,W-30),y:-10,vy:H/240*R(.9,1.3),ph:R(0,6.28),amp:R(8,14),col:pick(C)});sDone++;}
+      if(fDone<nFloat&&T>=nextFloat){floats.push({x:R(30,W-30),y:H+40,vy:H/225*R(.8,1.2),t:0,sw:R(0,6.28),size:R(26,46),ch:pick(EM)});fDone++;nextFloat=T+R(.12,.25);}
+      if(T<5&&Math.random()<.35*k)glints.push({x:R(0,W),y:R(0,H*.8),t:0,life:R(30,60),size:R(4,9)});
+      // 火箭
+      for(let i=rockets.length-1;i>=0;i--){const r=rockets[i];r.t+=k;const u=Math.min(1,r.t/r.dur),e=1-Math.pow(1-u,2);const px=r.x,py=r.y;r.x=r.sx+(r.tx-r.sx)*e;r.y=(H+10)+(r.ty-(H+10))*e;
+        ctx.globalAlpha=.9;ctx.strokeStyle='#ffe9a8';ctx.lineWidth=2.4;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(px,py);ctx.lineTo(r.x,r.y);ctx.stroke();
+        if(u>=1){explode(r.tx,r.ty,r.shape,r.col);rockets.splice(i,1);}}
+      // 火花
+      for(let i=sparks.length-1;i>=0;i--){const p=sparks[i];p.px=p.x;p.py=p.y;p.x+=p.vx*k;p.y+=p.vy*k;p.vy+=p.g*k;const d=Math.pow(p.drag,k);p.vx*=d;p.vy*=d;p.life-=p.decay*k;
+        if(p.life<=0){sparks.splice(i,1);continue;}
+        ctx.globalAlpha=p.life;ctx.strokeStyle=p.c;ctx.lineWidth=p.w;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(p.px,p.py);ctx.lineTo(p.x,p.y);ctx.stroke();ctx.fillStyle=p.c;ctx.beginPath();ctx.arc(p.x,p.y,p.w*.8,0,6.2832);ctx.fill();}
+      // 飘带
+      ctx.lineWidth=4;ctx.lineCap='round';ctx.globalAlpha=.95;
+      for(let i=streams.length-1;i>=0;i--){const s2=streams[i];s2.y+=s2.vy*k;s2.ph+=.07*k;if(s2.y-96>H){streams.splice(i,1);continue;}
+        ctx.strokeStyle=s2.col;ctx.beginPath();for(let j=0;j<=12;j++){const px=s2.x+Math.sin(s2.ph+j*.55)*s2.amp,py=s2.y-j*8;if(j===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.stroke();}
+      // 彩纸
+      ctx.globalAlpha=1;
+      for(let i=conf.length-1;i>=0;i--){const c=conf[i];c.vy=c.vy*Math.pow(.972,k)+.13*k;c.vx*=Math.pow(.985,k);c.x+=(c.vx+Math.sin(c.sw)*.7)*k;c.y+=c.vy*k;c.rot+=c.vr*k;c.sw+=.09*k;
+        if(c.y>H+40||c.x<-80||c.x>W+80){conf.splice(i,1);continue;}
+        ctx.save();ctx.translate(c.x,c.y);ctx.rotate(c.rot);ctx.fillStyle=c.col;
+        if(c.type==='rect'){ctx.scale(1,Math.cos(c.sw));ctx.fillRect(-c.w/2,-c.h/2,c.w,c.h);}
+        else if(c.type==='circle'){ctx.scale(1,Math.abs(Math.cos(c.sw))*.7+.3);ctx.beginPath();ctx.arc(0,0,c.r,0,6.2832);ctx.fill();}
+        else if(c.type==='tri'){ctx.beginPath();ctx.moveTo(0,-c.r*1.4);ctx.lineTo(c.r*1.2,c.r);ctx.lineTo(-c.r*1.2,c.r);ctx.closePath();ctx.fill();}
+        else{ctx.beginPath();for(let q=0;q<10;q++){const a=-Math.PI/2+q*Math.PI/5,rr=q%2?c.r*.5:c.r*1.3;ctx.lineTo(Math.cos(a)*rr,Math.sin(a)*rr);}ctx.closePath();ctx.fill();}
+        ctx.restore();}
+      // 气球和星星
+      ctx.textAlign='center';ctx.textBaseline='middle';
+      for(let i=floats.length-1;i>=0;i--){const f=floats[i];f.t+=k;f.y-=f.vy*k;f.sw+=.05*k;if(f.t>=180||f.y<-60){floats.splice(i,1);continue;}ctx.globalAlpha=f.t>140?(180-f.t)/40:1;ctx.font=Math.round(f.size)+'px sans-serif';ctx.fillText(f.ch,f.x+Math.sin(f.sw)*14,f.y);ctx.globalAlpha=1;}
+      // 闪光
+      ctx.strokeStyle='#fff';ctx.lineWidth=2;
+      for(let i=glints.length-1;i>=0;i--){const g2=glints[i];g2.t+=k;if(g2.t>=g2.life){glints.splice(i,1);continue;}ctx.globalAlpha=Math.sin(Math.PI*g2.t/g2.life);const s3=g2.size*(.6+.4*Math.sin(Math.PI*g2.t/g2.life));ctx.beginPath();ctx.moveTo(g2.x-s3,g2.y);ctx.lineTo(g2.x+s3,g2.y);ctx.moveTo(g2.x,g2.y-s3);ctx.lineTo(g2.x,g2.y+s3);ctx.stroke();}
+      ctx.globalAlpha=1;
+      const busy=launched<totalBursts||vDone<volleys||rained<rainN||sDone<nStream||fDone<nFloat||sparks.length||conf.length||streams.length||floats.length||rockets.length||(!finale&&lv>1);
+      if(busy&&T<8){fxRaf=requestAnimationFrame(frame);}
+      else{ctx.clearRect(0,0,W,H);cv.style.display='none';}
+    }
+    fxRaf=requestAnimationFrame(frame);
+  }catch(e){}
+}
+let game=null;
+function gsrc(){
+  const v=store.game.src;
+  if(BUILTIN[v]||v==='my')return v;
+  if(typeof v==='string'&&v.indexOf('d:')===0&&store.decks.some(d=>'d:'+d.id===v))return v;
+  return 'wy4';
+}
+function gwords(){
+  const v=gsrc();
+  if(BUILTIN[v])return BUILTIN[v].words;
+  if(v==='my')return store.cards;
+  return store.decks.find(d=>'d:'+d.id===v).words;
+}
+function srcList(){
+  const l=Object.keys(BUILTIN).map(k=>[k,BUILTIN[k].short,BUILTIN[k].words.length]);
+  l.push(['my','我的词库',store.cards.length]);
+  store.decks.forEach(d=>l.push(['d:'+d.id,d.name,d.words.length]));
+  return l;
+}
+function buildChapters(words){
+  const out=[]; let i=0;
+  while(i<words.length){
+    const unit=words[i].unit||''; let j=i;
+    while(j<words.length&&(words[j].unit||'')===unit)j++;
+    const grp=words.slice(i,j), chunks=[];
+    for(let k=0;k<grp.length;k+=CH)chunks.push(grp.slice(k,k+CH));
+    if(unit&&chunks.length>1&&chunks[chunks.length-1].length<3){const last=chunks.pop();chunks[chunks.length-1]=chunks[chunks.length-1].concat(last);}
+    chunks.forEach((ch,idx)=>out.push({words:ch,unit:unit,first:idx===0,idx:idx}));
+    i=j;
+  }
+  return out;
+}
+let chapCache={key:'',val:null};
+function chapterList(){
+  const w=gwords(), key=gsrc()+'|'+w.length+'|'+(w.length?w[0].word+'|'+w[w.length-1].word:'');
+  if(chapCache.key!==key||!chapCache.val)chapCache={key:key,val:buildChapters(w)};
+  return chapCache.val;
+}
+const shuffle=a=>{const b=a.slice();for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=b[i];b[i]=b[j];b[j]=t;}return b;};
+const chapters=()=>chapterList().length;
+const lvKey=(c,s)=>{const ch=chapterList()[c];return gsrc()+'|'+((ch&&ch.unit)?ch.unit+'#'+ch.idx:String(c))+'-'+s;};
+const starsOf=(c,s)=>store.game.stars[lvKey(c,s)]||0;
+function unlocked(c,s){return s===0?true:starsOf(c,s-1)>0;}
+function blankOf(c){
+  if(!c.example)return null;
+  const w=c.word.trim().toLowerCase(), ex=c.example, lo=ex.toLowerCase();
+  const stem=(/\s/.test(w)||w.length<=4)?w:w.slice(0,w.length-2);
+  let at=lo.indexOf(stem);
+  while(at>0&&/[a-z]/i.test(ex[at-1]))at=lo.indexOf(stem,at+1);
+  if(at<0)return null;
+  let end=at+stem.length;
+  while(end<ex.length&&/[a-z]/i.test(ex[end]))end++;
+  return ex.slice(0,at)+'____'+ex.slice(end);
+}
+function distract(card,key,n){
+  const pool=shuffle(gwords().filter(x=>x.id!==card.id&&x[key]!==card[key]));
+  const seen=new Set([card[key]]), out=[];
+  for(const x of pool){if(!seen.has(x[key])){seen.add(x[key]);out.push(x[key]);if(out.length===n)break;}}
+  return out;
+}
+function letterCount(word){return word.replace(/ /g,'').length;}
+function hintOf(word,n){
+  let k=0;
+  return word.split('').map(ch=>{if(ch===' ')return '/';k++;return k<=n?ch:'_';}).join(' ');
+}
+function makeQ(card,stage){
+  let type=stage, blank=null;
+  if(type===2){blank=blankOf(card);if(!blank)type=1;}
+  const q={type:type,card:card,blank:blank};
+  if(type===0){q.opts=shuffle([card.meaning].concat(distract(card,'meaning',3)));q.ans=q.opts.indexOf(card.meaning);}
+  else if(type===1||type===2){q.opts=shuffle([card.word].concat(distract(card,'word',3)));q.ans=q.opts.indexOf(card.word);}
+  return q;
+}
+function startLevel(c,s){
+  const words=gwords();
+  if(words.length<4)return toast('至少需要 4 个单词才能闯关');
+  const chap=chapterList()[c];
+  const chunk=chap?chap.words:[];
+  if(!chunk.length)return;
+  game={view:'play',c:c,s:s,qs:shuffle(chunk).map(x=>makeQ(x,s)),i:0,lives:LIVES,picked:null,typed:'',draft:'',hn:0,ok:null,missed:[],spk:-1,passed:false,stars:0,pts:0,bonus:0};
+  render();
+}
+function answer(ok,picked){
+  const g=game,q=g.qs[g.i];
+  if(g.ok!==null)return;
+  g.ok=ok; g.picked=picked;
+  if(!ok){g.lives--;g.missed.push(q.card);}
+  else{const pt=PTS[q.type];q.got=pt;g.pts+=pt;store.wallet.pts+=pt;store.wallet.earned+=pt;save();}
+  render();
+  if(ok){const idx=g.i;setTimeout(()=>{if(game===g&&g.i===idx&&g.ok===true)next();},900);}
+}
+function pickOpt(i){const g=game,q=g.qs[g.i];if(g.ok!==null)return;answer(i===q.ans,i);}
+function submitSpell(){
+  const g=game,q=g.qs[g.i],el=$('#spell');
+  if(!el||g.ok!==null)return;
+  const norm=s=>String(s).trim().toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g,' ');
+  const v=norm(el.value);
+  if(!v)return toast('先输入答案');
+  g.typed=el.value.trim();
+  answer(v===norm(q.card.word),null);
+}
+function finish(){
+  const g=game;
+  g.view='result'; g.passed=g.lives>0;
+  if(g.passed){
+    const m=LIVES-g.lives;
+    g.stars=m===0?3:(m<=2?2:1);
+    const k=lvKey(g.c,g.s);
+    if(g.stars>(store.game.stars[k]||0)){store.game.stars[k]=g.stars;}
+    g.bonus=[0,5,10,15][g.stars];
+    store.wallet.pts+=g.bonus; store.wallet.earned+=g.bonus; save();
+  }
+}
+function next(){
+  const g=game;
+  if(!g||g.view!=='play'||g.ok===null)return;
+  g.i++; g.ok=null; g.picked=null; g.typed=''; g.draft=''; g.hn=0;
+  if(g.lives<=0||g.i>=g.qs.length){finish();if(g.passed){fireworks(g.stars);showReward(g.stars,g.pts+g.bonus);}}
+  render();
+}
+function gameAct(a,t){
+  if(a==='g-start'){const c=+t.dataset.c,s=+t.dataset.s;if(!unlocked(c,s))return toast('先通过上一关');startLevel(c,s);}
+  else if(a==='g-pick'){if(game)pickOpt(+t.dataset.i);}
+  else if(a==='g-submit'){if(game)submitSpell();}
+  else if(a==='g-hint'){
+    if(!game)return;
+    const g=game,q=g.qs[g.i],el=$('#spell');
+    if(el)g.draft=el.value;
+    if(1+g.hn<letterCount(q.card.word)-1)g.hn++;
+    render();
+  }
+  else if(a==='g-next')next();
+  else if(a==='g-map'){game=null;render();}
+  else if(a==='g-retry'){if(game)startLevel(game.c,game.s);}
+  else if(a==='g-nextlevel'){if(game){const g=game;startLevel(g.s<3?g.c:g.c+1,g.s<3?g.s+1:0);}}
+  else if(a==='g-speak'){const q=game&&game.qs[game.i];if(q)speak(q.card.word);}
+  else if(a==='g-src'){store.game.src=t.dataset.src;if(gsrc()!==store.game.src)store.game.src='wy4';save();game=null;render();}
+}
+function viewGame(){
+  if(!game)return viewMap();
+  return game.view==='play'?viewPlay():viewResult();
+}
+function viewMap(){
+  const n=chapters();let got=0;
+  for(let c=0;c<n;c++)for(let s=0;s<4;s++)got+=starsOf(c,s);
+  const src=gsrc();
+  let nextKey=null;
+  for(let c=0;c<n&&nextKey===null;c++)for(let s=0;s<4;s++){if(unlocked(c,s)&&!starsOf(c,s)){nextKey=c+'-'+s;break;}}
+  let h='<div class="seg multi">'+srcList().map(x=>'<button data-act="g-src" data-src="'+esc(x[0])+'" aria-pressed="'+(src===x[0])+'"><span>'+esc(x[1])+'</span><small>'+x[2]+' 词</small></button>').join('')+'</div>';
+  h+='<div class="meta"><span>星星 <b>'+got+' / '+(n*12)+'</b></span><span>共 <b>'+n+'</b> 章</span></div>';
+  h+='<details class="why"><summary>玩法说明和词表来源</summary><p class="note">每章约 '+CH+' 个单词，分 4 关：选义、选词、填空、拼写。每关有 '+LIVES+' 条生命，答错失去 1 条，生命用完才算失败。全对 3 星，错 1–2 次 2 星，错更多但通关 1 星。拼写题可以点“提示”多看一个字母。每章的第一关随时可以玩，章内的关卡要按顺序通过。闯关成绩单独保存，不影响“学习”里的复习进度。</p>';
+  if(BUILTIN[src]&&BUILTIN[src].note)h+='<p class="note">'+esc(BUILTIN[src].note)+'</p>';
+  h+='</details>';
+  if(src!=='my')h+='<div class="row"><button class="ghost" data-act="src-learn">把这个词库加入“学习”（'+gwords().length+' 词）</button></div>';
+  if(gwords().length<4)return h+'<div class="empty">至少需要 4 个单词才能闯关。<br><br><button class="primary" data-tab="add">去添加单词</button></div>';
+  h+='<div class="chaps">';
+  const chs=chapterList();
+  for(let c=0;c<n;c++){
+    const words=chs[c].words.map(x=>x.word);
+    if(chs[c].unit&&chs[c].first)h+='<h3 class="unit">'+esc(chs[c].unit)+'</h3>';
+    h+='<section class="chap"><h2><span class="chip ch'+(c%5)+'">第 '+(c+1)+' 章</span></h2><p class="note">'+esc(words.join('、'))+'</p><div class="lv">';
+    for(let s=0;s<4;s++){
+      const ok=unlocked(c,s),st=starsOf(c,s);
+      h+='<button class="lvbtn'+(nextKey===c+'-'+s?' next':'')+'" data-act="g-start" data-c="'+c+'" data-s="'+s+'"'+(ok?'':' disabled')+'><span class="ic">'+(ok?STAGES[s].icon:'🔒')+'</span><strong>'+STAGES[s].name+'</strong>'+(ok?starsSVG(st,3,15):'<small>未解锁</small>')+'</button>';
+    }
+    h+='</div></section>';
+  }
+  return h+'</div>';
+}
+function viewPlay(){
+  const g=game,q=g.qs[g.i];
+  if(q.type===0&&store.settings.autoSpeak&&g.spk!==g.i){g.spk=g.i;speak(q.card.word);}
+  let h='<div class="gtop"><button class="ghost" data-act="g-map">退出</button><b>第 '+(g.c+1)+' 章 · '+STAGES[g.s].name+'</b><span class="hearts" aria-label="剩余生命 '+g.lives+'">'+'❤️'.repeat(g.lives)+'🤍'.repeat(LIVES-g.lives)+'</span></div>';
+  h+='<div class="bar"><i style="width:'+Math.round(100*g.i/g.qs.length)+'%"></i></div><div class="card q t'+q.type+'">';
+  if(q.card.emoji&&q.type!==2)h+='<p class="emo">'+q.card.emoji+'</p>';
+  if(q.type===0)h+='<p class="word">'+esc(q.card.word)+'</p><button class="spk" data-act="g-speak">朗读</button>';
+  else if(q.type===1)h+='<p class="meaning" style="font-size:1.5rem;margin:0">'+esc(q.card.meaning)+'</p><p class="hint">选出对应的英文</p>';
+  else if(q.type===2)h+='<p class="example" style="font-size:1.25rem;color:var(--ink)">'+esc(q.blank)+'</p><p class="hint">选出最合适的词</p>';
+  else h+='<p class="meaning" style="font-size:1.5rem;margin:0">'+esc(q.card.meaning)+'</p><p class="hintpat">'+esc(hintOf(q.card.word,1+g.hn))+'</p>';
+  h+='</div>';
+  if(q.type<3){
+    h+='<div class="opts">'+q.opts.map((o,i)=>{
+      let cls='opt'+(q.type>0?' w':''), dis='';
+      if(g.ok!==null){dis=' disabled';if(i===q.ans)cls+=' ok';else if(i===g.picked)cls+=' bad';}
+      return '<button class="'+cls+'" data-act="g-pick" data-i="'+i+'"'+dis+'><span class="k k'+i+'">'+(i+1)+'</span><span>'+esc(o)+'</span></button>';
+    }).join('')+'</div>';
+  }else if(g.ok===null){
+    h+='<div class="row"><input type="text" id="spell" value="'+esc(g.draft)+'" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="输入英文单词" style="flex:1;min-width:0"><button class="primary" data-act="g-submit">确定</button></div>';
+    if(1+g.hn<letterCount(q.card.word)-1)h+='<div class="row" style="justify-content:center"><button class="ghost" data-act="g-hint">提示：多看一个字母</button></div>';
+  }else{
+    h+='<p class="note" style="text-align:center">你的答案：'+esc(g.typed)+'</p>';
+  }
+  if(g.ok===true)h+='<p class="fb ok"><b>太棒了！+'+q.got+' 分</b></p>';
+  else if(g.ok===false){
+    h+='<div class="fbspace"></div><div class="fbbar"><div class="fbin">';
+    h+='<p class="fb bad"><b>没关系，记住它：'+esc(q.card.word)+'</b>（'+esc(q.card.meaning)+'）</p>';
+    if(q.card.example)h+='<p class="example">'+esc(q.card.example)+'</p>';
+    h+='<button class="primary" data-act="g-next">'+(g.lives<=0?'查看结果':'继续')+'</button></div></div>';
+  }
+  return h;
+}
+function viewResult(){
+  const g=game,k=g.passed?g.stars:0,m=LIVES-g.lives;
+  let h='<div class="card res"><p class="big">'+starsSVG(k,3,46)+'</p><p class="word" style="font-size:1.8rem;margin-top:8px">'+(g.passed?'通关！':'差一点，再来一次吧')+'</p><p class="hint">第 '+(g.c+1)+' 章 · '+STAGES[g.s].name+(g.passed?'，答错 '+m+' 次':'，生命用完了，别灰心')+'</p></div>';
+  h+='<p class="note" style="text-align:center">本关积分 +'+(g.pts+g.bonus)+(g.bonus?'（答题 '+g.pts+'，通关奖励 '+g.bonus+'）':'')+'，现有 '+store.wallet.pts+' 分</p>';
+  if(g.missed.length){
+    h+='<h2>需要再看看</h2><div class="list">'+g.missed.map(c=>'<div class="item"><div class="t"><b>'+esc(c.word)+'</b><span>'+esc(c.meaning)+'</span></div></div>').join('')+'</div>';
+  }
+  const hasNext=g.s<3||g.c+1<chapters();
+  h+='<div class="row">'+(g.passed&&hasNext?'<button class="primary" data-act="g-nextlevel">下一关</button>':'')+'<button class="ghost" data-act="g-retry">重玩本关</button><button class="ghost" data-act="g-map">返回地图</button></div>';
+  if(g.passed&&!hasNext)h+='<p class="note">已经通关全部关卡，真厉害！</p>';
+  return h;
+}
+document.addEventListener('keydown',e=>{
+  if(tab!=='game'||!game||game.view!=='play')return;
+  const q=game.qs[game.i];
+  if(q.type===3&&game.ok===null){if(e.target.id==='spell'&&e.key==='Enter'){e.preventDefault();submitSpell();}return;}
+  if(q.type<3&&game.ok===null&&['1','2','3','4'].includes(e.key)){pickOpt(+e.key-1);return;}
+  if(game.ok===false&&e.target===document.body&&(e.key==='Enter'||e.key===' ')){e.preventDefault();next();}
+});
+
+ensureWallet();
+load(); ensureWallet(); migrateGame(); render();
+try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist();}catch(e){}
+</script>
+</body>
+</html>
